@@ -1,8 +1,10 @@
+import { lazy, Suspense } from 'react';
 import React from 'react'
 import './index.css'
 import { Route, Routes } from 'react-router-dom'
 import Test from './Components/Test'
-import Buy from './Components/Buy'
+// import Buy from './Components/Buy'
+const Buy = lazy(() => import('./Components/Buy'));
 
 const App = () => {
   const properties = [
@@ -38,10 +40,12 @@ const App = () => {
     },
 ]
   return (
+    <Suspense fallback={<div>Loading...</div>}>
     <Routes>
       <Route path={'/test'} element={<Test properties={properties}/>}/>
       <Route path={'/buy'} element={<Buy properties={properties}/>}/>
     </Routes>
+    </Suspense>
   )
 }
 
