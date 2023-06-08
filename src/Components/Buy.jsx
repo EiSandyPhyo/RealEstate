@@ -1,5 +1,6 @@
 import React from "react";
 import { BiSearchAlt } from "react-icons/bi";
+import { HiOutlinePhone } from "react-icons/hi";
 
 const Buy = ({ properties }) => {
   return (
@@ -32,14 +33,11 @@ const Buy = ({ properties }) => {
 
       <section className="">
         {/* search box section */}
-        <div className="flex-center-center -mt-[43px]">
+        <div className="flex-center-center -mt-[43px] px-3">
           <div className=" md:w-[672px] shadow-lg rounded-md z-10 bg-white">
-            <form
-              action=""
-              className="flex-between-center gap-2 pl-4 pr-1"
-            >
+            <form action="" className="flex-between-center gap-2 pl-4 pr-1">
               <div className="flex-center-center gap-1">
-                <BiSearchAlt size={25} />
+                <BiSearchAlt className="text-xl sm:text-2xl" />
                 <input
                   type="text"
                   className="border border-none focus:outline-none w-48 xs:w-[250px] sm:w-96 md:w-[400px] text-sm md:text-lg p-2"
@@ -51,6 +49,19 @@ const Buy = ({ properties }) => {
               </button>
             </form>
           </div>
+        </div>
+
+        {/* get in touch section */}
+        <div className="flex-center-center flex-col mt-px">
+          <h1 className="h1 mb-6">Have Question ? Get in touch!</h1>
+          <p className="p max-w-xl text-center">
+            A great plateform to buy, sell and rent your properties without any
+            agent or commisions.
+          </p>
+          <button className="btn flex-center-center gap-2 px-7 py-2 mt-6">
+            <HiOutlinePhone className="xs:mb-[4px] md:mb-1 text-md sm:text-lg" />
+            Contact us
+          </button>
         </div>
       </section>
 
