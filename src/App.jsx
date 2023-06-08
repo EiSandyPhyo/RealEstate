@@ -2,6 +2,11 @@ import React from 'react'
 import './index.css'
 import { Route, Routes } from 'react-router-dom'
 import Test from './Components/Test'
+import Home from "./Pages/Home";
+import Login from "./Pages/Login";
+import Signup from "./Pages/Signup";
+import ForgetPW from "./Pages/ForgetPW";
+
 
 const App = () => {
   const properties = [
@@ -38,7 +43,11 @@ const App = () => {
 ]
   return (
     <Routes>
-      <Route path={'/test'} element={<Test properties={properties}/>}/>
+      <Route path={"/test"} element={<Test properties={properties} />} />
+      <Route path={"/"} element={<Home />} />
+      <Route path={"/login"} element={<Login />} />
+      <Route path={"/signup"} element={<Signup />} />
+      <Route path={"/forgetPW"} element={<ForgetPW />} />
     </Routes>
   )
 }
