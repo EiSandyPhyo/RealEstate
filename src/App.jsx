@@ -2,6 +2,7 @@ import React from 'react'
 import './index.css'
 import { Route, Routes } from 'react-router-dom'
 import Test from './Components/Test'
+import Buy from './Components/Buy'
 
 const App = () => {
   const properties = [
@@ -39,6 +40,7 @@ const App = () => {
   return (
     <Routes>
       <Route path={'/test'} element={<Test properties={properties}/>}/>
+      <Route path={'/buy'} element={<Buy properties={properties}/>}/>
     </Routes>
   )
 }
