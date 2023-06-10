@@ -10,20 +10,51 @@
     font-family: 'League Spartan', sans-serif;
 }
 
-/* hero section */
+/* font */
+.header{
+    @apply capitalize font-medium xxs:text-2xl xs:text-3xl md:text-4xl text-white mt-10
+}
+.h1{
+    @apply font-medium text-2xl sm:text-3xl;
+}
+.h2{
+    @apply font-medium sm:text-lg;
+}
+.font{
+    @apply text-lg font-medium;
+}
+.sub-header{
+    @apply text-2xl md:text-3xl font-semibold mb-6;
+}
+.paragraph{
+    @apply xs:text-[16px] md:text-lg max-w-xl text-center text-slate-400 px-1 sm:px-0
+}
+
+
+
+/* bg-color n bg-img */
 .hero-img{
-    @apply bg-buy-img bg-no-repeat bg-center bg-cover w-full h-[378px] relative;
+    @apply bg-buy-img bg-no-repeat bg-center bg-cover w-full h-[378px] relative
 }
 .bg-dark-opacity{
     @apply absolute bg-[#161C2D] opacity-80 inset-0;
 }
-.hero-title{
-    @apply capitalize font-medium text-2xl sm:text-3xl md:text-4xl text-white mt-10;
-}
 
-/* search box section */
+
+
+/* btn */
 .btn{
     @apply bg-green-600 hover:bg-green-700 rounded-md text-white text-sm md:text-lg font-medium;
+}
+
+
+
+/* layout */
+.container-2xl{
+    @apply w-full md:max-w-3xl lg:max-w-screen-2xl px-3 md:px-4 lg:px-52 mx-auto;
+}
+.grid-layout-3{
+    @apply grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-7;
 }
 .flex-between-center{
     @apply flex flex-wrap justify-between items-center;
@@ -32,15 +63,18 @@
     @apply flex flex-wrap justify-center items-center;
 }
 
-/* get in touch section */
-.h1{
-    @apply font-medium text-2xl sm:text-3xl;
+
+
+/* icon */
+.icon-color{
+    @apply text-green-500 text-2xl;
 }
-.p{
-    @apply xs:text-[16px] md:text-lg text-slate-400
-}
-.mt-px{
-    @apply mt-16 px-3;
+
+
+
+/* hover */
+.card-hover{
+    @apply hover:shadow-xl duration-500 ease-in-out;
 }
 
 
