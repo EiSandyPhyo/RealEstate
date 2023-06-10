@@ -14,6 +14,9 @@
 .header{
     @apply capitalize font-medium xxs:text-2xl xs:text-3xl md:text-4xl text-white mt-10
 }
+.header-2{
+    @apply capitalize font-bold xxs:text-2xl xs:text-3xl md:text-4xl text-black mt-10 text-center
+}
 .h1{
     @apply font-medium text-2xl sm:text-3xl;
 }
@@ -52,6 +55,9 @@
 /* layout */
 .container-2xl{
     @apply w-full md:max-w-3xl lg:max-w-screen-2xl px-3 md:px-4 lg:px-52 mx-auto;
+}
+.grid-layout-1{
+    @apply grid grid-cols-1;
 }
 .grid-layout-3{
     @apply grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-7;
