@@ -77,7 +77,7 @@ const FeatureSlider = () => {
             </i>
           </div>
           <div className="text-center">
-            <p className="text-xl text-slate-400 italic">
+            <p className="text-xl text-slate-400 h-[110px] italic">
               {slides[currentIndex].text}
             </p>
             <div className="text-center mt-5 ">
