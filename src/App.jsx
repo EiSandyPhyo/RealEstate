@@ -43,9 +43,6 @@ const App = () => {
 ]
   return (
     <Routes>
-      <Route path={"/test"} element={<Test properties={properties} />} />
-      <Route path={"/"} element={<Home />} />
-      <Route path={"/login"} element={<Login />} />
       <Route path={"/signup"} element={<Signup />} />
       <Route path={"/forgetPW"} element={<ForgetPW />} />
     </Routes>
