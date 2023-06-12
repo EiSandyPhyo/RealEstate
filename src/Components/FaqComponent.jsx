@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {MdOutlineKeyboardArrowUp,MdOutlineKeyboardArrowDown} from "react-icons/md"
 
 const FaqComponent = () => {
   const [faqLists, setFaqLists] = useState([
@@ -59,6 +60,9 @@ const FaqComponent = () => {
                   className={faqList.showAns ? "text-green-600" : "text-black"}
                 >
                   {faqList.que}
+                </span>
+                <span className="ms-auto">
+                  {faqList.showAns? <MdOutlineKeyboardArrowUp className="text-green-600"/> : <MdOutlineKeyboardArrowDown/>}
                 </span>
               </button>
             </h2>

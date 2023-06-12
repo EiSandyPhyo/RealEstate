@@ -8,7 +8,7 @@ const Features = () => {
     <>
       <div className="relative bgTop table w-full py-32 lg:py-36 bg-no-repeat bg-center bg-cover">
         <div className="absolute inset-0 bg-slate-900 opacity-80"></div>
-        <div className="container mx-auto">
+        <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 text-center mt-10">
             <h3 className="md:text-4xl text-3xl md:leading-normal leading-normal font-medium text-white z-50">
               Services / Features
@@ -18,7 +18,7 @@ const Features = () => {
       </div>
       <div className="relative lg:py-24 py-16">
         <FeatureGrids />
-        <div className="container lg:mt-24 mt-16 mx-auto">
+        <div className="container lg:mt-24 mt-16 mx-auto px-4">
           <div className="grid grid-cols-1 pb-8 text-center">
             <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">
               What Our Client Say ?
@@ -31,7 +31,7 @@ const Features = () => {
           <FeatureSlider/>
          
         </div>
-        <div className="container lg:mt-24 mt-16 mx-auto">
+        <div className="container lg:mt-24 mt-16 mx-auto px-4">
           <div className="grid grid-cols-1 text-center">
             <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-medium text-black dark:text-white">
               Have Question ? Get in touch!

@@ -7,7 +7,7 @@ import {BsTelephone} from "react-icons/bs"
 const DetailText = ({showModal,setShowModal}) => {
   return (
     <>
-      <div className="container md:mt-24 mt-16 mx-auto ">
+      <div className="container md:mt-24 mt-16 mx-auto px-4 ">
         <div className=" md:flex">
           <div className="lg:w-2/3 md:w-1/2 md:p-4 px-3">
             <h4 className="text-2xl font-medium">

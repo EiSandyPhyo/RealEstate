@@ -18,7 +18,7 @@ const Pricing = () => {
         </div>
       </div>
       <div className="relative lg:py-24 py-16 ">
-        <div className="container mx-auto">
+        <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-[30px] gap-y-[50px]">
             <div className="rounded-md shadow-lg hover:shadow-xl  duration-500 ease-in-out">
               <div className="p-6 text-center">
@@ -74,7 +74,7 @@ const Pricing = () => {
             </div>
           </div>
         </div>
-        <div className="container lg:mt-24 mt-16 mx-auto">
+        <div className="container lg:mt-24 mt-16 mx-auto px-4">
           <div className="flex flex-col text-center">
             <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-medium text-black dark:text-white">
               Have Question ? Get in touch!

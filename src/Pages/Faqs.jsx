@@ -49,7 +49,7 @@ const Faqs = () => {
     <>
       <div className="relative bgTop table w-full py-32 lg:py-36 bg-no-repeat bg-center bg-cover ">
         <div className="absolute inset-0 bg-slate-900 opacity-80"></div>
-        <div className="container mx-auto">
+        <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 text-center mt-10 ">
             <h3 className="md:text-4xl text-3xl md:leading-normal leading-normal font-medium text-white z-50">
               Frequently Asked Questions
@@ -58,7 +58,7 @@ const Faqs = () => {
         </div>
       </div>
       <div className="relative lg:py-24 py-16">
-        <div className="container mx-auto">
+        <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
             <div className="lg:col-span-4 md:col-span-5">
               <div className="rounded-md shadow-lg  p-6 sticky top-20">
@@ -144,7 +144,7 @@ const Faqs = () => {
             </div>
           </div>
         </div>
-        <div className="container lg:mt-24 mt-16 mx-auto">
+        <div className="container lg:mt-24 mt-16 mx-auto px-4">
           <div className="grid grid-cols-1 text-center">
             <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-medium text-black dark:text-white">
               Have Question ? Get in touch!
