@@ -6,6 +6,7 @@ import { IoBedOutline } from "react-icons/io5";
 import { LuBath } from "react-icons/lu";
 import { BsStarFill } from "react-icons/bs";
 import { RxHeart, RxHeartFilled } from "react-icons/rx";
+import { Link } from "react-router-dom";
 
 const ListSideBar = ({ properties }) => {
   const [heartFill, setHeartFill] = useState(false);
@@ -135,9 +136,11 @@ const ListSideBar = ({ properties }) => {
 
                         <div className="p-6">
                           <div className="mb-6">
+                          <Link to={`/detail/${property.id}`}>
                             <h2 className="h2 cursor-pointer hover:text-green-600 duration-500 ease-in-out inline-block">
                               {property.title}
                             </h2>
+                            </Link>
                           </div>
                           <div className="border-y border-slate-100 py-6 mb-6">
                             <div className="flex-between-center">

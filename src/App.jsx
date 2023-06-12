@@ -5,6 +5,7 @@ import { Route, Routes } from 'react-router-dom'
 import Test from './Components/Test'
 import Error from './Pages/Error';
 import ListSidebar from './Pages/ListSidebar';
+import Detail from './Pages/Detail';
 // import Buy from './Pages/Buy'
 const Buy = lazy(() => import('./Pages/Buy'));
 
@@ -47,6 +48,7 @@ const App = () => {
       <Route path={'/test'} element={<Test properties={properties}/>}/>
       <Route path={'/buy'} element={<Buy properties={properties}/>}/>
       <Route path={'/list-sidebar'} element={<ListSidebar properties={properties}/>}/>
+      <Route path={'/detail/:id'} element={<Detail properties={properties}/>}/>
       <Route path={'/404'} element={<Error/>}/>
     </Routes>
     </Suspense>

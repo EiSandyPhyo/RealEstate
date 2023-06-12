@@ -58,6 +58,10 @@
 .btn-2{
     @apply px-4 py-2 text-black text-sm md:text-lg font-medium w-full;
 }
+.btn-3{
+    @apply hover:bg-green-600 rounded-md text-green-600 hover:text-white text-sm md:text-lg font-medium border border-green-600;
+
+}
 .active{
     @apply bg-green-600 rounded text-white
 }
@@ -105,7 +109,7 @@
 
 /* form input box */
 .form-box{
-    @apply w-full py-2 px-3 ps-10 text-sm md:text-lg;
+    @apply w-full py-2 px-3 ps-10 text-sm md:text-lg
 }
 .form-box-2{
     @apply w-full py-2 px-3 text-sm md:text-lg border border-gray-200 bg-white rounded overflow-hidden;
