@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { BiSearchAlt } from "react-icons/bi";
 import FeatureProperties from "../Components/FeatureProperties";
 import HowItWorks from "../Components/HowItWorks";
+import GetInTouch from "../Components/GetInTouch";
 
 const Buy = ({ properties }) => {
 
@@ -228,6 +229,9 @@ const Buy = ({ properties }) => {
             </div>
           </div>
         </div>
+
+        {/* get in touch section */}
+        <GetInTouch/>
       </section>
 
     </div>
