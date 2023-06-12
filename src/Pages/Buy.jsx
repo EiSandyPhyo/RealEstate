@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BiSearchAlt } from "react-icons/bi";
-import FeatureProperties from "./FeatureProperties";
+import FeatureProperties from "../Components/FeatureProperties";
 
 const Buy = ({ properties }) => {
 

@@ -3,9 +3,9 @@ import React from 'react'
 import './index.css'
 import { Route, Routes } from 'react-router-dom'
 import Test from './Components/Test'
-import Error from './Components/Error';
-// import Buy from './Components/Buy'
-const Buy = lazy(() => import('./Components/Buy'));
+import Error from './Pages/Error';
+// import Buy from './Pages/Buy'
+const Buy = lazy(() => import('./Pages/Buy'));
 
 const App = () => {
   const properties = [
