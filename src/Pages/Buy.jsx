@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { BiSearchAlt } from "react-icons/bi";
 import FeatureProperties from "../Components/FeatureProperties";
+import HowItWorks from "../Components/HowItWorks";
 
 const Buy = ({ properties }) => {
 
@@ -54,6 +55,9 @@ const Buy = ({ properties }) => {
 
         {/* feature properties section */}
         <FeatureProperties properties={properties}/>
+
+        {/* How It Works */}
+        <HowItWorks/>
       </section>
 
     </div>
