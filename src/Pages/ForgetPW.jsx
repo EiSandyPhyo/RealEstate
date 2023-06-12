@@ -7,7 +7,9 @@ const ForgetPW = () => {
   return (
     <div className=" container-fluid snow-bg myParent duration-[40000ms]">
       <div className="z-1 relative w-screen h-screen overflow-hidden">
-        <div className="myImg absolute w-screen h-screen bg-center bg-cover bg-[url('https://images.unsplash.com/photo-1558036117-15d82a90b9b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80')]"></div>
+        <div className="myImg absolute w-screen h-screen bg-center bg-cover bg-[url('https://hously-react.vercel.app/static/media/5.289f490cebbaef2f5f58.jpg')]">
+        <div className="absolute inset-0 bg-black opacity-30 "></div>
+        </div>
 
         <div className=" h-screen flex flex-col justify-center items-center">
           <form className=" p-6 w-[350px] md:w-[400px] m-3 z-10 bg-white border rounded-lg">
@@ -18,9 +20,14 @@ const ForgetPW = () => {
                 alt=""
               />
             </div>
-            <span className=" mb-5 font-semibold	text-2xl block ">Reset Your Password</span>
+            <span className=" mb-5 font-semibold	text-2xl block ">
+              Reset Your Password
+            </span>
 
-            <p className=" text-slate-400 mb-3">Please enter your email address. You will receive a link to create a new password via email.</p>
+            <p className=" text-slate-400 mb-3">
+              Please enter your email address. You will receive a link to create
+              a new password via email.
+            </p>
             <div className="mb-3 flex flex-col gap-3">
               <label className=" font-medium">Email Address:</label>
               <input
@@ -37,7 +44,7 @@ const ForgetPW = () => {
 
             <p className="	flex justify-center mb-3">
               <span className=" text-slate-400">Remember your password?</span>
-              <Link to={"/signin"}>
+              <Link to={"/"}>
                 <span className=" font-semibold ml-4">Sign in</span>
               </Link>
             </p>

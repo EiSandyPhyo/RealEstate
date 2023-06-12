@@ -3,11 +3,12 @@ import { BsTelephone } from "react-icons/bs";
 import FeatureGrids from "../Components/FeatureGrids";
 import FeatureSlider from "../Components/FeatureSlider";
 
+
 const Features = () => {
   return (
-    <>
-      <div className="relative bgTop table w-full py-32 lg:py-36 bg-no-repeat bg-center bg-cover">
-        <div className="absolute inset-0 bg-slate-900 opacity-80"></div>
+    <div className=" mt-[70px] dark:bg-black">
+      <div className="relative bgTop table w-full py-32 lg:py-36 bg-no-repeat bg-center bg-cover ">
+        <div className="absolute inset-0 bg-slate-900 opacity-80 dark:bg-black"></div>
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 text-center mt-10">
             <h3 className="md:text-4xl text-3xl md:leading-normal leading-normal font-medium text-white z-50">
@@ -16,11 +17,11 @@ const Features = () => {
           </div>
         </div>
       </div>
-      <div className="relative lg:py-24 py-16">
+      <div className="relative lg:py-24 pt-16 pb-32 lg:pb-44 dark:bg-black">
         <FeatureGrids />
         <div className="container lg:mt-24 mt-16 mx-auto px-4">
           <div className="grid grid-cols-1 pb-8 text-center">
-            <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">
+            <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold dark:text-white">
               What Our Client Say ?
             </h3>
             <p className="text-slate-400 max-w-xl mx-auto">
@@ -56,7 +57,7 @@ const Features = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

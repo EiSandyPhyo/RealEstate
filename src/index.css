@@ -4,13 +4,115 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 'background-image: url("/static/media/01.22de4da0428b035e9d2b.jpg");' */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+.myGlassBg {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.30);
+width: 100wh;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(9px);
+}
+.myliForDropDown:hover .myDivDrop {
+  display: block;
+}
+.myliForDropDown:active .myDivDrop {
+  display: block;
+}
+.myZImg {
+  position: absolute;
+  z-index: -5;
+}
+.myBorderColor:focus{
+  border-color: rgb(163 230 53);
+}
 
-*{
-    font-family: 'League Spartan', sans-serif;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+.snow-bg {
+  position: relative;
+}
+
+.snow-bg:after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 2;
+  opacity: 85%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  background-image: url("https://library.elementor.com/resources/christmas-snow-effect/s1.png"),
+    url("https://library.elementor.com/resources/christmas-snow-effect/s2.png"),
+    url("https://library.elementor.com/resources/christmas-snow-effect/s3.png");
+  animation: snow 10s linear infinite;
+}
+
+@keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  50% {
+    background-position: 500px 500px, 100px 200px, -100px 150px;
+  }
+  100% {
+    background-position: 500px 1000px, 200px 400px, -100px 300px;
+  }
+}
+
+.myImg {
+  
+  animation-name: myImg;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+@keyframes myImg {
+  from {
+    transform: scale(1.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.myDarkBtnMoveUp {
+  animation-name: myDarkBtnMoveUp;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+@keyframes myDarkBtnMoveUp {
+  from {
+    transform: translateY(52px);
+  }
+  to {
+    transform: translateY(2px);
+  }
+}
+.myDarkBtnMoveDown {
+  animation-name: myDarkBtnMoveDown;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+@keyframes myDarkBtnMoveDown {
+  from {
+    transform: translateY(2px);
+  }
+  to {
+    transform: translateY(52px);
+  }
 }
 
 .bgTop{
@@ -23,55 +125,4 @@
     background-color: blue;
     clip-path: polygon(25% 0%, 76% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 
-}
-
-
-.myBorderColor:focus{
-    border-color: rgb(163 230 53);
-}
-
-.snow-bg {
-    position: relative;
- }
- 
- .snow-bg:after {
-    content: '';
-    display: block;
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    pointer-events: none;
-    background-image: url('https://library.elementor.com/resources/christmas-snow-effect/s1.png'), url('https://library.elementor.com/resources/christmas-snow-effect/s2.png'), url('https://library.elementor.com/resources/christmas-snow-effect/s3.png');
-     animation: snow 10s linear infinite;
- }
- 
- @keyframes snow {
-  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
-  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
- }
-
- .myParent{
-    
- }
-
- .myImg{
-    animation-name: myImg;
-    animation-duration: 30s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
- }
-
-@keyframes myImg{
-from{
-    transform: scale(2);
-}
-to{
-    transform: scale(1);
-
-}
 }

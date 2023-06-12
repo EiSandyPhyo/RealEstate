@@ -1,15 +1,16 @@
 import React from "react";
 import "../index.css";
 import { Link } from "react-router-dom";
-import Signup from "./Signup";
 
 const Login = () => {
   return (
     <div className=" container-fluid snow-bg myParent duration-[40000ms]">
       <div className="z-1 relative w-screen h-screen overflow-hidden">
-        <div className="myImg absolute w-screen h-screen bg-center bg-cover bg-[url('https://images.unsplash.com/photo-1558036117-15d82a90b9b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80')]"></div>
+        <div className="myImg absolute w-screen h-screen bg-center bg-cover bg-[url('https://hously-react.vercel.app/static/media/5.289f490cebbaef2f5f58.jpg')]">
+        <div className="absolute inset-0 bg-black opacity-30 "></div>
+        </div>
 
-        <div className=" h-screen flex flex-col justify-center items-center">
+        <div className=" h-screen flex flex-col justify-center items-center ">
           <form className=" p-6 w-[350px] md:w-[400px] m-3 z-10 bg-white border rounded-lg">
             <div className="flex justify-center mb-5">
               <img
@@ -23,7 +24,7 @@ const Login = () => {
 
             <label className=" font-medium">Email Address:</label>
             <input
-              value={"john@gmail.com"}
+              defaultValue={"john@gmail.com"}
               type="text"
               placeholder="name@example.com"
               className=" px-3 py-2 w-full border-2 mb-3 myBorderColor"
@@ -33,7 +34,7 @@ const Login = () => {
 
             <label className=" font-medium">Password:</label>
             <input
-              value={"john123"}
+              defaultValue={"john123"}
               type="text"
               placeholder="Password"
               className=" px-3 py-2 w-full border-2 mb-3 myBorderColor"
@@ -57,7 +58,7 @@ const Login = () => {
                 <span className=" text-slate-400">Forget password?</span>
               </Link>
             </div>
-            <Link to={"/"}>
+            <Link to={"/home"}>
               <button className=" mb-3 p-2 w-full fs-[17px] leading-[24px] text-white bg-[#16a34a] hover:bg-[#138a3f] border rounded-lg">
                 Login / Sign in
               </button>

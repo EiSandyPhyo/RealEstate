@@ -54,15 +54,15 @@ const FaqComponent = () => {
               <button
                 type="button"
                 onClick={() => openAnswer(faqList.id)}
-                className=" flex justify-between items-center p-5 w-full font-medium text-left bg-gray-50"
+                className=" flex justify-between items-center p-5 w-full font-medium text-left bg-gray-50 dark:bg-slate-900  dark:drop-shadow-[1px_1px_0_rgba(2555,255,255,0.2)]"
               >
                 <span
-                  className={faqList.showAns ? "text-green-600" : "text-black"}
+                  className={` ${faqList.showAns ? "text-green-600" : "text-black"} dark:text-white` }
                 >
                   {faqList.que}
                 </span>
                 <span className="ms-auto">
-                  {faqList.showAns? <MdOutlineKeyboardArrowUp className="text-green-600"/> : <MdOutlineKeyboardArrowDown/>}
+                  {faqList.showAns? <MdOutlineKeyboardArrowUp className="text-green-600"/> : <MdOutlineKeyboardArrowDown className=" dark:text-white"/>}
                 </span>
               </button>
             </h2>

@@ -34,12 +34,12 @@ const FeatureGrids = () => {
                 </div>
               </div>
               <div className="mt-6">
-                <a
-                  className="text-xl hover:text-green-600 font-medium"
+                <h1
+                  className="text-xl hover:text-green-600 font-medium dark:text-white cursor-pointer"
                   href="/features"
                 >
                   Comfortable
-                </a>
+                </h1>
                 <p className="text-slate-400 mt-3">
                   If the distribution of letters and 'words' is random, the
                   reader will not be distracted from making.
@@ -69,12 +69,12 @@ const FeatureGrids = () => {
                 </div>
               </div>
               <div className="mt-6">
-                <a
-                  className="text-xl hover:text-green-600 font-medium"
+                <h1
+                  className="text-xl hover:text-green-600 font-medium dark:text-white cursor-pointer"
                   href="/features"
                 >
                   Extra Security
-                </a>
+                </h1>
                 <p className="text-slate-400 mt-3">
                   If the distribution of letters and 'words' is random, the
                   reader will not be distracted from making.
@@ -104,12 +104,12 @@ const FeatureGrids = () => {
                 </div>
               </div>
               <div className="mt-6">
-                <a
-                  className="text-xl hover:text-green-600 font-medium"
+                <h1
+                  className="text-xl hover:text-green-600 font-medium dark:text-white cursor-pointer"
                   href="/features"
                 >
                   Luxury
-                </a>
+                </h1>
                 <p className="text-slate-400 mt-3">
                   If the distribution of letters and 'words' is random, the
                   reader will not be distracted from making.
@@ -139,12 +139,12 @@ const FeatureGrids = () => {
                 </div>
               </div>
               <div className="mt-6">
-                <a
-                  className="text-xl hover:text-green-600 font-medium"
+                <h1
+                  className="text-xl hover:text-green-600 font-medium dark:text-white cursor-pointer"
                   href="/features"
                 >
                   Best Price
-                </a>
+                </h1>
                 <p className="text-slate-400 mt-3">
                   If the distribution of letters and 'words' is random, the
                   reader will not be distracted from making.
@@ -174,12 +174,12 @@ const FeatureGrids = () => {
                 </div>
               </div>
               <div className="mt-6">
-                <a
-                  className="text-xl hover:text-green-600 font-medium"
+                <h1
+                  className="text-xl hover:text-green-600 font-medium dark:text-white cursor-pointer"
                   href="/features"
                 >
                   Stratagic Location
-                </a>
+                </h1>
                 <p className="text-slate-400 mt-3">
                   If the distribution of letters and 'words' is random, the
                   reader will not be distracted from making.
@@ -209,12 +209,12 @@ const FeatureGrids = () => {
                 </div>
               </div>
               <div className="mt-6">
-                <a
-                  className="text-xl hover:text-green-600 font-medium"
+                <h1
+                  className="text-xl hover:text-green-600 font-medium dark:text-white cursor-pointer"
                   href="/features"
                 >
                   Efficient
-                </a>
+                </h1>
                 <p className="text-slate-400 mt-3">
                   If the distribution of letters and 'words' is random, the
                   reader will not be distracted from making.

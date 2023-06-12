@@ -77,7 +77,7 @@ const FeatureSlider = () => {
             </i>
           </div>
           <div className="text-center">
-            <p className="text-xl text-slate-400 italic">
+            <p className="text-xl text-slate-400 h-[110px] italic">
               {slides[currentIndex].text}
             </p>
             <div className="text-center mt-5 ">
@@ -92,7 +92,7 @@ const FeatureSlider = () => {
                 style={{ backgroundImage: `url(${slides[currentIndex].img})` }}
                 className="  bg-center bg-cover duration-500 h-14 w-14 rounded-full shadow-md dark:shadow-gray-700 mx-auto"
               ></div>
-              <h6 className="mt-2 fw-semibold">
+              <h6 className="mt-4 lg:mt-2 fw-semibold dark:text-white">
                 {slides[currentIndex].personName}
               </h6>
               <span className="text-slate-400 text-sm">

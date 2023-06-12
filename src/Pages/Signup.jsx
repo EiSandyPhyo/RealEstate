@@ -6,9 +6,11 @@ const Signup = () => {
   return (
     <div className=" container-fluid snow-bg myParent duration-[40000ms]">
       <div className="z-1 relative w-screen h-screen overflow-hidden">
-        <div className="myImg absolute w-screen h-screen bg-center bg-cover bg-[url('https://images.unsplash.com/photo-1558036117-15d82a90b9b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80')]"></div>
+        <div className="myImg absolute w-screen h-screen bg-center bg-cover bg-[url('https://hously-react.vercel.app/static/media/5.289f490cebbaef2f5f58.jpg')]">
+        <div className="absolute inset-0 bg-black opacity-30 "></div>
+        </div>
 
-        <div className=" h-screen flex flex-col justify-center items-center">
+        <div className=" h-screen flex flex-col justify-center items-center ">
           <form className=" p-6 w-[350px] md:w-[400px] m-3 z-10 bg-white border rounded-lg">
             <div className="flex justify-center mb-5">
               <img
@@ -48,6 +50,7 @@ const Signup = () => {
                 <input
                   type="checkbox"
                   id="rememberMe"
+                  
                   name="rememberMe"
                   value="remember"
                 />
@@ -63,7 +66,7 @@ const Signup = () => {
                 </span>
               </Link>
             </div>
-            <Link to={"/login"}>
+            <Link to={"/"}>
               <button className=" mb-3 p-2 w-full fs-[17px] leading-[24px] text-white bg-[#16a34a] hover:bg-[#138a3f] border rounded-lg">
                 Register
               </button>
@@ -71,7 +74,7 @@ const Signup = () => {
 
             <p className="	flex justify-center mb-3">
               <span className=" text-slate-400">Already have an account?</span>
-              <Link to={"/login"}>
+              <Link to={"/"}>
                 <span className=" font-semibold ml-4">Log in</span>
               </Link>
             </p>

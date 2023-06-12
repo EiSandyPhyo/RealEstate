@@ -6,9 +6,9 @@ import PricingComponent from "../Components/PricingComponent";
 
 const Pricing = () => {
   return (
-    <>
-      <div className="relative bgTop table w-full py-32 lg:py-36 bg-no-repeat bg-center bg-cover ">
-        <div className="absolute inset-0 bg-slate-900 opacity-80"></div>
+    <div className=" mt-[70px]">
+      <div className="relative bgTop table w-full py-32 lg:py-36 bg-no-repeat bg-center bg-cover">
+        <div className="absolute inset-0 bg-slate-900 opacity-80  dark:bg-[#0f262e]"></div>
         <div className="container mx-auto">
           <div className="grid grid-cols-1 text-center mt-10 ">
             <h3 className="md:text-4xl text-3xl md:leading-normal leading-normal font-medium text-white z-50">
@@ -17,7 +17,7 @@ const Pricing = () => {
           </div>
         </div>
       </div>
-      <div className="relative lg:py-24 py-16 ">
+      <div className="relative lg:py-24 pt-16 pb-32 lg:pb-44 dark:bg-[#0f262e]">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-[30px] gap-y-[50px]">
             <div className="rounded-md shadow-lg hover:shadow-xl  duration-500 ease-in-out">
@@ -27,11 +27,17 @@ const Pricing = () => {
                     <CgTrees />
                   </i>
                 </div>
-                <h3 className="text-2xl text-green-600 font-medium mt-4">Basic</h3>
+                <h3 className="text-2xl text-green-600 font-medium mt-4">
+                  Basic
+                </h3>
                 <div className="flex justify-center mt-4">
-                  <span className="text-xl">$</span>
-                  <span className="text-3xl font-semibold">19</span>
-                  <span className="text-xl self-end">/month</span>
+                  <span className="text-xl dark:text-white">$</span>
+                  <span className="text-3xl font-semibold dark:text-white">
+                    19
+                  </span>
+                  <span className="text-xl self-end dark:text-white">
+                    /month
+                  </span>
                 </div>
               </div>
               <PricingComponent />
@@ -47,9 +53,13 @@ const Pricing = () => {
                   Premium
                 </h3>
                 <div className="flex justify-center mt-4">
-                  <span className="text-xl">$</span>
-                  <span className="text-3xl font-semibold">39</span>
-                  <span className="text-xl self-end">/month</span>
+                  <span className="text-xl dark:text-white">$</span>
+                  <span className="text-3xl font-semibold dark:text-white">
+                    39
+                  </span>
+                  <span className="text-xl self-end dark:text-white">
+                    /month
+                  </span>
                 </div>
               </div>
               <PricingComponent />
@@ -65,9 +75,13 @@ const Pricing = () => {
                   Business
                 </h3>
                 <div className="flex justify-center mt-4">
-                  <span className="text-xl">$</span>
-                  <span className="text-3xl font-semibold">99</span>
-                  <span className="text-xl self-end">/month</span>
+                  <span className="text-xl dark:text-white">$</span>
+                  <span className="text-3xl font-semibold dark:text-white">
+                    99
+                  </span>
+                  <span className="text-xl self-end dark:text-white">
+                    /month
+                  </span>
                 </div>
               </div>
               <PricingComponent />
@@ -99,7 +113,7 @@ const Pricing = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
