@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+<<<<<<< HEAD
 
 *{
     padding: 0;
@@ -56,4 +59,22 @@ to{
     transform: scale(1);
 
 }
+=======
+/* 'background-image: url("/static/media/01.22de4da0428b035e9d2b.jpg");' */
+
+*{
+    font-family: 'League Spartan', sans-serif;
+}
+
+.bgTop{
+    background-image: url("https://hously-react.vercel.app/static/media/01.22de4da0428b035e9d2b.jpg");
+    clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 96%, 59% 100%, 40% 100%, 0 96%, 0% 30%);
+    
+}
+
+.bg-hex{
+    background-color: blue;
+    clip-path: polygon(25% 0%, 76% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+
+>>>>>>> 7b426cb5cf521e526479ae4a83d17f1ed26671c7
 }

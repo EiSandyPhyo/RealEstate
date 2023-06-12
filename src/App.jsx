@@ -1,12 +1,18 @@
-import React from 'react'
 import './index.css'
 import { Route, Routes } from 'react-router-dom'
 import Test from './Components/Test'
+<<<<<<< HEAD
 import Home from "./Pages/Home";
 import Login from "./Pages/Login";
 import Signup from "./Pages/Signup";
 import ForgetPW from "./Pages/ForgetPW";
 
+=======
+import Details from './Pages/Details'
+import Pricing from './Pages/Pricing'
+import Features from './Pages/Features'
+import Faqs from './Pages/Faqs'
+>>>>>>> 7b426cb5cf521e526479ae4a83d17f1ed26671c7
 
 const App = () => {
   const properties = [
@@ -45,6 +51,11 @@ const App = () => {
     <Routes>
       <Route path={"/signup"} element={<Signup />} />
       <Route path={"/forgetPW"} element={<ForgetPW />} />
+      <Route path={'/test'} element={<Test properties={properties}/>}/> 
+      <Route path='/details/:id' element={<Details properties={properties}/>} />
+      <Route path='/pricing' element={<Pricing/>}/>
+      <Route path='/features' element={<Features/>}/>
+      <Route path='/faqs' element={<Faqs/>}/>
     </Routes>
   )
 }
