@@ -1,0 +1,11 @@
+:root {
+    --light: #ffffff;
+    color: gainsboro;
+  }
+  
+  body { background-color: var(--dark,--light); }
+
+  .changeLight{
+    background-color: var(--light);
+  }
+  
