@@ -38,7 +38,7 @@ const App = () => {
 ]
   return (
     <Routes>
-      <Route path={'/test'} element={<Test properties={properties}/>}/>
+      <Route path={'/test'} element={<Test properties={properties}/>}/> 
     </Routes>
   )
 }
