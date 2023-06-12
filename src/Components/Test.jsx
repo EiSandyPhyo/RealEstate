@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Test = ({properties}) => {
+  console.log(properties);
   return (
     <div>Properties
     {properties.map((product)=>{
@@ -9,7 +10,11 @@ const Test = ({properties}) => {
                 <h1>{product.title}</h1>
             </div>
         )
-    })}</div>
+      
+    })}
+
+    
+    </div>
   )
 }
 

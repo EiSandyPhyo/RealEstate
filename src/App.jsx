@@ -1,7 +1,10 @@
-import React from 'react'
 import './index.css'
 import { Route, Routes } from 'react-router-dom'
 import Test from './Components/Test'
+import Details from './Pages/Details'
+import Pricing from './Pages/Pricing'
+import Features from './Pages/Features'
+import Faqs from './Pages/Faqs'
 
 const App = () => {
   const properties = [
@@ -39,6 +42,10 @@ const App = () => {
   return (
     <Routes>
       <Route path={'/test'} element={<Test properties={properties}/>}/> 
+      <Route path='/details/:id' element={<Details properties={properties}/>} />
+      <Route path='/pricing' element={<Pricing/>}/>
+      <Route path='/features' element={<Features/>}/>
+      <Route path='/faqs' element={<Faqs/>}/>
     </Routes>
   )
 }

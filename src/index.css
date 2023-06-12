@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 'background-image: url("/static/media/01.22de4da0428b035e9d2b.jpg");' */
+
+.bgTop{
+    background-image: url("https://hously-react.vercel.app/static/media/01.22de4da0428b035e9d2b.jpg");
+    clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 96%, 59% 100%, 40% 100%, 0 96%, 0% 30%);
+    
+}
+
+.bg-hex{
+    background-color: blue;
+    clip-path: polygon(25% 0%, 76% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+
+}
