@@ -33,7 +33,7 @@ const Features = () => {
         </div>
         <div className="container lg:mt-24 mt-16 mx-auto px-4">
           <div className="grid grid-cols-1 text-center">
-            <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-medium text-black dark:text-white">
+            <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-medium text-black ">
               Have Question ? Get in touch!
             </h3>
             <p className="text-slate-400 max-w-xl mx-auto">

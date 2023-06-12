@@ -58,7 +58,7 @@ const DetailText = ({showModal,setShowModal}) => {
           </div>
           <div className="lg:w-1/3 md:p-4 px-3 mt-8 md:mt-0 ">
               <div className={showModal? "  top-20":" sticky top-20"}>
-                <div className="rounded-md bg-slate-50 dark:bg-slate-800 shadow dark:shadow-gray-700">
+                <div className="rounded-md bg-slate-50  shadow">
                   <div className="p-6">
                     <h5 className="text-2xl font-medium">Price:</h5>
                     <div className="flex justify-between items-center mt-4">
@@ -109,7 +109,7 @@ const DetailText = ({showModal,setShowModal}) => {
                  
                 </div>
                 <div className="mt-12 text-center">
-                    <h3 className="mb-6 text-xl leading-normal font-medium text-black dark:text-white">
+                    <h3 className="mb-6 text-xl leading-normal font-medium text-black">
                       Have Question ? Get in touch!
                     </h3>
                     <div className="mt-6">
