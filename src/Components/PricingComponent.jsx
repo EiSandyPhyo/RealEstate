@@ -4,7 +4,7 @@ import { BsCheckCircle } from "react-icons/bs";
 const PricingComponent = () => {
   return (
     <div className="p-6">
-      <h5>Pricing Features:</h5>
+      <h5 className=" dark:text-white">Pricing Features:</h5>
       <ul className="list-none">
         <li className="text-slate-400 my-5 flex">
           <span className="text-green-600 text-lg me-2 mt-1 font-bold">

@@ -1,6 +1,6 @@
 import "./index.css";
 import { Route, Routes } from "react-router-dom";
-import LoginSuccess from "./Pages/LoginSuccess";
+//import LoginSuccess from "./Pages/LoginSuccess";
 import Login from "./Pages/Login";
 import Signup from "./Pages/Signup";
 import ForgetPW from "./Pages/ForgetPW";
@@ -9,6 +9,12 @@ import Details from "./Pages/Details";
 import Pricing from "./Pages/Pricing";
 import Features from "./Pages/Features";
 import Faqs from "./Pages/Faqs";
+import Home from "./Pages/Home";
+
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
+
+
 
 const App = () => {
   const properties = [
@@ -50,20 +56,24 @@ const App = () => {
     },
   ];
   return (
+    <div className=" container-fluid dark:bg-[#0F262E]">
     <Routes>
       <Route path={"/"} element={<Login />} />
-      <Route path={"/home"} element={<LoginSuccess />} />
       <Route path={"/forgetPW"} element={<ForgetPW />} />
       <Route path={"/signup"} element={<Signup />} />
 
+      <Route path={"/home"} element={<><Navbar/><Home/><Footer/></>} />
       <Route
-        path="/details/:id"
-        element={<Details properties={properties} />}
-      />
-      <Route path="/pricing" element={<Pricing />} />
-      <Route path="/features" element={<Features />} />
-      <Route path="/faqs" element={<Faqs />} />
+          path="/details/:id"
+          element={<><Navbar/><Details properties={properties} /><Footer/></>}
+        />
+        <Route path="/pricing" element={<><Navbar/><Pricing /><Footer/></>} />
+        <Route path="/features" element={<><Navbar/><Features /><Footer/></>} />
+        <Route path="/faqs" element={<><Navbar/><Faqs /><Footer/></>} />
+
     </Routes>
+    </div>
+
   );
 };
 

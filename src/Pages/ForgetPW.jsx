@@ -7,7 +7,9 @@ const ForgetPW = () => {
   return (
     <div className=" container-fluid snow-bg myParent duration-[40000ms]">
       <div className="z-1 relative w-screen h-screen overflow-hidden">
-        <div className="myImg absolute w-screen h-screen bg-center bg-cover bg-[url('https://hously-react.vercel.app/static/media/5.289f490cebbaef2f5f58.jpg')]"></div>
+        <div className="myImg absolute w-screen h-screen bg-center bg-cover bg-[url('https://hously-react.vercel.app/static/media/5.289f490cebbaef2f5f58.jpg')]">
+        <div className="absolute inset-0 bg-black opacity-30 "></div>
+        </div>
 
         <div className=" h-screen flex flex-col justify-center items-center">
           <form className=" p-6 w-[350px] md:w-[400px] m-3 z-10 bg-white border rounded-lg">
@@ -42,7 +44,7 @@ const ForgetPW = () => {
 
             <p className="	flex justify-center mb-3">
               <span className=" text-slate-400">Remember your password?</span>
-              <Link to={"/signup"}>
+              <Link to={"/"}>
                 <span className=" font-semibold ml-4">Sign in</span>
               </Link>
             </p>

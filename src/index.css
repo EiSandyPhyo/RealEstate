@@ -13,7 +13,7 @@
 .myGlassBg {
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.30);
-  border-radius: 16px;
+width: 100wh;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(9px);
 }
@@ -61,16 +61,17 @@
 }
 
 .myImg {
+  
   animation-name: myImg;
   animation-duration: 30s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-direction: normal;
 }
 
 @keyframes myImg {
   from {
-    transform: scale(2);
+    transform: scale(1.5);
   }
   to {
     transform: scale(1);

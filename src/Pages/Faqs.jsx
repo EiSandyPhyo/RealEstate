@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { BsTelephone } from "react-icons/bs";
 import FaqComponent from "../Components/FaqComponent";
 
+
 const Faqs = () => {
   const [links,setLinks]=useState(
     [
@@ -46,7 +47,7 @@ const Faqs = () => {
   };
     
   return (
-    <>
+    <div className=' dark:bg-black mt-[70px]'>
       <div className="relative bgTop table w-full py-32 lg:py-36 bg-no-repeat bg-center bg-cover ">
         <div className="absolute inset-0 bg-slate-900 opacity-80"></div>
         <div className="container mx-auto px-4">
@@ -57,11 +58,11 @@ const Faqs = () => {
           </div>
         </div>
       </div>
-      <div className="relative lg:py-24 py-16">
+      <div className="relative lg:py-24 pt-16 pb-32 lg:pb-44">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
             <div className="lg:col-span-4 md:col-span-5">
-              <div className="rounded-md shadow-lg  p-6 sticky top-20">
+              <div className="rounded-md shadow-lg  p-6 sticky top-20 dark:drop-shadow-[1px_1px_0_rgba(2555,255,255,0.2)] dark:text-white dark:bg-slate-900">
                 <ul
                   className="list-unstyled sidebar-nav mb-0 py-0"
                   
@@ -117,25 +118,25 @@ const Faqs = () => {
               </div>
             </div>
             <div className="lg:col-span-8 md:col-span-7">
-              <div id="buying-questions">
-                <h5 className="text-2xl font-semibold">Buying Product</h5>
+              <div id="buying-questions " className=" ">
+                <h5 className="text-2xl font-semibold dark:text-white dark:bg-black">Buying Product</h5>
                 <div className="mt-6">
                   <FaqComponent />
                 </div>
               </div>
-              <div id="general-questions" className="mt-8">
+              <div id="general-questions" className="mt-8 ">
                 <h5 className="text-2xl font-semibold">General Questions</h5>
                 <div className="mt-6">
                   <FaqComponent />
                 </div>
               </div>
-              <div id="payment-questions" className="mt-8">
+              <div id="payment-questions" className="mt-8 ">
                 <h5 className="text-2xl font-semibold">Payments Questions</h5>
                 <div className="mt-6">
                   <FaqComponent />
                 </div>
               </div>
-              <div id="support-questions" className="mt-8">
+              <div id="support-questions" className="mt-8 ">
                 <h5 className="text-2xl font-semibold">Support Questions</h5>
                 <div className="mt-6">
                   <FaqComponent />
@@ -169,7 +170,7 @@ const Faqs = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

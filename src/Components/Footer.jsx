@@ -71,7 +71,7 @@ const Footer = () => {
         </div>
         {/* Subscribe Section End*/}
         {/* Footer Section Start*/}
-        <div className=" flex flex-col lg:flex-row justify-between pb-9 pt-52 lg:pt-36 mb-3">
+        <div className=" flex flex-col lg:flex-row justify-between pb-9 pt-52 px-3 lg:pt-36 mb-3">
           <div className=" basis-4/12 mb-5">
             <div className=" mb-4">
               <img
