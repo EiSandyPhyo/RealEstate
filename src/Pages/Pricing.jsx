@@ -21,7 +21,7 @@ const Pricing = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-[30px] gap-y-[50px]">
             <div className="rounded-md shadow-lg hover:shadow-xl  duration-500 ease-in-out">
-              <div className="p-6 text-center">
+              <div className="border-b p-6 text-center">
                 <div className="w-24 h-24 bg-green-600/5 text-green-600 flex items-center justify-center text-3xl rounded-full mx-auto">
                   <i>
                     <CgTrees />
@@ -85,12 +85,12 @@ const Pricing = () => {
             </p>
             <div className="mt-6 mx-auto">
               <button
-                className="py-3 px-5 bg-transparent hover:bg-green-600 border border-green-600 text-green-600 hover:text-white rounded-md"
+                className="py-3 px-5 bg-green-600 hover:bg-green-700 border border-green-600 text-white rounded-md"
                 href="/contact"
               >
                 <span className="flex gap-2">
                   <i>
-                    <BsTelephone className=" font-semibold align-middle mt-1" />
+                    <BsTelephone className=" font-semibold align-middle mt-[2px] " />
                   </i>
                   <span className="font-semibold">Contact us</span>
                 </span>
