@@ -42,12 +42,12 @@ const Features = () => {
             </p>
             <div className="mt-6">
               <button
-                className="py-3 px-5 bg-transparent hover:bg-green-600 border border-green-600 text-green-600 hover:text-white rounded-md"
+                className="py-3 px-5 bg-green-600 hover:bg-green-700 border border-green-600 text-white rounded-md"
                 href="/contact"
               >
                 <span className="flex gap-2">
                   <i>
-                    <BsTelephone className=" font-semibold align-middle mt-1" />
+                    <BsTelephone className=" font-semibold align-middle mt-[2px] " />
                   </i>
                   <span className="font-semibold">Contact us</span>
                 </span>
