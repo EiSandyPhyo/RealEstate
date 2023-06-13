@@ -1,6 +1,6 @@
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
-import { Link,NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { BiLocationPlus } from "react-icons/bi";
 import { BsTelephone } from "react-icons/bs";
@@ -23,7 +23,7 @@ const Footer = () => {
       <div className=" container mx-auto relative">
         {/* Subscribe Section Start*/}
 
-        <div className="container mx-auto absolute top-[-120px] left-0 my-10 overflow-hidden bg-white dark:drop-shadow-[0_10px_10px_rgba(2555,255,255,0.25)] drop-shadow-[0_30px_30px_rgba(0,0,0,0.25)] rounded-xl dark:bg-[#0F172A]">
+        <div className="container mx-auto absolute top-[-120px] left-0 my-10 overflow-hidden bg-white dark:drop-shadow-[0_10px_10px_rgba(2555,255,255,0.25)] drop-shadow-[0_30px_30px_rgba(0,0,0,0.25)] rounded-xl dark:bg-slate-900">
           <div className="flex flex-col lg:flex-row gap-3 p-10 justify-between items-center relative z-30 shadow-lg ">
             <div>
               <h1 className="text-black text-center lg:text-left text-2xl md:text-3xl font-semibold mb-3 dark:text-white">
@@ -37,7 +37,7 @@ const Footer = () => {
               <input
                 type="text"
                 placeholder="Enter your email:"
-                className=" px-3 py-2 w-full focus:border-none focus:outline-none text-black dark:bg[#0F172A] dark:text-white"
+                className=" px-3 py-2 w-full focus:border-none focus:outline-none text-black dark:bg-slate-900 dark:text-white"
               />
               <button className=" p-2 w-[150px] fs-[17px] leading-[24px] text-white bg-[#16a34a] hover:bg-[#138a3f] border rounded-full">
                 Subscribe
@@ -89,33 +89,33 @@ const Footer = () => {
             <div className=" mb-5">
               <p className=" text-white mb-3 text-md font-semibold">Company</p>
               <ul className=" text-slate-400">
-              <NavLink to={"/aboutus"}>
+              Link to={"/aboutus"}>
                 <li className=" flex justify-start items-center mb-2 hover:text-[#16a34a]">
                   <IoIosArrowForward className="mr-3" />
                   About us
                 </li>
-                </NavLink>
+                </Link>
                 <li className=" flex justify-start items-center mb-2 hover:text-[#16a34a]">
                   <IoIosArrowForward className="mr-3" />
                   Services
                 </li>
-                <NavLink to={"/pricing"}>
+                <Link to={"/pricing"}>
                 <li className=" flex justify-start items-center mb-2 hover:text-[#16a34a]">
                   <IoIosArrowForward className="mr-3" />
                   Pricing{" "}
                 </li>
-                               </NavLink>
+                               </Link>
                 <li className=" flex justify-start items-center mb-2 hover:text-[#16a34a]">
                   <IoIosArrowForward className="mr-3" />
                   Blog
                 </li>
-                <NavLink to={"/"}>
+                <Link to={"/"}>
 
                 <li className=" flex justify-start items-center mb-2 hover:text-[#16a34a]">
                   <IoIosArrowForward className="mr-3" />
                   Login
                 </li>
-                </NavLink>
+                </Link>
                 
               </ul>
             </div>
@@ -132,20 +132,20 @@ const Footer = () => {
                   <IoIosArrowForward className="mr-3" />
                   Privacy Policy
                 </li>
-                <NavLink to={"/list-sidebar"}>
+                <Link to={"/list-sidebar"}>
 
                 <li className=" flex justify-start items-center mb-2 hover:text-[#16a34a]">
                   <IoIosArrowForward className="mr-3" />
                   Listing
                 </li>
-                </NavLink>
-                <NavLink to={"/contact"}>
+                </Link>
+                <Link to={"/contact"}>
 
                 <li className=" flex justify-start items-center mb-2 hover:text-[#16a34a]">
                   <IoIosArrowForward className="mr-3" />
                   Contact
                 </li>
-                </NavLink>
+                </Link>
               </ul>
             </div>
           </div>

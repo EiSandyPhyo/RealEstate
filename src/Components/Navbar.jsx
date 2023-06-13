@@ -52,7 +52,7 @@ const Navbar = () => {
   return (
     <div>
       <div className=" h-fit" id="mystart">
-        <div className=" container-fluid w-full myGlassBg dark:bg-[#0F262E] fixed top-0 px-30  py-4 h-[70px]  flex justify-between md:justify-evenly items-center z-50">
+        <div className=" container-fluid w-full myGlassBg dark:bg-slate-900 fixed top-0 px-30  py-4 h-[70px]  flex justify-between md:justify-evenly items-center z-50">
           <div>
             <Link to={"/home"}>
               <img
@@ -213,7 +213,7 @@ const Navbar = () => {
                     <ul
                       className={`${
                         showMenu ? "block" : "hidden"
-                      } bg-white dark:bg-[#0F172A]`}
+                      } bg-white dark:bg-slate-900`}
                     >
                       <Link to={"/list-sidebar"}>
                         <li className="ml-5 fs-[17px] font-medium text-black hover:text-[#16a34a] mb-2 dark:text-white">
@@ -251,7 +251,7 @@ const Navbar = () => {
 
         {/* dark mode Section Start*/}
         <div className=" flex flex-col w-[40px] h-[95px] rounded-full overflow-hidden fixed top-[40%] left-5 z-50 lg:mx-3">
-          <div className="relative flex flex-col justify-center items-center bg-[#0F172A] dark:bg-white rounded-full">
+          <div className="relative flex flex-col justify-center items-center bg-slate-900 dark:bg-white rounded-full">
             <p className="  p-2 border-0 text-yellow-500 ">
               <BsMoon size={"2rem"} />
             </p>
@@ -262,7 +262,7 @@ const Navbar = () => {
               onClick={changeMood}
               className={` ${
                 showAni == true ? "myDarkBtnMoveUp" : "myDarkBtnMoveDown"
-              } absolute top-0 left-0 w-10 h-10 rounded-full z-50 dark:bg-[#0F172A] bg-white`}
+              } absolute top-0 left-0 w-10 h-10 rounded-full z-50 dark:bg-slate-900 bg-white`}
             ></button>
           </div>
         </div>

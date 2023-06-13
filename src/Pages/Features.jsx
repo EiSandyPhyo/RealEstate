@@ -6,7 +6,7 @@ import FeatureSlider from "../Components/FeatureSlider";
 
 const Features = () => {
   return (
-    <div className=" mt-[70px] dark:bg-black">
+    <div className=" mt-[70px] dark:bg-slate-900">
       <div className="relative bgTop table w-full py-32 lg:py-36 bg-no-repeat bg-center bg-cover ">
         <div className="absolute inset-0 bg-slate-900 opacity-80 dark:bg-black"></div>
         <div className="container mx-auto px-4">

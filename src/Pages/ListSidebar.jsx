@@ -13,7 +13,7 @@ const ListSideBar = ({ properties }) => {
 
   return (
     <>
-      <div className=" mb-40">
+      <div className=" mb-40 dark:bg-slate-900">
         <div className="">
           {/*  hero section */}
           <div className="hero-img">

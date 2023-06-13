@@ -6,9 +6,9 @@ import PricingComponent from "../Components/PricingComponent";
 
 const Pricing = () => {
   return (
-    <div className=" mt-[70px]">
+    <div className=" mt-[70px] dark:bg-slate-900">
       <div className="relative bgTop table w-full py-32 lg:py-36 bg-no-repeat bg-center bg-cover">
-        <div className="absolute inset-0 bg-slate-900 opacity-80  dark:bg-[#0f262e]"></div>
+        <div className="absolute inset-0 bg-slate-900 opacity-80  dark:bg-slate-900"></div>
         <div className="container mx-auto">
           <div className="grid grid-cols-1 text-center mt-10 ">
             <h3 className="md:text-4xl text-3xl md:leading-normal leading-normal font-medium text-white z-50">
@@ -17,7 +17,7 @@ const Pricing = () => {
           </div>
         </div>
       </div>
-      <div className="relative lg:py-24 pt-16 pb-32 lg:pb-44 dark:bg-[#0f262e]">
+      <div className="relative lg:py-24 pt-16 pb-32 lg:pb-44 dark:bg-slate-900">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-[30px] gap-y-[50px]">
             <div className="rounded-md shadow-lg hover:shadow-xl  duration-500 ease-in-out">

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Error = () => {
   return (
     <div>
-      <section className="bg-[#f3faf6] dark:bg-black w-full pt-20">
+      <section className="bg-[#f3faf6] dark:bg-slate-900 w-full pt-20">
         <div className="grid-layout-1">
           <div className="flex-center-center flex-col px-4 md:px-10 py-10 min-h-screen">
             <Link to={'/'}>

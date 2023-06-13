@@ -9,7 +9,7 @@ const HowItWorks = () => {
     { id: 3, name: "Close the Deal", icon: "uil:key-skeleton" },
   ]);
   return (
-    <div className="container-2xl mt-16 lg:mt-24">
+    <div className="container-2xl mt-16 lg:mt-24 dark:bg-slate-900">
       <div className="flex-center-center flex-col pb-8">
         <h1 className="sub-header  dark:text-white">How It Works</h1>
         <p className="paragraph">

@@ -43,8 +43,8 @@ const Home = ({properties}) => {
     <>
       <div className=" container-fluid dark:bg-slate-900 ">
         {/* Hero Section Start*/}
-        <div className=" container-fluid lg:h-screen pb-30  bg-[#E7F6ED]  dark:bg-[#0F262E] ">
-          <div className=" container mx-auto flex flex-col lg:flex-row justify-evenly items-center bg-[#E7F6ED] dark:bg-[#0F262E] h-fit mb-10 pt-32 lg:pt-10">
+        <div className=" container-fluid lg:h-screen pb-30  bg-[#E7F6ED]  dark:bg-slate-900 ">
+          <div className=" container mx-auto flex flex-col lg:flex-row justify-evenly items-center bg-[#E7F6ED] dark:bg-slate-900 h-fit mb-10 pt-32 lg:pt-10">
             <div className=" basis-5/12 my-10 mx-2 lg:mx-12 ">
               <div className="mx-2 ">
                 <h1 className=" text-4xl font-extrabold text-black dark:text-white leading-loose mb-6	text-center lg:text-left ">
@@ -63,7 +63,7 @@ const Home = ({properties}) => {
               </div>
               
               <div className="mx-2">
-                <div className="w-[70%] bg-white dark:bg-[#0F172A] dark:text-white text-black  rounded-t-xl px-6 py-4 h-fit flex justify-start items-center lg:w-fit">
+                <div className="w-[70%] bg-white dark:bg-slate-900 dark:text-white text-black  rounded-t-xl px-6 py-4 h-fit flex justify-start items-center lg:w-fit">
                   <button
                     onClick={BuyHandler}
                     className={` w-[80px] h-[40px] fs-[17px] leading-[24px] rounded-lg ${
@@ -95,7 +95,7 @@ const Home = ({properties}) => {
                     Rent
                   </button>
                 </div>
-                <div className="w-[100%] lg:w-[100%] bg-white dark:bg-[#0F172A] h-fit rounded-b-xl rounded-tr-xl px-6 py-4">
+                <div className="w-[100%] lg:w-[100%] bg-white dark:bg-slate h-fit rounded-b-xl rounded-tr-xl px-6 py-4">
                   <div className="flex border-2 border-slate-200  dark:border-slate-600 rounded-full w-full lg:w-[400px] h-[45px] justify-between items-center">
                     <BsSearch
                       className=" lg:w-[40px] lg:h-[40px] lg:ml-3 p-1 font-extrabold text-black dark:text-white"
@@ -161,7 +161,7 @@ const Home = ({properties}) => {
 
         {/* Efficiency Section Start*/}
         <div className="container-fluid h-fit">
-          <div className="container  mx-auto relative flex flex-col lg:flex-row justify-evenly items-center py-10 lg:my-20 dark:bg-[#0F172A]  ">
+          <div className="container  mx-auto relative flex flex-col lg:flex-row justify-evenly items-center py-10 lg:my-20 dark:bg-slate-900  ">
             <div className=" basis-5/12 relative mb-5 mx-5 ">
               <div className=" relative ">
                 <img
@@ -228,7 +228,7 @@ const Home = ({properties}) => {
         {/* Efficiency Section End*/}
 
         {/* How is work Section Start*/}
-        <div className="container h-fit  mx-auto relative flex flex-col lg:flex-row justify-evenly items-center pb-16 lg:my-20 dark:bg-[#0F172A]  ">
+        <div className="container h-fit  mx-auto relative flex flex-col lg:flex-row justify-evenly items-center pb-16 lg:my-20 dark:bg-slate-900  ">
           <HowItWorks />
         </div>
         {/* How is work Section End*/}

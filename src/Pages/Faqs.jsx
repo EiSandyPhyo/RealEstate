@@ -47,7 +47,7 @@ const Faqs = () => {
   };
     
   return (
-    <div className=' dark:bg-black mt-[70px]'>
+    <div className=' dark:bg-slate-900 mt-[70px]'>
       <div className="relative bgTop table w-full py-32 lg:py-36 bg-no-repeat bg-center bg-cover ">
         <div className="absolute inset-0 bg-slate-900 opacity-80"></div>
         <div className="container mx-auto px-4">

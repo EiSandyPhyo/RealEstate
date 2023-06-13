@@ -15,7 +15,7 @@ const ImagesModal = (props) => {
   };
 
   return (
-    <div className="container-fluid">
+    <div className="container-fluid dark:bg-slate-900">
       <div className=" md:flex mt-4">
         <div className="md:w-1/2 lg:w-1/2 p-1">
           <div className="group relative overflow-hidden">
