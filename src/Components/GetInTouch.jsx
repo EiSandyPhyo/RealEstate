@@ -3,9 +3,9 @@ import { HiOutlinePhone } from "react-icons/hi";
 
 const GetInTouch = () => {
   return (
-    <div className="container-2xl mt-16 lg:mt-24">
+    <div className="container-2xl mt-16 lg:mt-24 mb-20">
       <div className="flex-center-center flex-col">
-        <h1 className="sub-header">Have Question ? Get in touch!</h1>
+        <h1 className="sub-header  dark:text-white">Have Question ? Get in touch!</h1>
         <p className="paragraph">
           A great platform to buy, sell and rent your properties without any
           agent or commissions.
