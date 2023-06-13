@@ -1,12 +1,19 @@
 import { lazy, Suspense } from 'react';
 import React from 'react'
-import './index.css'
 import { Route, Routes } from 'react-router-dom'
-import Test from './Components/Test'
 import Error from './Pages/Error';
 import ListSidebar from './Pages/ListSidebar';
 import Detail from './Pages/Detail';
-// import Buy from './Pages/Buy'
+import Home from "./Pages/Home";
+import Login from "./Pages/Login";
+import Signup from "./Pages/Signup";
+import ForgetPW from "./Pages/ForgetPW";
+import Pricing from './Pages/Pricing';
+import Features from './Pages/Features';
+import Faqs from './Pages/Faqs';
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
+import './index.css'
 const Buy = lazy(() => import('./Pages/Buy'));
 
 const App = () => {
@@ -43,15 +50,31 @@ const App = () => {
     },
 ]
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <div className=" container-fluid dark:bg-[#0F262E]">
+          <Suspense fallback={<div>Loading...</div>}>
+
     <Routes>
-      <Route path={'/test'} element={<Test properties={properties}/>}/>
-      <Route path={'/buy'} element={<Buy properties={properties}/>}/>
-      <Route path={'/list-sidebar'} element={<ListSidebar properties={properties}/>}/>
-      <Route path={'/detail/:id'} element={<Detail properties={properties}/>}/>
-      <Route path={'/404'} element={<Error/>}/>
+      <Route path={"/"} element={<Login />} />
+      <Route path={"/forgetPW"} element={<ForgetPW />} />
+      <Route path={"/signup"} element={<Signup />} />
+
+      <Route path={"/home"} element={<><Navbar/><Home/><Footer/></>} />
+      
+        <Route path="/pricing" element={<><Navbar/><Pricing /><Footer/></>} />
+        <Route path="/features" element={<><Navbar/><Features /><Footer/></>} />
+        <Route path="/faqs" element={<><Navbar/><Faqs /><Footer/></>} />
+
+        <Route path={'/buy'} element={<><Navbar/><Buy properties={properties}/><Footer/></>}/>
+      <Route path={'/list-sidebar'} element={<><Navbar/><ListSidebar properties={properties}/><Footer/></>}/>
+
+      <Route path={'/detail/:id'} element={<><Navbar/><Detail properties={properties}/><Footer/></>}/>
+
+      <Route path={'/404'} element={<><Navbar/><Error/><Footer/></>}/>
+
     </Routes>
     </Suspense>
+    </div>
+    
   )
 }
 

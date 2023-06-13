@@ -13,7 +13,7 @@ const Buy = ({ properties }) => {
 
   return (
     <div>
-      <div className="">
+      <div className="mt-[70px]">
         {/*  hero section */}
         <div className="hero-img">
           <div className="bg-dark-opacity"></div>
@@ -33,22 +33,22 @@ const Buy = ({ properties }) => {
           >
             <path
               d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-              className="shape-fill"
+              className=" fill-[#fff] dark:fill-slate-900"
             ></path>
           </svg>
         </div>
       </div>
 
-      <section className=" pb-16 md:pb-24">
+      <section className=" pb-16 md:pb-24 dark:bg-slate-900">
         {/* search box section */}
         <div className="flex-center-center -mt-[43px] px-3">
-          <div className=" md:w-[672px] shadow-lg rounded-md z-10 bg-white">
+          <div className=" md:w-[672px] shadow-lg rounded-md z-10 bg-white dark:bg-slate-900 dark:shadow-gray-800">
             <form action="" className="flex-between-center gap-2 pl-4 pr-1">
-              <div className="flex-center-center gap-1">
+              <div className="flex-center-center gap-1 dark:text-white">
                 <BiSearchAlt className="text-xl sm:text-2xl" />
                 <input
                   type="text"
-                  className="border border-none focus:outline-none w-48 xs:w-[250px] sm:w-96 md:w-[400px] text-sm md:text-lg p-2"
+                  className="border border-none focus:outline-none w-48 xs:w-[250px] sm:w-96 md:w-[400px] text-sm md:text-lg p-2 dark:bg-slate-900"
                   placeholder="City, Address, Zip :"
                 />
               </div>
@@ -68,14 +68,14 @@ const Buy = ({ properties }) => {
          {/* 6 Tabs */}
          <div className="container-2xl mt-16 lg:mt-24">
           <div className="grid-layout-2 mt-8">
-            <div className="md:col-span-5 lg:col-span-4">
+            <div className="md:col-span-5 lg:col-span-4 dark:bg-slate-900 dark:shadow-gray-700">
               <ul className="p-6 shadow rounded-md overflow-hidden">
                 <li onClick={() => toggleHandler(1)}>
                   <button
-                    className={
+                    className={`${
                       toggle === 1
                         ? "btn-2 mt-3 active"
-                        : "btn-2 mt-3 hover:bg-gray-50 hover:text-green-600"
+                        : "btn-2 mt-3 hover:bg-gray-50 hover:text-green-600 dark:text-white dark:hover:bg-slate-700 hover:rounded"}`
                     }
                   >
                     {/* hover:bg-gray-50 text-green-600 */}
@@ -84,10 +84,10 @@ const Buy = ({ properties }) => {
                 </li>
                 <li onClick={() => toggleHandler(2)}>
                   <button
-                    className={
+                    className={`${
                       toggle === 2
                         ? "btn-2 mt-3 active"
-                        : "btn-2 mt-3 hover:bg-gray-50 hover:text-green-600"
+                        : "btn-2 mt-3 hover:bg-gray-50 hover:text-green-600 dark:text-white dark:hover:bg-slate-700 hover:rounded"} `
                     }
                   >
                     Schedule a Showing
@@ -95,10 +95,10 @@ const Buy = ({ properties }) => {
                 </li>
                 <li onClick={() => toggleHandler(3)}>
                 <button
-                    className={
+                    className={`${
                       toggle === 3
                         ? "btn-2 mt-3 active"
-                        : "btn-2 mt-3 hover:bg-gray-50 hover:text-green-600"
+                        : "btn-2 mt-3 hover:bg-gray-50 hover:text-green-600 dark:text-white dark:hover:bg-slate-700 hover:rounded"} `
                     }
                   >
                     Submit an Offer
@@ -106,10 +106,10 @@ const Buy = ({ properties }) => {
                 </li>
                 <li onClick={() => toggleHandler(4)}>
                 <button
-                    className={
+                    className={`${
                       toggle === 4
                         ? "btn-2 mt-3 active"
-                        : "btn-2 mt-3 hover:bg-gray-50 hover:text-green-600"
+                        : "btn-2 mt-3 hover:bg-gray-50 hover:text-green-600 dark:text-white dark:hover:bg-slate-700 hover:rounded"} `
                     }
                   >
                     Property inspection
@@ -117,10 +117,10 @@ const Buy = ({ properties }) => {
                 </li>
                 <li onClick={() => toggleHandler(5)}>
                 <button
-                    className={
+                    className={`${
                       toggle === 5
                         ? "btn-2 mt-3 active"
-                        : "btn-2 mt-3 hover:bg-gray-50 hover:text-green-600"
+                        : "btn-2 mt-3 hover:bg-gray-50 hover:text-green-600 dark:text-white dark:hover:bg-slate-700 hover:rounded"} `
                     }
                   >
                     Appraisal
@@ -128,10 +128,10 @@ const Buy = ({ properties }) => {
                 </li>
                 <li onClick={() => toggleHandler(6)}>
                 <button
-                    className={
+                    className={`${
                       toggle === 6
                         ? "btn-2 mt-3 active"
-                        : "btn-2 mt-3 hover:bg-gray-50 hover:text-green-600"
+                        : "btn-2 mt-3 hover:bg-gray-50 hover:text-green-600 dark:text-white dark:hover:bg-slate-700 hover:rounded"} `
                     }
                   >
                     Closing Deal
@@ -148,7 +148,7 @@ const Buy = ({ properties }) => {
                   alt="Pre Approval Letter"
                 />
                 <div className="mt-6">
-                  <h2 className="sub-header-2">Pre Approval Letter</h2>
+                  <h2 className="sub-header-2 dark:text-white">Pre Approval Letter</h2>
                   <p className="paragraph-2 mt-3">
                     Most buyers think the first step is finding their dream
                     house, but the truth is finding the funding is the first
@@ -165,7 +165,7 @@ const Buy = ({ properties }) => {
                   alt="Schedule a Showing"
                 />
                 <div className="mt-6">
-                  <h2 className="sub-header-2">Schedule a Showing</h2>
+                  <h2 className="sub-header-2  dark:text-white">Schedule a Showing</h2>
                   <p className="paragraph-2 mt-3">
                     Hously allows a buyer to schedule an instant showing and
                     gain a private viewing without the need for multiple parties
@@ -180,7 +180,7 @@ const Buy = ({ properties }) => {
                   alt="Submit an Offer"
                 />
                 <div className="mt-6">
-                  <h2 className="sub-header-2">Submit an Offer</h2>
+                  <h2 className="sub-header-2  dark:text-white">Submit an Offer</h2>
                   <p className="paragraph-2 mt-3">
                   Hously walks a buyer through the purchase agreement process making the paperwork appear effortless. With our custom workflows and progress analytics, you will always know where your purchase stands. No more phone tag and unreturned emails!
                   </p>
@@ -193,7 +193,7 @@ const Buy = ({ properties }) => {
                   alt="Property Inspection"
                 />
                 <div className="mt-6">
-                  <h2 className="sub-header-2">Property Inspection</h2>
+                  <h2 className="sub-header-2  dark:text-white">Property Inspection</h2>
                   <p className="paragraph-2 mt-3">
                   No one wants to buy a lemon. Book an inspection with a licensed inspector, then submit the repair requests all via the Hously platform.
                   </p>
@@ -206,7 +206,7 @@ const Buy = ({ properties }) => {
                   alt="Appraisal"
                 />
                 <div className="mt-6">
-                  <h2 className="sub-header-2">Appraisal</h2>
+                  <h2 className="sub-header-2  dark:text-white">Appraisal</h2>
                   <p className="paragraph-2 mt-3">
                   Hously monitors the appraisal process ensuring the home you are purchasing meets or exceeds the price you are paying.
                   </p>
@@ -219,7 +219,7 @@ const Buy = ({ properties }) => {
                   alt="Closing Deal"
                 />
                 <div className="mt-6">
-                  <h2 className="sub-header-2">Closing Deal</h2>
+                  <h2 className="sub-header-2  dark:text-white">Closing Deal</h2>
                   <p className="paragraph-2 mt-3">
                   Finally the closing packet is sent to the Title office, and the day has come… You have Hously the home of your dreams!
                   </p>

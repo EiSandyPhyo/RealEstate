@@ -4,6 +4,135 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.myGlassBg {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.30);
+  width: 100wh;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(9px);
+}
+.myliForDropDown:hover .myDivDrop {
+  display: block;
+}
+.myliForDropDown:active .myDivDrop {
+  display: block;
+}
+.myZImg {
+  position: absolute;
+  z-index: -5;
+}
+.myBorderColor:focus{
+  border-color: rgb(163 230 53);
+}
+
+.snow-bg {
+  position: relative;
+}
+
+.snow-bg:after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 2;
+  opacity: 85%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  background-image: url("https://library.elementor.com/resources/christmas-snow-effect/s1.png"),
+    url("https://library.elementor.com/resources/christmas-snow-effect/s2.png"),
+    url("https://library.elementor.com/resources/christmas-snow-effect/s3.png");
+  animation: snow 10s linear infinite;
+}
+
+@keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  50% {
+    background-position: 500px 500px, 100px 200px, -100px 150px;
+  }
+  100% {
+    background-position: 500px 1000px, 200px 400px, -100px 300px;
+  }
+}
+
+.myImg {
+  
+  animation-name: myImg;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+@keyframes myImg {
+  from {
+    transform: scale(1.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.myDarkBtnMoveUp {
+  animation-name: myDarkBtnMoveUp;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+@keyframes myDarkBtnMoveUp {
+  from {
+    transform: translateY(52px);
+  }
+  to {
+    transform: translateY(2px);
+  }
+}
+.myDarkBtnMoveDown {
+  animation-name: myDarkBtnMoveDown;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+@keyframes myDarkBtnMoveDown {
+  from {
+    transform: translateY(2px);
+  }
+  to {
+    transform: translateY(52px);
+  }
+}
+
+.bgTop{
+    background-image: url("https://hously-react.vercel.app/static/media/01.22de4da0428b035e9d2b.jpg");
+    clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 96%, 59% 100%, 40% 100%, 0 96%, 0% 30%);
+    
+}
+
+.bg-hex{
+    background-color: blue;
+    clip-path: polygon(25% 0%, 76% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+
+}
+
+/* ESDP */
 /* font */
 .header{
     @apply capitalize font-medium xxs:text-2xl xs:text-3xl md:text-4xl text-white mt-10
@@ -110,38 +239,46 @@
 }
 
 
+/* dark theme */
+.card-dark{
+  @apply dark:bg-slate-900 dark:hover:shadow-xl dark:shadow-gray-700 dark:hover:shadow-gray-700
+}
+.normal-dark{
+  @apply dark:bg-slate-900 dark:shadow-gray-700
+}
+
 
 /* custom shape */
 .custom-shape-divider-bottom {
-    @apply absolute top-[320px] left-0 w-full overflow-hidden z-0;
+  @apply absolute top-[390px] left-0 w-full overflow-hidden z-0;
 }
 
 .custom-shape-divider-bottom svg {
-    @apply relative block w-[calc(300%+1.3px)] h-[80px];
+  @apply relative block w-[calc(300%+1.3px)] h-[80px];
 }
 
-.custom-shape-divider-bottom .shape-fill {
-    fill: #fff;
+/* .custom-shape-divider-bottom .shape-fill {
+  fill: #0F262E;
 }
-
+ */
 
 /** For tablet devices **/
 @media (min-width: 768px) and (max-width: 1023px) {
-    .custom-shape-divider-bottom {
-        top: 350px;
-    }
-    .custom-shape-divider-bottom svg {
-        width: calc(300% + 1.3px);
-        height: 50px;
-    }
+  .custom-shape-divider-bottom {
+      top: 420px;
+  }
+  .custom-shape-divider-bottom svg {
+      width: calc(300% + 1.3px);
+      height: 50px;
+  }
 }
 
 @media (max-width: 768px) {
-    .custom-shape-divider-bottom {
-        top: 350px;
-    }
-    .custom-shape-divider-bottom svg {
-        width: calc(300% + 1.3px);
-        height: 30px;
-    }
+  .custom-shape-divider-bottom {
+      top: 420px;
+  }
+  .custom-shape-divider-bottom svg {
+      width: calc(300% + 1.3px);
+      height: 30px;
+  }
 }
