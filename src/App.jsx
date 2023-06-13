@@ -9,7 +9,6 @@ import Home from "./Pages/Home";
 import Login from "./Pages/Login";
 import Signup from "./Pages/Signup";
 import ForgetPW from "./Pages/ForgetPW";
-import Details from './Pages/Details'
 import Pricing from './Pages/Pricing'
 import Features from './Pages/Features'
 import Faqs from './Pages/Faqs'
