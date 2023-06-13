@@ -13,7 +13,7 @@ const FeatureProperties = ({ properties }) => {
   return (
     <div className="container-2xl mt-16 lg:mt-24">
       <div className="flex-center-center flex-col pb-8">
-        <h1 className="sub-header">Featured Properties</h1>
+        <h1 className="sub-header  dark:text-white">Featured Properties</h1>
         <p className="paragraph">
           A great platform to buy, sell and rent your properties without any
           agent or commissions.
@@ -35,7 +35,7 @@ const FeatureProperties = ({ properties }) => {
                   placeholderSrc={PlaceholderImage}
                 />
                 <div className="absolute top-4 end-4">
-                  <div className=" w-10 h-10 bg-white rounded-full cursor-pointer flex-center-center ">
+                  <div className=" w-10 h-10 bg-white rounded-full cursor-pointer flex-center-center dark:bg-black">
                     <button onClick={() => setHeartFill(!heartFill)}>
                       {heartFill ? (
                         <RxHeartFilled size={20} className=" text-red-600  " />
@@ -53,21 +53,21 @@ const FeatureProperties = ({ properties }) => {
               <div className="p-6">
                 <div className="mb-6">
                 <Link to={`/detail/${property.id}`}>
-                  <h2 className="h2 cursor-pointer hover:text-green-600 duration-500 ease-in-out inline-block">
+                  <h2 className="h2 cursor-pointer hover:text-green-600 duration-500 ease-in-out inline-block  dark:text-white">
                     {property.title}
                   </h2>
                 </Link>
                 </div>
                 <div className="border-y border-slate-100 py-6 mb-6">
                   <div className="flex-between-center">
-                    <div className="flex-center-center gap-2">
+                    <div className="flex-center-center gap-2  dark:text-white">
                       <FaCompressArrowsAlt className="icon-color" />
                       8000sqft
                     </div>
-                    <div className="flex-center-center gap-2">
+                    <div className="flex-center-center gap-2  dark:text-white">
                       <IoBedOutline className="icon-color" />4 Beds
                     </div>
-                    <div className="flex-center-center gap-2">
+                    <div className="flex-center-center gap-2  dark:text-white">
                       <LuBath className="icon-color" />4 Baths
                     </div>
                   </div>
@@ -76,7 +76,7 @@ const FeatureProperties = ({ properties }) => {
                   <div className="">
                     <div className="">
                       <p>Price</p>
-                      <p className="text-black font">$5000</p>
+                      <p className="text-black font  dark:text-white">$5000</p>
                     </div>
                   </div>
 
@@ -86,7 +86,7 @@ const FeatureProperties = ({ properties }) => {
                       {[...Array(5)].map((x, i) => (
                         <BsStarFill key={i} className="text-amber-400" />
                       ))}
-                      <p className="text-black font mt-1">5(30)</p>
+                      <p className="text-black font mt-1  dark:text-white">5(30)</p>
                     </div>
                   </div>
                 </div>

@@ -70,13 +70,13 @@ const Navbar = () => {
           </div>
           <div className=" flex justify-end items-center">
             <ul className="hidden md:flex justify-end items-center mr-5 ">
-              <li className=" w-[60px] h-[40px] flex justify-center items-center mx-3 cursor-pointer">
-                <NavLink to={"/"}></NavLink>
-                <span className=" fs-[17px] font-medium text-black dark:text-white hover:text-[#16a34a]">
-                  Home
-                </span>
-                <NavLink />
-              </li>
+              <NavLink to={"/home"}>
+                <li className=" w-[60px] h-[40px] flex justify-center items-center mx-3 cursor-pointer">
+                  <span className=" fs-[17px] font-medium text-black dark:text-white hover:text-[#16a34a]">
+                    Home
+                  </span>
+                </li>
+              </NavLink>
               <NavLink to={"/buy"}>
                 <li className=" w-[60px] h-[40px] flex justify-center items-center mx-3 cursor-pointer">
                   <span className=" fs-[17px] font-medium dark:text-white hover:text-[#16a34a]">
@@ -216,10 +216,10 @@ const Navbar = () => {
                       } bg-white dark:bg-[#0F172A]`}
                     >
                       <NavLink to={"/list-sidebar"}>
-                    <li className="ml-5 fs-[17px] font-medium text-black hover:text-[#16a34a] mb-2 dark:text-white">
-                      Listing
-                    </li>
-                  </NavLink>
+                        <li className="ml-5 fs-[17px] font-medium text-black hover:text-[#16a34a] mb-2 dark:text-white">
+                          Listing
+                        </li>
+                      </NavLink>
                       <NavLink to={"/features"}>
                         <li className=" ml-5 fs-[17px] font-medium text-black hover:text-[#16a34a] mb-2 dark:text-white">
                           Features
