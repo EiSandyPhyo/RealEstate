@@ -132,7 +132,7 @@ const Footer = () => {
                   <IoIosArrowForward className="mr-3" />
                   Privacy Policy
                 </li>
-                <NavLink to={"/listing"}>
+                <NavLink to={"/list-sidebar"}>
 
                 <li className=" flex justify-start items-center mb-2 hover:text-[#16a34a]">
                   <IoIosArrowForward className="mr-3" />

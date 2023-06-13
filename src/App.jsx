@@ -14,6 +14,10 @@ import Home from "./Pages/Home";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 
+import { lazy, Suspense } from 'react';
+const Buy = lazy(() => import('./Pages/Buy'));
+import Error from './Pages/Error';
+import ListSidebar from './Pages/ListSidebar';
 
 
 const App = () => {
@@ -57,21 +61,28 @@ const App = () => {
   ];
   return (
     <div className=" container-fluid dark:bg-[#0F262E]">
+          <Suspense fallback={<div>Loading...</div>}>
+
     <Routes>
       <Route path={"/"} element={<Login />} />
       <Route path={"/forgetPW"} element={<ForgetPW />} />
       <Route path={"/signup"} element={<Signup />} />
 
       <Route path={"/home"} element={<><Navbar/><Home/><Footer/></>} />
-      <Route
-          path="/details/:id"
-          element={<><Navbar/><Details properties={properties} /><Footer/></>}
-        />
+      
         <Route path="/pricing" element={<><Navbar/><Pricing /><Footer/></>} />
         <Route path="/features" element={<><Navbar/><Features /><Footer/></>} />
         <Route path="/faqs" element={<><Navbar/><Faqs /><Footer/></>} />
 
+        <Route path={'/buy'} element={<><Navbar/><Buy properties={properties}/><Footer/></>}/>
+      <Route path={'/list-sidebar'} element={<><Navbar/><ListSidebar properties={properties}/><Footer/></>}/>
+
+      <Route path={'/detail/:id'} element={<><Navbar/><Details properties={properties}/><Footer/></>}/>
+
+      <Route path={'/404'} element={<><Navbar/><Error/><Footer/></>}/>
+
     </Routes>
+    </Suspense>
     </div>
 
   );
