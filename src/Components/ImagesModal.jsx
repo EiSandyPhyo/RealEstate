@@ -129,12 +129,12 @@ const ImagesModal = (props) => {
       <div
         className={
           showModal
-            ? "fixed top-0 left-0 z-80 w-screen h-screen bg-black/70 flex  justify-center items-center cursor-pointer"
+            ? "fixed top-0 lg:top-0 left-0 z-80 w-screen h-screen bg-black/70 flex  justify-center items-center cursor-pointer z-50"
             : "hidden"
         }
       >
         <a
-          className="fixed z-90 top-6 right-8 text-white text-5xl font-bold"
+          className="fixed z-90 top-[240px] lg:top-16 right-8 lg:right-[280px] text-white text-5xl font-bold"
           onClick={() => setShowModal(false)}
         >
           <RxCross2 />
@@ -143,7 +143,7 @@ const ImagesModal = (props) => {
         <img
           id="modalImage"
           src=""
-          className="max-w-[800px] max-h-[600px] object-cover z[1000] "
+          className=" w-[100%] max-w-[800px] max-h-[600px] object-cover z[1000] "
         />
       </div>
     </div>
