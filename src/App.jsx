@@ -50,25 +50,27 @@ const App = () => {
     },
 ]
   return (
-    <div className="container-fluid dark:bg-[#0F262E]">
-        <Suspense fallback={<div>Loading...</div>}>
+    <div className=" container-fluid dark:bg-[#0F262E]">
+          <Suspense fallback={<div>Loading...</div>}>
+
     <Routes>
-      <Route path={"/"} element={<Home />} />
-      <Route path={"/login"} element={<Login />} />
-      <Route path={"/signup"} element={<Signup />} />
+      <Route path={"/"} element={<Login />} />
       <Route path={"/forgetPW"} element={<ForgetPW />} />
+      <Route path={"/signup"} element={<Signup />} />
+
       <Route path={"/home"} element={<><Navbar/><Home/><Footer/></>} />
+      
+        <Route path="/pricing" element={<><Navbar/><Pricing /><Footer/></>} />
+        <Route path="/features" element={<><Navbar/><Features /><Footer/></>} />
+        <Route path="/faqs" element={<><Navbar/><Faqs /><Footer/></>} />
 
-      <Route path={'/pricing'} element={<Pricing/>}/>
-      <Route path={'/features'} element={<Features/>}/>
-      <Route path={'/faqs'} element={<Faqs/>}/>
-
-       <Route path={'/buy'} element={<><Navbar/><Buy properties={properties}/><Footer/></>}/>
+        <Route path={'/buy'} element={<><Navbar/><Buy properties={properties}/><Footer/></>}/>
       <Route path={'/list-sidebar'} element={<><Navbar/><ListSidebar properties={properties}/><Footer/></>}/>
 
       <Route path={'/detail/:id'} element={<><Navbar/><Detail properties={properties}/><Footer/></>}/>
 
       <Route path={'/404'} element={<><Navbar/><Error/><Footer/></>}/>
+
     </Routes>
     </Suspense>
     </div>
