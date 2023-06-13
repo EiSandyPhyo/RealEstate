@@ -5,12 +5,17 @@ import { BsSearch } from "react-icons/bs";
 import { BsPlayFill } from "react-icons/bs";
 import { GrClose } from "react-icons/gr";
 import { BsTelephone } from "react-icons/bs";
+import { AiOutlineClose } from "react-icons/ai";
+
 import FeatureSlider from "../Components/FeatureSlider";
 
 const Home = () => {
   const [showBuyBtnColor, setShowBuyBtnColor] = useState(true);
   const [showSellBtnColor, setShowSellBtnColor] = useState(false);
   const [showRentBtnColor, setShowRentBtnColor] = useState(false);
+
+  const [showHomeIframe, setShowHomeIframe] = useState(false);
+  const [showIframe, setShowIframe] = useState(false);
 
   const BuyHandler = (e) => {
     e.preventDefault();
@@ -114,8 +119,36 @@ const Home = () => {
                   className=" border-[15px] rounded-t-full border-white dark:border-black lg:w-[500px] h-[600px] object-cover object-center "
                 />
                 <div className=" absolute z-10 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex justify-center item-end w-[70px] h-[70px] border-none rounded-full changeLight bg-white dark:bg-black">
-                  <button className="">
+                  <button onClick={() => setShowHomeIframe(true)} className="">
                     <BsPlayFill color="#16a34a" size={"2rem"} />
+                  </button>
+                </div>
+              </div>
+              <div className={` ${showHomeIframe ? "" : "hidden"} z-50 `}>
+                <div
+                  className={`absolute inset-0 bg-black opacity-70 w-full h-[1800px] lg:h-full`}
+                ></div>
+                <div className="">
+                  <iframe
+                    id="myvideo"
+                    width="560"
+                    height="315"
+                    src={`${
+                      showHomeIframe
+                        ? "https://www.youtube.com/embed/yba7hPeTSjk"
+                        : ""
+                    }`}
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    className={` ${
+                      showHomeIframe ? "" : "hidden"
+                    } z-40  absolute top-[120%] lg:top-[50%] right-1 md:right-[50%] translate-x-[-20%] md:translate-x-[50%] translate-y-[-50%] w-[70%] lg:w-[50%]`}
+                  ></iframe>
+                  <button
+                    onClick={() => setShowHomeIframe(false)}
+                    className={`absolute top-[100%] lg:top-[30%] right-1 md:right-14 lg:right-[20%] w-10 h-10 p-2 border-0 text-white bg-[#16a34a] hover:bg-[#138a3f] rounded-full mx-1 z-50 `}
+                  >
+                    <AiOutlineClose size={"1.5rem"} color="white" />
                   </button>
                 </div>
               </div>
@@ -126,52 +159,73 @@ const Home = () => {
         {/* Hero Section End*/}
 
         {/* Efficiency Section Start*/}
-        <div className="container relative mx-auto flex flex-col lg:flex-row lg:justify-between items-center py-16 lg:my-20 dark:bg-[#0F172A]  ">
-          <div className=" w-[90%] lg:basis-4/12 relative mb-5 mx-5 ">
-            <div className=" relative ">
-              <img
-                className=" rounded-xl w-full h-[400px] lg:w-[500px] lg:h-[550px]"
-                src="	https://hously-react.vercel.app/static/media/about.f67dcc77d84a6e14d5de.jpg"
-                alt=""
-              />
-              <div className=" dark:bg-black absolute z-10 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex justify-center item-end w-[70px] h-[70px] border-2 rounded-full changeLight">
-                <button className="">
-                  <BsPlayFill color="#16a34a" size={"2rem"} />
+        <div className="container-fluid">
+          <div className="container mx-auto relative flex flex-col lg:flex-row lg:justify-evenly items-center py-16 lg:my-20 dark:bg-[#0F172A]  ">
+            <div className=" w-[90%] lg:basis-4/12 relative mb-5 mx-5 ">
+              <div className=" relative ">
+                <img
+                  className=" rounded-xl w-full h-[400px] lg:w-[500px] lg:h-[550px]"
+                  src="	https://hously-react.vercel.app/static/media/about.f67dcc77d84a6e14d5de.jpg"
+                  alt=""
+                />
+                <div
+                  onClick={() => setShowIframe(true)}
+                  className=" dark:bg-black absolute z-10 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex justify-center item-end w-[70px] h-[70px] border-2 rounded-full changeLight bg-white"
+                >
+                  <button className="">
+                    <BsPlayFill color="#16a34a" size={"2rem"} />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className=" basis-7/12 mb-5 w-[90%] my-10 lg:mx-5 ">
+              <div className=" lg:w-[600px]">
+                <h1 className=" text-2xl md:text-3xl mb-3 text-black dark:text-white font-medium">
+                  Efficiency. Transparency. <br />
+                  Control.
+                </h1>
+                <p className=" text-slate-400 mb-3">
+                  Hously developed a platform for the Real Estate marketplace
+                  that allows buyers and sellers to easily execute a transaction
+                  on their own. The platform drives efficiency, cost
+                  transparency and control into the hands of the consumers.
+                  Hously is Real Estate Redefined.
+                </p>
+                <button className=" p-3 fs-[17px] leading-[24px] text-white bg-[#16a34a] hover:bg-[#138a3f] border-0 rounded-lg mb-3">
+                  Learn More
                 </button>
               </div>
             </div>
           </div>
-          <div className=" basis-7/12 mb-5 w-[90%] my-10 lg:mx-5 ">
-            <div className=" lg:w-[600px]">
-              <h1 className=" text-2xl md:text-3xl mb-3 text-black dark:text-white font-medium">
-                Efficiency. Transparency. <br />
-                Control.
-              </h1>
-              <p className=" text-slate-400 mb-3">
-                Hously developed a platform for the Real Estate marketplace that
-                allows buyers and sellers to easily execute a transaction on
-                their own. The platform drives efficiency, cost transparency and
-                control into the hands of the consumers. Hously is Real Estate
-                Redefined.
-              </p>
-              <button className=" p-3 fs-[17px] leading-[24px] text-white bg-[#16a34a] hover:bg-[#138a3f] border-0 rounded-lg mb-3">
-                Learn More
+
+          <div className={` ${showIframe ? "" : "hidden"} z-50 `}>
+            <div
+              className={`absolute inset-0 bg-black opacity-60 w-screen h-[2300px] `}
+            ></div>
+            <div className="">
+              <iframe
+                id="myvideo"
+                width="560"
+                height="315"
+                src={`${
+                  showIframe ? "https://www.youtube.com/embed/yba7hPeTSjk" : ""
+                }`}
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                className={` ${
+                  showIframe ? "" : "hidden"
+                } z-50  absolute top-[180%] right-1 md:right-[50%] translate-x-[-20%] md:translate-x-[50%] translate-y-[-50%] w-[70%]`}
+              ></iframe>
+              <button
+                onClick={() => setShowIframe(false)}
+                className={`absolute top-[160%] right-1 md:right-14 lg:right-[160px] w-10 h-10 p-2 border-0 text-white bg-[#16a34a] hover:bg-[#138a3f] rounded-full mx-1 z-50 `}
+              >
+                <AiOutlineClose size={"1.5rem"} color="white" />
               </button>
             </div>
           </div>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/yba7hPeTSjk"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            className=" hidden z-50  absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] "
-          ></iframe>
-          <button className="hidden absolute top-16 right-60 w-10 h-10 p-2 border-0 text-white bg-[#16a34a] hover:bg-[#138a3f] rounded-full mx-1 z-50">
-            <GrClose size={"1.5rem"} />
-          </button>
         </div>
+
         {/* Efficiency Section End*/}
 
         {/* How is work Section Start*/}

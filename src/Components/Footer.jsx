@@ -1,6 +1,6 @@
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
-import { Link } from "react-router-dom";
+import { Link,NavLink } from "react-router-dom";
 
 import { BiLocationPlus } from "react-icons/bi";
 import { BsTelephone } from "react-icons/bs";
@@ -89,26 +89,34 @@ const Footer = () => {
             <div className=" mb-5">
               <p className=" text-white mb-3 text-md font-semibold">Company</p>
               <ul className=" text-slate-400">
+              <NavLink to={"/aboutus"}>
                 <li className=" flex justify-start items-center mb-2 hover:text-[#16a34a]">
                   <IoIosArrowForward className="mr-3" />
                   About us
                 </li>
+                </NavLink>
                 <li className=" flex justify-start items-center mb-2 hover:text-[#16a34a]">
                   <IoIosArrowForward className="mr-3" />
                   Services
                 </li>
+                <NavLink to={"/pricing"}>
                 <li className=" flex justify-start items-center mb-2 hover:text-[#16a34a]">
                   <IoIosArrowForward className="mr-3" />
                   Pricing{" "}
                 </li>
+                               </NavLink>
                 <li className=" flex justify-start items-center mb-2 hover:text-[#16a34a]">
                   <IoIosArrowForward className="mr-3" />
                   Blog
                 </li>
+                <NavLink to={"/"}>
+
                 <li className=" flex justify-start items-center mb-2 hover:text-[#16a34a]">
                   <IoIosArrowForward className="mr-3" />
                   Login
                 </li>
+                </NavLink>
+                
               </ul>
             </div>
             <div className=" mb-3">
@@ -124,14 +132,20 @@ const Footer = () => {
                   <IoIosArrowForward className="mr-3" />
                   Privacy Policy
                 </li>
+                <NavLink to={"/listing"}>
+
                 <li className=" flex justify-start items-center mb-2 hover:text-[#16a34a]">
                   <IoIosArrowForward className="mr-3" />
-                  Listing{" "}
+                  Listing
                 </li>
+                </NavLink>
+                <NavLink to={"/contact"}>
+
                 <li className=" flex justify-start items-center mb-2 hover:text-[#16a34a]">
                   <IoIosArrowForward className="mr-3" />
                   Contact
                 </li>
+                </NavLink>
               </ul>
             </div>
           </div>
