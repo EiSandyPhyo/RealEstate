@@ -140,7 +140,7 @@ const Home = ({properties}) => {
               height="315"
               src={`${
                 showHomeIframe
-                  ? "https://www.youtube.com/embed/yba7hPeTSjk"
+                  ?"https://www.youtube.com/embed/yba7hPeTSjk"
                   : ""
               }`}
               title="YouTube video player"
@@ -161,7 +161,7 @@ const Home = ({properties}) => {
 
         {/* Efficiency Section Start*/}
         <div className="container-fluid h-fit">
-          <div className="container  mx-auto relative flex flex-col lg:flex-row justify-evenly items-center py-16 lg:my-20 dark:bg-[#0F172A]  ">
+          <div className="container  mx-auto relative flex flex-col lg:flex-row justify-evenly items-center py-10 lg:my-20 dark:bg-[#0F172A]  ">
             <div className=" basis-5/12 relative mb-5 mx-5 ">
               <div className=" relative ">
                 <img
@@ -228,7 +228,7 @@ const Home = ({properties}) => {
         {/* Efficiency Section End*/}
 
         {/* How is work Section Start*/}
-        <div className="container h-fit  mx-auto relative flex flex-col lg:flex-row justify-evenly items-center py-16 lg:my-20 dark:bg-[#0F172A]  ">
+        <div className="container h-fit  mx-auto relative flex flex-col lg:flex-row justify-evenly items-center pb-16 lg:my-20 dark:bg-[#0F172A]  ">
           <HowItWorks />
         </div>
         {/* How is work Section End*/}

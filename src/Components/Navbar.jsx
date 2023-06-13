@@ -237,7 +237,7 @@ const Navbar = () => {
                       </Link>
                     </ul>
                   </div>
-                  <Link to={"/contact"}>
+                  <Link to={""}>
                     <li className="fs-[17px] font-medium text-black hover:text-[#16a34a] dark:text-white">
                       Contact
                     </li>
