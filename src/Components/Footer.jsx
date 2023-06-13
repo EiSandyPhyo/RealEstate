@@ -19,7 +19,7 @@ import { BsPencil } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className=" container-fluid bg-slate-900 dark:bg-slate-800 px-3 lg:px-10">
+    <div className=" container-fluid bg-slate-900 dark:bg-slate-800 px-3 lg:px-10 mt-24">
       <div className=" container mx-auto relative">
         {/* Subscribe Section Start*/}
 

@@ -14,49 +14,49 @@ const ListSideBar = ({ properties }) => {
   return (
     <>
       <div className=" mb-40">
-        <div className="">
-          {/*  hero section */}
-          <div className="hero-img">
-            <div className="bg-dark-opacity"></div>
-            <div className="relative px-12">
-              <div className="flex-center-center h-[378px]">
-                <h2 className="header">grid view layout</h2>
-              </div>
+      <div className="mt-[70px]">
+        {/*  hero section */}
+        <div className="hero-img">
+          <div className="bg-dark-opacity"></div>
+          <div className="relative px-12">
+            <div className="flex-center-center h-[378px]">
+              <h2 className="header">grid view layout</h2>
             </div>
           </div>
-          {/* custom shape */}
-          <div className="custom-shape-divider-bottom dark:bg-black">
-            <svg
-              data-name="Layer 1"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1200 120"
-              preserveAspectRatio="none"
-            >
-              <path
-                d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-                className="shape-fill"
-              ></path>
-            </svg>
-          </div>
         </div>
+        {/* custom shape */}
+        <div className="custom-shape-divider-bottom">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+              className=" fill-[#fff] dark:fill-slate-900"
+            ></path>
+          </svg>
+        </div>
+      </div>
 
         <section className="pt-12 pb-16 lg:py-24">
           <div className="container-2xl">
             <div className="grid-layout-2 mt-8">
               <div className="md:col-span-5 lg:col-span-4">
-                <div className="p-6 shadow rounded-md overflow-hidden">
+                <div className="p-6 shadow-md dark:shadow-gray-700 rounded-md overflow-hidden">
                   <form action="">
                     <div className="flex flex-col gap-3">
                       <div className="">
                         <p className="font dark:text-white">
                           search properties
                         </p>
-                        <div className="relative border border-gray-200 rounded overflow-hidden mt-2">
-                          <BiSearchAlt className="text-xl sm:text-2xl absolute top-[10px] left-2" />
+                        <div className="relative border border-gray-200 rounded overflow-hidden mt-2 dark:border-slate-800">
+                          <BiSearchAlt className="text-xl sm:text-2xl absolute top-[10px] left-2 dark:text-white " />
                           <input
                             name="search"
                             type="text"
-                            className="border-none focus:outline-none form-box"
+                            className="border-none focus:outline-none form-box dark:bg-slate-900 dark:text-white"
                             placeholder="Search"
                           />
                         </div>
@@ -66,7 +66,7 @@ const ListSideBar = ({ properties }) => {
                         <select
                           name=""
                           id=""
-                          className="form-box-2 mt-2 block appearance-none"
+                          className="form-box-2 mt-2 block appearance-none dark:border-slate-800 dark:bg-slate-900 dark:text-white"
                         >
                           <option value="">Residential</option>
                           <option value="">Land</option>
@@ -84,7 +84,7 @@ const ListSideBar = ({ properties }) => {
                         <select
                           name=""
                           id=""
-                          className="form-box-2 mt-2 block appearance-none"
+                          className="form-box-2 mt-2 block appearance-none dark:border-slate-800 dark:bg-slate-900 dark:text-white"
                         >
                           <option value="">New York</option>
                           <option value="">North Carolina</option>
@@ -108,7 +108,7 @@ const ListSideBar = ({ properties }) => {
                     return (
                       /* card */
                       <div
-                        className="shadow rounded-xl overflow-hidden card-hover w-full lg:max-w-2xl mx-auto"
+                        className="shadow rounded-xl overflow-hidden card-hover w-full lg:max-w-2xl mx-auto dark:bg-slate-900 dark:hover:shadow-xl dark:shadow-gray-700 dark:hover:shadow-gray-700"
                         key={property.id}
                       >
                         <div className="md:flex">
@@ -119,22 +119,17 @@ const ListSideBar = ({ properties }) => {
                               className=" w-full h-full md:w-48 object-cover"
                             />
                             <div className="absolute top-4 end-4">
-                              <div className=" w-10 h-10 bg-white rounded-full cursor-pointer flex-center-center ">
-                                <button
-                                  onClick={() => setHeartFill(!heartFill)}
-                                >
-                                  {heartFill ? (
-                                    <RxHeartFilled
-                                      size={20}
-                                      className=" text-red-600  "
-                                    />
-                                  ) : (
-                                    <RxHeartFilled
-                                      size={20}
-                                      className="text-slate-100 hover:text-red-600"
-                                    />
-                                  )}
-                                </button>
+                              <div className=" w-10 h-10 bg-white rounded-full cursor-pointer flex-center-center dark:bg-slate-900 dark:shadow-gray-700">
+                              <button onClick={() => setHeartFill(!heartFill)}>
+                      {heartFill ? (
+                        <RxHeartFilled size={20} className=" text-red-600  " />
+                      ) : (
+                        <RxHeartFilled
+                          size={20}
+                          className="text-slate-100 hover:text-red-600 dark:text-slate-700 dark:hover:text-red-700"
+                        />
+                      )}
+                    </button>
                               </div>
                             </div>
                           </div>
@@ -147,7 +142,7 @@ const ListSideBar = ({ properties }) => {
                                 </h2>
                               </Link>
                             </div>
-                            <div className="border-y border-slate-100 py-6 mb-6">
+                            <div className="border-y border-slate-100 py-6 mb-6 dark:border-gray-800">
                               <div className="flex-between-center">
                                 <div className="flex-center-center gap-2 dark:text-white">
                                   <FaCompressArrowsAlt className="icon-color" />

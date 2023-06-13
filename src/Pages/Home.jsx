@@ -8,6 +8,7 @@ import { BsTelephone } from "react-icons/bs";
 import { AiOutlineClose } from "react-icons/ai";
 
 import FeatureSlider from "../Components/FeatureSlider";
+import HowItWorks from "../Components/HowItWorks";
 
 const Home = () => {
   const [showBuyBtnColor, setShowBuyBtnColor] = useState(true);
@@ -102,7 +103,7 @@ const Home = () => {
                     <input
                       placeholder="City, Address, Zip:"
                       type="text"
-                      className=" px-3 py-2 border-slate-600 outline-none lg:mx-4 w-[60%]"
+                      className=" px-3 py-2 dark:bg-slate-900 outline-none lg:mx-4 w-[60%]"
                     />
                     <button className=" p-2 w-[90px] fs-[17px] leading-[24px] text-white bg-[#16a34a] hover:bg-[#138a3f] border rounded-full">
                       Find Out{" "}
@@ -160,7 +161,7 @@ const Home = () => {
 
         {/* Efficiency Section Start*/}
         <div className="container-fluid">
-          <div className="container mx-auto relative flex flex-col lg:flex-row lg:justify-evenly items-center py-16 lg:my-20 dark:bg-[#0F172A]  ">
+          <div className="container mx-auto relative flex flex-col lg:flex-row lg:justify-evenly items-center py-16 lg:my-20 dark:bg-[#0F172A]">
             <div className=" w-[90%] lg:basis-4/12 relative mb-5 mx-5 ">
               <div className=" relative ">
                 <img
@@ -229,6 +230,7 @@ const Home = () => {
         {/* Efficiency Section End*/}
 
         {/* How is work Section Start*/}
+          <HowItWorks/>
         {/* How is work Section End*/}
 
         {/* Feature property Section Start*/}
@@ -237,7 +239,7 @@ const Home = () => {
         {/* Our clients Section Start*/}
         <div className="container lg:mt-24 mt-16 mx-auto">
           <div className="grid grid-cols-1 pb-8 text-center">
-            <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal text-black dark:text-white">
+            <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal text-black dark:text-white font-semibold">
               What Our Client Say ?
             </h3>
             <p className="text-slate-400 max-w-xl mx-auto">

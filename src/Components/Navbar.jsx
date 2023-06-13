@@ -49,10 +49,21 @@ const Navbar = () => {
     const Theme = JSON.parse(Cookies.get("theme"));
     changeAni();
   };
+
+  /*** 90Yoffset -> change bg color ***/
+  const [color, setColor] = useState(false);
+  const colorHandler = () => {
+    if (window.pageYOffset >= 90) {
+      setColor(true);
+    } else {
+      setColor(false);
+    }
+  };
+  window.addEventListener("scroll", colorHandler);
   return (
     <div>
       <div className=" h-fit" id="mystart">
-        <div className=" container-fluid w-full myGlassBg dark:bg-[#0F262E] fixed top-0 px-30  py-4 h-[70px]  flex justify-between md:justify-evenly items-center z-50">
+        <div className={` ${color ? "container-fluid w-full myGlassBg dark:bg-slate-900 fixed top-0 px-30  py-4 h-[70px]  flex justify-between md:justify-evenly items-center z-50 nav_color" : "container-fluid w-full myGlassBg dark:bg-[#0F262E] fixed top-0 px-30  py-4 h-[70px]  flex justify-between md:justify-evenly items-center z-50"}`}>
           <div>
             <Link to={"/home"}>
               <img

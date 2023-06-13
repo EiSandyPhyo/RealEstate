@@ -68,8 +68,8 @@ const Buy = ({ properties }) => {
          {/* 6 Tabs */}
          <div className="container-2xl mt-16 lg:mt-24">
           <div className="grid-layout-2 mt-8">
-            <div className="md:col-span-5 lg:col-span-4 dark:bg-slate-900 dark:shadow-gray-700">
-              <ul className="p-6 shadow rounded-md overflow-hidden">
+            <div className="md:col-span-5 lg:col-span-4 dark:bg-slate-900 ">
+              <ul className="p-6 shadow rounded-md overflow-hidden dark:shadow-gray-700">
                 <li onClick={() => toggleHandler(1)}>
                   <button
                     className={`${

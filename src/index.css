@@ -149,6 +149,9 @@ html{
 .font{
     @apply text-lg font-medium capitalize;
 }
+.font-2{
+  @apply text-lg capitalize;
+}
 .sub-header{
     @apply text-2xl md:text-3xl font-semibold mb-6;
 }
@@ -246,6 +249,15 @@ html{
 .normal-dark{
   @apply dark:bg-slate-900 dark:shadow-gray-700
 }
+
+
+/* nav */
+.nav_color{
+  @apply border-[#e5e7eb] shadow-md
+}
+/* .nav_list{
+  @apply container-fluid w-full myGlassBg dark:bg-[#0F262E] fixed top-0 px-30  py-4 h-[70px]  flex justify-between md:justify-evenly items-center z-50
+} */
 
 
 /* custom shape */

@@ -68,12 +68,12 @@ const FeatureSlider = () => {
         <div className="relative lg:w-1/3 md:w-1/2 w-full transition-all">
           <div className="absolute -top-20 md:-start-20 -start-0">
             <i className="text-7xl opacity-5">
-              <FaQuoteLeft />
+              <FaQuoteLeft className="dark:text-white dark:opacity-4"/>
             </i>
           </div>
           <div className="absolute bottom-24 md:-end-20 md:bottom-15 -end-0">
             <i className=" text-7xl opacity-5">
-              <FaQuoteRight />
+              <FaQuoteRight className="dark:text-white dark:opacity-4"/>
             </i>
           </div>
           <div className="text-center">

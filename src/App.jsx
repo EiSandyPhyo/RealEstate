@@ -14,6 +14,7 @@ import Faqs from './Pages/Faqs';
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import './index.css'
+import Sell from './Pages/Sell';
 const Buy = lazy(() => import('./Pages/Buy'));
 
 const App = () => {
@@ -50,7 +51,7 @@ const App = () => {
     },
 ]
   return (
-    <div className=" container-fluid dark:bg-[#0F262E]">
+    <div className=" container-fluid dark:bg-slate-900">
           <Suspense fallback={<div>Loading...</div>}>
 
     <Routes>
@@ -65,6 +66,7 @@ const App = () => {
         <Route path="/faqs" element={<><Navbar/><Faqs /><Footer/></>} />
 
         <Route path={'/buy'} element={<><Navbar/><Buy properties={properties}/><Footer/></>}/>
+        <Route path={'/sell'} element={<><Navbar/><Sell properties={properties}/><Footer/></>}/>
       <Route path={'/list-sidebar'} element={<><Navbar/><ListSidebar properties={properties}/><Footer/></>}/>
 
       <Route path={'/detail/:id'} element={<><Navbar/><Detail properties={properties}/><Footer/></>}/>

@@ -16,28 +16,30 @@ const ImagesModal = (props) => {
 
   return (
     <div className="container-fluid">
-      <div className=" md:flex mt-4">
+      <div className=" md:flex">
         <div className="md:w-1/2 lg:w-1/2 p-1">
           <div className="group relative overflow-hidden">
-            
-              <img className="w-full object-contain h-auto " src={item.image} alt="" /> {/* max-h-[620px] */}
-              <div className="absolute inset-0 group-hover:bg-slate-900/70 duration-500 ease-in-out"></div>
-
-              <div className="absolute top-1/2 -translate-y-1/2 start-1/2 end-1/2 text-center invisible group-hover:visible">
-                <button
-                  id="btn"
-                  onClick={() =>
-                    toggleModal(
-                      item.image.slice(45, 46),
-                      item.image.slice(47, 67)
-                    )
-                  }
-                  className=" w-full bg-green-600 text-center ps-3 pe-7 py-3  hover:bg-green-700 text-white rounded-full lightbox"
-                >
-                  <FiCamera className="text-center " />
-                </button>
-              </div>
-            
+            <img
+              className="w-full md:h-[300px] lg:h-[646px] "
+              src={item.image}
+              alt=""
+            />{" "}
+            {/* max-h-[620px] */}
+            <div className="absolute inset-0 group-hover:bg-slate-900/70 duration-500 ease-in-out"></div>
+            <div className="absolute top-1/2 -translate-y-1/2 start-1/2 end-1/2 text-center invisible group-hover:visible">
+              <button
+                id="btn"
+                onClick={() =>
+                  toggleModal(
+                    item.image.slice(45, 46),
+                    item.image.slice(47, 67)
+                  )
+                }
+                className=" w-full bg-green-600 text-center ps-3 pe-7 py-3  hover:bg-green-700 text-white rounded-full lightbox"
+              >
+                <FiCamera className="text-center " />
+              </button>
+            </div>
           </div>
         </div>
         <div className=" md:w-1/2 lg:w-1/2">

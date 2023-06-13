@@ -17,11 +17,11 @@ const Pricing = () => {
           </div>
         </div>
       </div>
-      <div className="relative lg:py-24 pt-16 pb-32 lg:pb-44 dark:bg-[#0f262e]">
+      <div className="relative lg:py-24 pt-16 pb-32 lg:pb-44 dark:bg-slate-900">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-[30px] gap-y-[50px]">
-            <div className="rounded-md shadow-lg hover:shadow-xl  duration-500 ease-in-out">
-              <div className="border-b p-6 text-center">
+            <div className="rounded-md shadow hover:shadow-xl  duration-500 ease-in-out  dark:bg-slate-900 dark:hover:shadow-xl dark:shadow-gray-700 dark:hover:shadow-gray-700">
+              <div className="border-b dark:border-gray-800 p-6 text-center">
                 <div className="w-24 h-24 bg-green-600/5 text-green-600 flex items-center justify-center text-3xl rounded-full mx-auto">
                   <i>
                     <CgTrees />
@@ -42,8 +42,8 @@ const Pricing = () => {
               </div>
               <PricingComponent />
             </div>
-            <div className="rounded-md shadow-lg  hover:shadow-md  duration-500 ease-in-out">
-              <div className="border-b  p-6 text-center">
+            <div className="rounded-md shadow hover:shadow-xl  duration-500 ease-in-out  dark:bg-slate-900 dark:hover:shadow-xl dark:shadow-gray-700 dark:hover:shadow-gray-700">
+              <div className="border-b dark:border-gray-800 p-6 text-center">
                 <div className="w-24 h-24 bg-green-600/5 text-green-600 flex items-center justify-center text-3xl rounded-full mx-auto">
                   <i>
                     <BsShield />
@@ -64,8 +64,8 @@ const Pricing = () => {
               </div>
               <PricingComponent />
             </div>
-            <div className="rounded-md shadow-lg  hover:shadow-md  duration-500 ease-in-out">
-              <div className="border-b  p-6 text-center">
+            <div className="rounded-md shadow hover:shadow-xl  duration-500 ease-in-out  dark:bg-slate-900 dark:hover:shadow-xl dark:shadow-gray-700 dark:hover:shadow-gray-700">
+              <div className="border-b dark:border-gray-800 p-6 text-center">
                 <div className="w-24 h-24 bg-green-600/5 text-green-600 flex items-center justify-center text-3xl rounded-full mx-auto">
                   <i>
                     <FaRocket />
