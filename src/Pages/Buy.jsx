@@ -13,7 +13,7 @@ const Buy = ({ properties }) => {
 
   return (
     <div>
-      <div className="mt-[70px]">
+      <div className="mt-[70px] dark:bg-slate-900">
         {/*  hero section */}
         <div className="hero-img">
           <div className="bg-dark-opacity"></div>

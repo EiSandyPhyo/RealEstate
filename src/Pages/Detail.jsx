@@ -27,7 +27,7 @@ const Detail = ({ properties }) => {
   const item = detail[0];
 
   return (
-    <section className="pt-12 pb-16 lg:py-[5rem]"> {/* lg:py-[5rem] */}
+    <section className="pt-12 pb-16 lg:py-24 dark:bg-slate-900">
       {item ? (
         <>
           <ImagesModal

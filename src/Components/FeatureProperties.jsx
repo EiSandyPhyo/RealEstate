@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 const FeatureProperties = ({ properties }) => {
   const [heartFill, setHeartFill] = useState(false);
   return (
-    <div className="container-2xl mt-16 lg:mt-24">
+    <div className="container-2xl mt-16 lg:mt-24 dark:bg-slate-900">
       <div className="flex-center-center flex-col pb-8">
         <h1 className="sub-header  dark:text-white">Featured Properties</h1>
         <p className="paragraph">

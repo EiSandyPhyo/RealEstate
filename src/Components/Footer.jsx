@@ -1,6 +1,6 @@
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
-import { Link,NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { BiLocationPlus } from "react-icons/bi";
 import { BsTelephone } from "react-icons/bs";
@@ -48,11 +48,11 @@ const Footer = () => {
           <div className=" hidden lg:inline-block  absolute left-[-20px] top-[-5px] w-full z-10">
             <div className=" flex justify-between items-center relative">
               <FiMail
-                className=" rotate-[-45deg]  text-gray-300 dark:text-slate-700	"
+                className=" rotate-[-45deg]  text-gray-100 dark:text-slate-700	"
                 size={"9rem"}
               />
               <BsPencil
-                className=" top-[-50px]  text-gray-300 dark:text-slate-700	"
+                className=" top-[-50px]  text-gray-100 dark:text-slate-700	"
                 size={"9rem"}
               />
             </div>
@@ -62,10 +62,10 @@ const Footer = () => {
           <div className=" lg:hidden absolute rotate-[25deg] md:rotate-[15deg] top-12 right-0 md:top-7 md:left-0 w-full -z-10">
             <div className=" flex justify-between items-center ">
               <FiMail
-                className=" rotate-[-50deg] text-gray-300 dark:text-slate-700		"
+                className=" rotate-[-50deg] text-gray-100 dark:text-slate-700		"
                 size={"9rem"}
               />
-              <BsPencil size={"9rem"} className=" rotate-[-20deg] text-gray-300 dark:text-slate-700		"/>
+              <BsPencil size={"9rem"} className=" rotate-[-20deg] text-gray-100 dark:text-slate-700		"/>
             </div>
           </div>
         </div>
@@ -88,34 +88,34 @@ const Footer = () => {
           <div className=" basis-4/12 flex flex-col lg:flex-row justify-evenly items-start mb-3">
             <div className=" mb-5">
               <p className=" text-white mb-3 text-md font-semibold">Company</p>
-              <ul className=" text-gray-300">
-              <NavLink to={"/aboutus"}>
+              <ul className=" text-slate-400">
+             < Link to={"/aboutus"}>
                 <li className=" flex justify-start items-center mb-2 hover:text-[#16a34a]">
                   <IoIosArrowForward className="mr-3" />
                   About us
                 </li>
-                </NavLink>
+                </Link>
                 <li className=" flex justify-start items-center mb-2 hover:text-[#16a34a]">
                   <IoIosArrowForward className="mr-3" />
                   Services
                 </li>
-                <NavLink to={"/pricing"}>
+                <Link to={"/pricing"}>
                 <li className=" flex justify-start items-center mb-2 hover:text-[#16a34a]">
                   <IoIosArrowForward className="mr-3" />
                   Pricing{" "}
                 </li>
-                               </NavLink>
+                               </Link>
                 <li className=" flex justify-start items-center mb-2 hover:text-[#16a34a]">
                   <IoIosArrowForward className="mr-3" />
                   Blog
                 </li>
-                <NavLink to={"/"}>
+                <Link to={"/"}>
 
                 <li className=" flex justify-start items-center mb-2 hover:text-[#16a34a]">
                   <IoIosArrowForward className="mr-3" />
                   Login
                 </li>
-                </NavLink>
+                </Link>
                 
               </ul>
             </div>
@@ -132,20 +132,20 @@ const Footer = () => {
                   <IoIosArrowForward className="mr-3" />
                   Privacy Policy
                 </li>
-                <NavLink to={"/list-sidebar"}>
+                <Link to={"/list-sidebar"}>
 
                 <li className=" flex justify-start items-center mb-2 hover:text-[#16a34a]">
                   <IoIosArrowForward className="mr-3" />
                   Listing
                 </li>
-                </NavLink>
-                <NavLink to={"/contact"}>
+                </Link>
+                <Link to={"/contact"}>
 
                 <li className=" flex justify-start items-center mb-2 hover:text-[#16a34a]">
                   <IoIosArrowForward className="mr-3" />
                   Contact
                 </li>
-                </NavLink>
+                </Link>
               </ul>
             </div>
           </div>
