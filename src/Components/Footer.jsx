@@ -48,11 +48,11 @@ const Footer = () => {
           <div className=" hidden lg:inline-block  absolute left-[-20px] top-[-5px] w-full z-10">
             <div className=" flex justify-between items-center relative">
               <FiMail
-                className=" rotate-[-45deg]  text-gray-300 dark:text-slate-700	"
+                className=" rotate-[-45deg]  text-gray-100 dark:text-slate-700	"
                 size={"9rem"}
               />
               <BsPencil
-                className=" top-[-50px]  text-gray-300 dark:text-slate-700	"
+                className=" top-[-50px]  text-gray-100 dark:text-slate-700	"
                 size={"9rem"}
               />
             </div>
@@ -62,10 +62,10 @@ const Footer = () => {
           <div className=" lg:hidden absolute rotate-[25deg] md:rotate-[15deg] top-12 right-0 md:top-7 md:left-0 w-full -z-10">
             <div className=" flex justify-between items-center ">
               <FiMail
-                className=" rotate-[-50deg] text-gray-300 dark:text-slate-700		"
+                className=" rotate-[-50deg] text-gray-100 dark:text-slate-700		"
                 size={"9rem"}
               />
-              <BsPencil size={"9rem"} className=" rotate-[-20deg] text-gray-300 dark:text-slate-700		"/>
+              <BsPencil size={"9rem"} className=" rotate-[-20deg] text-gray-100 dark:text-slate-700		"/>
             </div>
           </div>
         </div>

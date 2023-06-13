@@ -70,36 +70,36 @@ const Navbar = () => {
           </div>
           <div className=" flex justify-end items-center">
             <ul className="hidden md:flex justify-end items-center mr-5 ">
-              <NavLink to={"/home"}>
+              <Link to={"/home"}>
                 <li className=" w-[60px] h-[40px] flex justify-center items-center mx-3 cursor-pointer">
-                  <span className=" fs-[17px] font-medium text-black dark:text-white hover:text-[#16a34a]">
+                  <span className=" fs-[17px] font-medium text-black hover:text-[#16a34a] dark:text-white dark:hover:text-[#16a34a] ">
                     Home
                   </span>
                 </li>
-              </NavLink>
-              <NavLink to={"/buy"}>
+              </Link>
+              <Link to={"/buy"}>
                 <li className=" w-[60px] h-[40px] flex justify-center items-center mx-3 cursor-pointer">
-                  <span className=" fs-[17px] font-medium dark:text-white hover:text-[#16a34a]">
+                  <span className=" fs-[17px] font-medium dark:text-white dark:hover:text-[#16a34a]  hover:text-[#16a34a]">
                     Buy
                   </span>
                 </li>
-              </NavLink>
-              <NavLink to={"/sell"}>
+              </Link>
+              <Link to={""}>
                 <li className=" w-[60px] h-[40px] flex justify-center items-center mx-3 cursor-pointer">
-                  <span className=" fs-[17px] font-medium text-black dark:text-white hover:text-[#16a34a]">
+                  <span className=" fs-[17px] font-medium text-black  dark:text-white dark:hover:text-[#16a34a]  hover:text-[#16a34a]">
                     Sell
                   </span>
                 </li>
-              </NavLink>
+              </Link>
               <li
                 onClick={() => setShowDeskMenu(!showDeskMenu)}
                 className=" w-fit h-[40px] flex justify-center items-center mx-3 cursor-pointer relative myliForDropDown"
               >
-                <span className=" fs-[17px] font-medium text-black dark:text-white hover:text-[#16a34a]">
+                <span className=" fs-[17px] font-medium text-black dark:text-white dark:hover:text-[#16a34a] hover:text-[#16a34a]">
                   Pages
                 </span>
                 <BsChevronDown
-                  className=" ml-2 font-extrabold text-black dark:text-white"
+                  className=" ml-2 font-extrabold text-black dark:text-white  dark:hover:text-[#16a34a] hover:text-[#16a34a]"
                   size={"0.8rem"}
                 />
                 <div
@@ -108,36 +108,36 @@ const Navbar = () => {
                   }  bg-white w-[150px] absolute top-[38px] left-0 shadow-lg p-5 rounded-md dark:bg-[#0F172A] z-50`}
                 >
                   <ul>
-                    <NavLink to={"/list-sidebar"}>
-                      <li className="fs-[17px] font-medium text-black dark:text-white hover:text-[#16a34a] mb-2">
+                    <Link to={"/list-sidebar"}>
+                      <li className="fs-[17px] font-medium text-black dark:text-white dark:hover:text-[#16a34a] hover:text-[#16a34a] mb-2">
                         List Side bar
                       </li>
-                    </NavLink>
-                    <NavLink to={"/features"}>
-                      <li className="fs-[17px] font-medium text-black dark:text-white hover:text-[#16a34a] mb-2">
+                    </Link>
+                    <Link to={"/features"}>
+                      <li className="fs-[17px] font-medium text-black dark:text-white dark:hover:text-[#16a34a] hover:text-[#16a34a] mb-2">
                         Features
                       </li>
-                    </NavLink>
-                    <NavLink to={"/pricing"}>
-                      <li className="fs-[17px] font-medium text-black dark:text-white hover:text-[#16a34a] mb-2">
+                    </Link>
+                    <Link to={"/pricing"}>
+                      <li className="fs-[17px] font-medium text-black dark:text-white dark:hover:text-[#16a34a] hover:text-[#16a34a] mb-2">
                         Pricing
                       </li>
-                    </NavLink>
-                    <NavLink to={"/faqs"}>
-                      <li className="fs-[17px] font-medium text-black dark:text-white hover:text-[#16a34a]">
+                    </Link>
+                    <Link to={"/faqs"}>
+                      <li className="fs-[17px] font-medium text-black dark:text-white dark:hover:text-[#16a34a] hover:text-[#16a34a]">
                         FAQs
                       </li>
-                    </NavLink>
+                    </Link>
                   </ul>
                 </div>
               </li>
               <li className=" w-fit h-[40px] flex justify-center items-center mx-3 cursor-pointer relative myliForDropDown">
-                <span className=" fs-[17px] font-medium text-black dark:text-white hover:text-[#16a34a]">
+                <span className=" fs-[17px] font-medium text-black dark:text-white dark:hover:text-[#16a34a] hover:text-[#16a34a]">
                   About us
                 </span>
               </li>
               <li className=" w-[60px] h-[40px] flex justify-center items-center mx-3 cursor-pointer">
-                <span className=" fs-[17px] font-medium text-black dark:text-white hover:text-[#16a34a]">
+                <span className=" fs-[17px] font-medium text-black dark:text-white dark:hover:text-[#16a34a] hover:text-[#16a34a]">
                   Contact
                 </span>
               </li>
@@ -180,19 +180,19 @@ const Navbar = () => {
                 } bg-white absolute top-[68px] right-0 p-5  rounded-md w-[80%] shadow-xl dark:bg-[#0F172A] `}
               >
                 <ul>
-                  <NavLink to={"/buy"}>
+                  <Link to={"/buy"}>
                     <li className="fs-[17px] font-medium text-black hover:text-[#16a34a] mb-2 dark:text-white">
                       Buy
                     </li>
-                  </NavLink>
+                  </Link>
                   <li className="fs-[17px] font-medium text-black hover:text-[#16a34a] mb-2 dark:text-white">
                     Sell
                   </li>
-                  <NavLink to={""}>
+                  <Link to={""}>
                     <li className="fs-[17px] font-medium text-black hover:text-[#16a34a] mb-2 dark:text-white">
                       About us
                     </li>
-                  </NavLink>
+                  </Link>
                   <div className=" ">
                     <li className="flex justify-between items-center fs-[17px] font-medium text-black hover:text-[#16a34a] mb-2 dark:text-white">
                       Pages
@@ -215,26 +215,26 @@ const Navbar = () => {
                         showMenu ? "block" : "hidden"
                       } bg-white dark:bg-[#0F172A]`}
                     >
-                      <NavLink to={"/list-sidebar"}>
+                      <Link to={"/list-sidebar"}>
                         <li className="ml-5 fs-[17px] font-medium text-black hover:text-[#16a34a] mb-2 dark:text-white">
                           Listing
                         </li>
-                      </NavLink>
-                      <NavLink to={"/features"}>
+                      </Link>
+                      <Link to={"/features"}>
                         <li className=" ml-5 fs-[17px] font-medium text-black hover:text-[#16a34a] mb-2 dark:text-white">
                           Features
                         </li>
-                      </NavLink>
-                      <NavLink to={"/pricing"}>
+                      </Link>
+                      <Link to={"/pricing"}>
                         <li className=" ml-5 fs-[17px] font-medium text-black hover:text-[#16a34a] mb-2 dark:text-white">
                           Pricing
                         </li>
-                      </NavLink>
-                      <NavLink to={"/faqs"}>
+                      </Link>
+                      <Link to={"/faqs"}>
                         <li className=" ml-5 fs-[17px] font-medium text-black hover:text-[#16a34a] mb-2 dark:text-white">
                           FAQs
                         </li>
-                      </NavLink>
+                      </Link>
                     </ul>
                   </div>
                   <Link to={"/contact"}>
