@@ -72,7 +72,7 @@ const App = () => {
 
       <Route path={'/detail/:id'} element={<><Navbar/><Detail properties={properties}/><Footer/></>}/>
 
-      <Route path={'/404'} element={<><Navbar/><Error/><Footer/></>}/>
+      <Route path={'/*'} element={<><Error/></>}/>
 
     </Routes>
     </Suspense>
