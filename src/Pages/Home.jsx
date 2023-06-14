@@ -43,8 +43,8 @@ const Home = ({properties}) => {
     <>
       <div className=" container-fluid dark:bg-slate-900 ">
         {/* Hero Section Start*/}
-        <div className=" container-fluid lg:h-screen pb-30  bg-[#E7F6ED]  dark:bg-slate-900 ">
-          <div className=" container mx-auto flex flex-col lg:flex-row justify-evenly items-center bg-[#E7F6ED] dark:bg-slate-900 h-fit mb-10 pt-32 lg:pt-10">
+        <div className=" container-fluid lg:h-screen pb-30  bg-[#E7F6ED]  dark:bg-[#13252F] ">
+          <div className=" container mx-auto flex flex-col lg:flex-row justify-center items-center h-fit mb-10 pt-32 lg:pt-10bg-[#E7F6ED] dark:bg-[#13252F] ">
             <div className=" basis-5/12 my-10 mx-2 lg:mx-12 ">
               <div className="mx-2 ">
                 <h1 className=" text-4xl font-extrabold text-black dark:text-white leading-loose mb-6	text-center lg:text-left ">
