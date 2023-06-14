@@ -7,7 +7,7 @@ import { BsTelephone } from "react-icons/bs";
 import { CiMail } from "react-icons/ci";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { FiDribbble } from "react-icons/fi";
-import { AiOutlineBehance } from "react-icons/ai";
+import { BsBehance } from "react-icons/bs";
 import { FiLinkedin } from "react-icons/fi";
 import { FiFacebook } from "react-icons/fi";
 import { FiInstagram } from "react-icons/fi";
@@ -19,59 +19,62 @@ import { BsPencil } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className=" container-fluid bg-slate-900 dark:bg-slate-800 px-3 lg:px-10 mt-24">
-      <div className=" container mx-auto relative">
-        {/* Subscribe Section Start*/}
-
-        <div className="container mx-auto absolute top-[-120px] left-0 my-10 overflow-hidden bg-white dark:drop-shadow-[0_10px_10px_rgba(2555,255,255,0.25)] drop-shadow-[0_30px_30px_rgba(0,0,0,0.25)] rounded-xl dark:bg-slate-900">
-          <div className="flex flex-col lg:flex-row gap-3 p-10 justify-between items-center relative z-30 shadow-lg ">
-            <div>
-              <h1 className="text-black text-center lg:text-left text-2xl md:text-3xl font-semibold mb-3 dark:text-white">
-                Subscribe to Newsletter!
-              </h1>
-              <p className=" text-center lg:text-left text-slate-400 mb-3">
-                Subscribe to get latest updates and information.
-              </p>
-            </div>
-            <div className="flex gap-3 border-2 pl-3 border-slate-200 dark:border-slate-50 rounded-full lg:w-[500px] overflow-hidden">
-              <input
-                type="text"
-                placeholder="Enter your email:"
-                className="  px-3 py-2 w-full focus:border-none focus:outline-none text-black dark:bg-slate-900 dark:text-white"
-              />
-              <button className=" p-2 w-[150px] fs-[17px] leading-[24px] text-white bg-[#16a34a] hover:bg-[#138a3f] border rounded-full">
-                Subscribe
-              </button>
-            </div>
+    <div className=" container-fluid bg-slate-900 dark:bg-slate-800 relative">
+      {/* Subscribe Section Start*/}
+      <div className="container-fluid w-[90%] lg:w-[55%]  absolute -top-20 left-[50%] translate-x-[-50%] mb-10 overflow-hidden bg-white dark:shadow-gray-700 drop-shadow-[0_30px_30px_rgba(0,0,0,0.25)] rounded-xl dark:bg-slate-900 ">
+        <div className="container-2xl flex flex-col lg:flex-row gap-3 md:p-10 justify-between items-center relative  shadow-lg ">
+          <div className="basis-1/2 z-20 ">
+            <h1 className="text-black text-center lg:text-left text-2xl md:text-3xl font-semibold mb-3 dark:text-white">
+              Subscribe to Newsletter!
+            </h1>
+            <p className=" text-center lg:text-left text-slate-400 mb-3">
+              Subscribe to get latest updates and information.
+            </p>
           </div>
-          {/*for desktop view */}
-          <div className=" hidden lg:inline-block  absolute left-[-20px] top-[-5px] w-full z-10">
-            <div className=" flex justify-between items-center relative">
-              <FiMail
-                className=" rotate-[-45deg]  text-gray-100 dark:text-slate-700	"
-                size={"9rem"}
-              />
-              <BsPencil
-                className=" top-[-50px]  text-gray-100 dark:text-slate-700	"
-                size={"9rem"}
-              />
-            </div>
-          </div>
-
-          {/*for mobile view*/}
-          <div className=" lg:hidden absolute rotate-[25deg] md:rotate-[15deg] top-12 right-0 md:top-7 md:left-0 w-full -z-10">
-            <div className=" flex justify-between items-center ">
-              <FiMail
-                className=" rotate-[-50deg] text-gray-100 dark:text-slate-700		"
-                size={"9rem"}
-              />
-              <BsPencil size={"9rem"} className=" rotate-[-20deg] text-gray-100 dark:text-slate-700		"/>
-            </div>
+          <div className="basis-1/2 flex gap-3 border-2 pl-3 border-slate-200 dark:border-slate-50 rounded-full lg:w-[500px] overflow-hidden z-20">
+            <input
+              type="text"
+              placeholder="Enter your email:"
+              className="  px-3 py-2 w-full focus:border-none focus:outline-none text-black dark:bg-slate-900 dark:text-white"
+            />
+            <button className=" p-2 w-[150px] fs-[17px] leading-[24px] text-white bg-[#16a34a] hover:bg-[#138a3f] border rounded-full">
+              Subscribe
+            </button>
           </div>
         </div>
-        {/* Subscribe Section End*/}
-        {/* Footer Section Start*/}
-        <div className=" flex flex-col lg:flex-row justify-between pb-9 pt-52 px-3 lg:pt-36 mb-3">
+        {/*for desktop view */}
+        <div className=" hidden lg:inline-block  absolute left-[-20px] top-[-10px] w-full z-10 overflow-hidden">
+          <div className=" flex justify-between items-center relative">
+            <FiMail
+              className=" rotate-[-45deg]  text-gray-100 dark:text-slate-700	"
+              size={"9rem"}
+            />
+            <BsPencil
+              className=" top-[-50px]  text-gray-100 dark:text-slate-700	"
+              size={"9rem"}
+            />
+          </div>
+        </div>
+
+        {/*for mobile view*/}
+        <div className=" lg:hidden absolute rotate-[12deg] md:rotate-[25deg] top-4 right-0 md:top-7 md:left-0 w-full px-5 -z-10 overflow-hidden">
+          <div className=" flex justify-between items-center ">
+            <FiMail
+              className=" rotate-[-50deg] text-gray-100 dark:text-slate-700		"
+              size={"5rem"}
+            />
+            <BsPencil
+              size={"5rem"}
+              className=" rotate-[-20deg] text-gray-100 dark:text-slate-700		"
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* Subscribe Section End*/}
+      {/* Footer Section Start*/}
+      <div className=" container-2xl mx-auto px-44 relative">
+        <div className=" flex flex-col lg:flex-row justify-between pb-9 pt-52 px-3 mb-3 lg:px-2 ">
           <div className=" basis-4/12 mb-5">
             <div className=" mb-4">
               <img
@@ -88,35 +91,31 @@ const Footer = () => {
           <div className=" basis-4/12 flex flex-col lg:flex-row justify-evenly items-start mb-3">
             <div className=" mb-5">
               <p className=" text-white mb-3 text-md font-semibold">Company</p>
-              <ul className=" text-slate-400">
-             < Link to={"/aboutus"}>
-                <li className=" flex justify-start items-center mb-2 hover:text-[#16a34a]">
-                  <IoIosArrowForward className="mr-3" />
-                  About us
-                </li>
+              <ul className=" text-slate-300">
+                <Link to={"/aboutus"}>
+                  <li className=" flex justify-start items-center mb-2 hover:text-slate-400">
+                    <IoIosArrowForward className="mr-3" />
+                    About us
+                  </li>
                 </Link>
-                <li className=" flex justify-start items-center mb-2 hover:text-[#16a34a]">
-                  <IoIosArrowForward className="mr-3" />
-                  Services
-                </li>
+                <Link to={"/features"}>
+                  <li className=" flex justify-start items-center mb-2 hover:text-slate-400">
+                    <IoIosArrowForward className="mr-3" />
+                    Services
+                  </li>
+                </Link>
                 <Link to={"/pricing"}>
-                <li className=" flex justify-start items-center mb-2 hover:text-[#16a34a]">
-                  <IoIosArrowForward className="mr-3" />
-                  Pricing{" "}
-                </li>
-                               </Link>
-                <li className=" flex justify-start items-center mb-2 hover:text-[#16a34a]">
-                  <IoIosArrowForward className="mr-3" />
-                  Blog
-                </li>
-                <Link to={"/"}>
-
-                <li className=" flex justify-start items-center mb-2 hover:text-[#16a34a]">
-                  <IoIosArrowForward className="mr-3" />
-                  Login
-                </li>
+                  <li className=" flex justify-start items-center mb-2 hover:text-slate-400">
+                    <IoIosArrowForward className="mr-3" />
+                    Pricing{" "}
+                  </li>
                 </Link>
-                
+                <Link to={"/"}>
+                  <li className=" flex justify-start items-center mb-2 hover:text-slate-400">
+                    <IoIosArrowForward className="mr-3" />
+                    Login
+                  </li>
+                </Link>
               </ul>
             </div>
             <div className=" mb-3">
@@ -124,27 +123,17 @@ const Footer = () => {
                 Useful Links
               </p>
               <ul className=" text-gray-300">
-                <li className=" flex justify-start items-center mb-2 hover:text-[#16a34a]">
-                  <IoIosArrowForward className="mr-3" />
-                  Terms of Services
-                </li>
-                <li className=" flex justify-start items-center mb-2 hover:text-[#16a34a]">
-                  <IoIosArrowForward className="mr-3" />
-                  Privacy Policy
-                </li>
                 <Link to={"/list-sidebar"}>
-
-                <li className=" flex justify-start items-center mb-2 hover:text-[#16a34a]">
-                  <IoIosArrowForward className="mr-3" />
-                  Listing
-                </li>
+                  <li className=" flex justify-start items-center mb-2 hover:text-slate-400">
+                    <IoIosArrowForward className="mr-3" />
+                    Listing
+                  </li>
                 </Link>
                 <Link to={"/contact"}>
-
-                <li className=" flex justify-start items-center mb-2 hover:text-[#16a34a]">
-                  <IoIosArrowForward className="mr-3" />
-                  Contact
-                </li>
+                  <li className=" flex justify-start items-center mb-2 hover:text-slate-400">
+                    <IoIosArrowForward className="mr-3" />
+                    Contact
+                  </li>
                 </Link>
               </ul>
             </div>
@@ -171,76 +160,77 @@ const Footer = () => {
               </div>
               <div className=" mb-3 flex justify-start item-center">
                 <BsTelephone className="text-[#16a34a]" size={"1.5rem"} />
-                <p className=" text-gray-300 mb-3 ml-5"> contact@gmail.com</p>
+                <p className=" text-gray-300 hover:text-slate-400 mb-3 ml-5">
+                  {" "}
+                  contact@gmail.com
+                </p>
               </div>
               <div className=" mb-3 flex justify-start item-center">
                 <CiMail className="text-[#16a34a]" size={"1.5rem"} />
-                <p className=" text-gray-300 mb-3 ml-5">+152-532-468-854</p>
+                <p className=" text-gray-300 hover:text-slate-400 mb-3 ml-5">
+                  +152-532-468-854
+                </p>
               </div>
             </div>
           </div>
         </div>
+
+        {/* Footer Section End*/}
+      </div>
+      <div className="container-2xl">
         <div className="border-t border-gray-800 dark:border-gray-700">
           <div className=" flex flex-col lg:flex-row justify-between items-center py-5 gap-3 ">
-          <span className=" text-gray-300 flex justify-start items-start">
-            <AiOutlineCopyright className=" lg:mr-2" />
-            <span>
-            2023 Hously. Design & Develop with 
-
+            <span className=" text-gray-300 flex justify-start items-start">
+              <AiOutlineCopyright className=" lg:mr-2" />
+              <span>2023 Hously. Design & Develop with</span>
+              <AiTwotoneHeart className="lg:mx-2" color="red" />
+              <span>by Team-F.</span>
             </span>
-            <AiTwotoneHeart className="lg:mx-2" color="red" />
-            <span>
+            <div className=" ">
+              <Link to={""}>
+                <button className=" w-10 h-10 p-2 fs-[17px] leading-[24px] text-slate-400 hover:text-white border-0 hover:bg-[#138a3f] rounded-lg myFooterBtn">
+                  <AiOutlineShoppingCart size={"1rem"} />
+                </button>
+              </Link>
 
-            by Team-F.
-            </span>
-          </span>
-          <div className=" basis-4/12">
-            <Link to={""}>
-              <button className=" w-10 h-10 p-2 fs-[17px] leading-[24px] text-slate-400 hover:text-white border-0 hover:bg-[#138a3f] rounded-lg myFooterBtn">
-                <AiOutlineShoppingCart size={"1.5rem"} />
-              </button>
-            </Link>
-
-            <Link to={""}>
-              <button className=" w-10 h-10 p-2 fs-[17px] leading-[24px] text-slate-400 hover:text-white border-0 hover:bg-[#138a3f] rounded-lg myFooterBtn">
-                <FiDribbble size={"1.5rem"} />
-              </button>
-            </Link>
-            <Link to={""}>
-              <button className=" w-10 h-10 p-2 fs-[17px] leading-[24px] text-slate-400 hover:text-white border-0 hover:bg-[#138a3f] rounded-lg myFooterBtn">
-                <AiOutlineBehance size={"1.5rem"} />
-              </button>
-            </Link>
-            <Link to={""}>
-              <button className=" w-10 h-10 p-2 fs-[17px] leading-[24px] text-slate-400 hover:text-white border-0 hover:bg-[#138a3f] rounded-lg myFooterBtn">
-                <FiLinkedin size={"1.5rem"} />
-              </button>
-            </Link>
-            <Link to={""}>
-              <button className=" w-10 h-10 p-2 fs-[17px] leading-[24px] text-slate-400 hover:text-white border-0 hover:bg-[#138a3f] rounded-lg myFooterBtn">
-                <FiFacebook size={"1.5rem"} />
-              </button>
-            </Link>
-            <Link to={""}>
-              <button className=" w-10 h-10 p-2 fs-[17px] leading-[24px] text-slate-400 hover:text-white border-0 hover:bg-[#138a3f] rounded-lg myFooterBtn">
-                <FiInstagram size={"1.5rem"} />
-              </button>
-            </Link>
-            <Link to={""}>
-              <button className=" w-10 h-10 p-2 fs-[17px] leading-[24px] text-slate-400 hover:text-white border-0 hover:bg-[#138a3f] rounded-lg myFooterBtn">
-                <FiTwitter size={"1.5rem"} />
-              </button>
-            </Link>
-            <Link to={""}>
-              <button className=" w-10 h-10 p-2 fs-[17px] leading-[24px] text-slate-400 hover:text-white border-0 hover:bg-[#138a3f] rounded-lg myFooterBtn">
-                <FiMail size={"1.5rem"} />
-              </button>
-            </Link>
+              <Link to={""}>
+                <button className=" w-10 h-10 p-2 fs-[17px] leading-[24px] text-slate-400 hover:text-white border-0 hover:bg-[#138a3f] rounded-lg myFooterBtn">
+                  <FiDribbble size={"1rem"} />
+                </button>
+              </Link>
+              <Link to={""}>
+                <button className=" w-10 h-10 p-2 fs-[17px] leading-[24px] text-slate-400 hover:text-white border-0 hover:bg-[#138a3f] rounded-lg myFooterBtn">
+                  <BsBehance size={"1rem"} />
+                </button>
+              </Link>
+              <Link to={""}>
+                <button className=" w-10 h-10 p-2 fs-[17px] leading-[24px] text-slate-400 hover:text-white border-0 hover:bg-[#138a3f] rounded-lg myFooterBtn">
+                  <FiLinkedin size={"1rem"} />
+                </button>
+              </Link>
+              <Link to={""}>
+                <button className=" w-10 h-10 p-2 fs-[17px] leading-[24px] text-slate-400 hover:text-white border-0 hover:bg-[#138a3f] rounded-lg myFooterBtn">
+                  <FiFacebook size={"1rem"} />
+                </button>
+              </Link>
+              <Link to={""}>
+                <button className=" w-10 h-10 p-2 fs-[17px] leading-[24px] text-slate-400 hover:text-white border-0 hover:bg-[#138a3f] rounded-lg myFooterBtn">
+                  <FiInstagram size={"1rem"} />
+                </button>
+              </Link>
+              <Link to={""}>
+                <button className=" w-10 h-10 p-2 fs-[17px] leading-[24px] text-slate-400 hover:text-white border-0 hover:bg-[#138a3f] rounded-lg myFooterBtn">
+                  <FiTwitter size={"1rem"} />
+                </button>
+              </Link>
+              <Link to={""}>
+                <button className=" w-10 h-10 p-2 fs-[17px] leading-[24px] text-slate-400 hover:text-white border-0 hover:bg-[#138a3f] rounded-lg myFooterBtn">
+                  <FiMail size={"1rem"} />
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
-        </div>
-        
-        {/* Footer Section End*/}
       </div>
     </div>
   );
