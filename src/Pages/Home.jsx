@@ -63,7 +63,7 @@ const Home = ({properties}) => {
               </div>
               
               <div className="mx-2">
-                <div className="w-[70%] bg-white dark:bg-slate-900 dark:text-white text-black  rounded-t-xl px-6 py-4 h-fit flex justify-start items-center lg:w-fit">
+                <div className="w-[100%] bg-white dark:bg-slate-900 dark:text-white text-black  rounded-t-xl px-6 py-4 h-fit flex justify-start items-center lg:w-fit">
                   <button
                     onClick={BuyHandler}
                     className={` w-[80px] h-[40px] fs-[17px] leading-[24px] rounded-lg ${
@@ -95,8 +95,8 @@ const Home = ({properties}) => {
                     Rent
                   </button>
                 </div>
-                <div className="w-[100%] lg:w-[100%] bg-white dark:bg-slate h-fit rounded-b-xl rounded-tr-xl px-6 py-4">
-                  <div className="flex border-2 border-slate-200  dark:border-slate-600 rounded-full w-full lg:w-[400px] h-[45px] justify-between items-center">
+                <div className="w-[100%] lg:w-[100%] bg-white dark:bg-slate-900 h-fit rounded-b-xl rounded-tr-xl px-6 py-4">
+                  <div className="flex border-2 border-slate-200  dark:border-slate-600 rounded-full w-full lg:w-[400px] h-[45px] justify-between items-center dark-bg-slate-900">
                     <BsSearch
                       className=" lg:w-[40px] lg:h-[40px] lg:ml-3 p-1 font-extrabold text-black dark:text-white"
                       size={"1.7rem"}

@@ -125,19 +125,19 @@ const Faqs = () => {
                 </div>
               </div>
               <div id="general-questions" className="mt-8 ">
-                <h5 className="text-2xl font-semibold">General Questions</h5>
+                <h5 className="text-2xl font-semibold dark:text-white">General Questions</h5>
                 <div className="mt-6">
                   <FaqComponent />
                 </div>
               </div>
               <div id="payment-questions" className="mt-8 ">
-                <h5 className="text-2xl font-semibold">Payments Questions</h5>
+                <h5 className="text-2xl font-semibold dark:text-white">Payments Questions</h5>
                 <div className="mt-6">
                   <FaqComponent />
                 </div>
               </div>
               <div id="support-questions" className="mt-8 ">
-                <h5 className="text-2xl font-semibold">Support Questions</h5>
+                <h5 className="text-2xl font-semibold dark:text-white">Support Questions</h5>
                 <div className="mt-6">
                   <FaqComponent />
                 </div>
