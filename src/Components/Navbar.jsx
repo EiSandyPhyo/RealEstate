@@ -268,21 +268,25 @@ const Navbar = () => {
         </div>
 
         {/* dark mode Section Start*/}
-        <div className=" flex flex-col w-[40px] h-[95px] rounded-full overflow-hidden fixed top-[40%] left-3 lg:left-6 z-50 ">
-          <div className="relative flex flex-col justify-center items-center bg-slate-900 dark:bg-white rounded-full">
-            <p className="  p-2 border-0 text-yellow-500 ">
-              <BsMoon size={"2rem"} />
-            </p>
-            <p className=" p-2 border-0 text-yellow-500">
-              <BsFillSunFill size={"2rem"} />
-            </p>
-            <button
+        <div className=" w-14 h-8 overflow-hidden fixed top-[40%] left-1 z-50  flex flex-col justify-center items-center bg-slate-900 dark:bg-white rounded-2xl rotate-90">
+          <div className="w-14 h-7 flex justify-center items-center	relative">
+          <button
               onClick={changeMood}
               className={` ${
                 showAni == true ? "myDarkBtnMoveUp" : "myDarkBtnMoveDown"
-              } absolute top-0 left-0 w-10 h-10 rounded-full z-50 dark:bg-slate-900 bg-white`}
+              } absolute top-0 left-0 w-7 h-7 rounded-full z-50 dark:bg-slate-900 bg-white `}
             ></button>
-          </div>
+            
+            <p className="w-7 h-7 p-1 border-0 text-yellow-500 ">
+              <BsMoon size={"1.3rem"} />
+            </p>
+            <p className=" w-7 h-7 p-1 border-0 text-yellow-500">
+              <BsFillSunFill size={"1.3rem"} />
+            </p>
+            
+            
+                      </div>
+
         </div>
         {/* dark mode Section End*/}
 
@@ -290,7 +294,7 @@ const Navbar = () => {
 
         <div>
           <a href="#mystart" className="duration-[1500ms]	">
-            <button className=" fixed right-3 lg:right-6 bottom-[15%] w-10 h-10 p-2 fs-[17px] leading-[24px] border-0 text-white bg-[#16a34a] hover:bg-[#138a3f] rounded-full z-50">
+            <button className=" fixed right-3 bottom-[5%] w-10 h-10 p-2 fs-[17px] leading-[24px] border-0 text-white bg-[#16a34a] hover:bg-[#138a3f] rounded-full z-50">
               <BiUpArrowAlt size={"1.5rem"} />
             </button>
           </a>
