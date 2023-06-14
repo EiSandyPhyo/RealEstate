@@ -19,11 +19,11 @@ import { BsPencil } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className=" container-fluid bg-slate-900 dark:bg-slate-800 px-3 lg:px-10 mt-24">
+    <div className=" container-fluid bg-slate-900 dark:bg-slate-800 px-3 lg:px-80 mt-24">
       <div className=" container mx-auto relative">
         {/* Subscribe Section Start*/}
 
-        <div className="container mx-auto absolute top-[-120px] left-0 my-10 overflow-hidden bg-white dark:drop-shadow-[0_10px_10px_rgba(2555,255,255,0.25)] drop-shadow-[0_30px_30px_rgba(0,0,0,0.25)] rounded-xl dark:bg-slate-900">
+        <div className="container mx-auto absolute top-[-120px] left-0 my-10 overflow-hidden bg-white dark:drop-shadow-[0_10px_10px_rgba(2555,255,255,0.25)] drop-shadow-[0_30px_30px_rgba(0,0,0,0.25)] rounded-xl dark:bg-slate-900 ">
           <div className="flex flex-col lg:flex-row gap-3 p-10 justify-between items-center relative z-30 shadow-lg ">
             <div>
               <h1 className="text-black text-center lg:text-left text-2xl md:text-3xl font-semibold mb-3 dark:text-white">
@@ -71,7 +71,7 @@ const Footer = () => {
         </div>
         {/* Subscribe Section End*/}
         {/* Footer Section Start*/}
-        <div className=" flex flex-col lg:flex-row justify-between pb-9 pt-52 px-3 lg:pt-36 mb-3">
+        <div className=" flex flex-col lg:flex-row justify-between pb-9 pt-52 px-3 lg:pt-36 mb-3 lg:px-2">
           <div className=" basis-4/12 mb-5">
             <div className=" mb-4">
               <img
