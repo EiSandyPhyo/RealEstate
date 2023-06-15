@@ -22,7 +22,7 @@ const Footer = () => {
     <div className=" container-fluid bg-[#0F172A] dark:[#1E293B] relative">
       {/* Subscribe Section Start*/}
       <div className="container-fluid w-[90%] lg:w-[55%] p-4 absolute -top-20 left-[50%] translate-x-[-50%] mb-10 overflow-hidden bg-white dark:drop-shadow-[0_10px_10px_rgba(2555,255,255,0.25)] drop-shadow-[0_30px_30px_rgba(0,0,0,0.25)] rounded-xl dark:bg-slate-900 ">
-        <div className="container-2xl flex flex-col lg:flex-row gap-3 md:p-10 justify-between items-center relative  shadow-lg ">
+        <div className="container-2xl flex flex-col lg:flex-row gap-3 md:p-10 justify-between items-center relative ">
           <div className="basis-1/2 z-20 ">
             <h1 className="text-black text-center lg:text-left text-2xl md:text-3xl font-semibold mb-3 dark:text-white">
               Subscribe to Newsletter!
