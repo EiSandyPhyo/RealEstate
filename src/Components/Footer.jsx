@@ -18,6 +18,9 @@ import { AiTwotoneHeart } from "react-icons/ai";
 import { BsPencil } from "react-icons/bs";
 
 const Footer = () => {
+  const scrollYHandler=()=>{
+    window.scroll(0,0);
+  }
   return (
     <div className=" container-fluid bg-[#0F172A] dark:[#1E293B] relative">
       {/* Subscribe Section Start*/}
@@ -43,7 +46,7 @@ const Footer = () => {
           </div>
         </div>
         {/*for desktop view */}
-        <div className=" hidden lg:inline-block  absolute left-[-20px] top-[-10px] w-full z-10 overflow-hidden">
+        <div className=" hidden lg:inline-block  absolute left-[-5px] top-[22px] w-full z-10 overflow-hidden">
           <div className=" flex justify-between items-center relative">
             <FiMail
               className=" rotate-[-45deg]  text-gray-100 dark:text-slate-700	"
@@ -57,7 +60,7 @@ const Footer = () => {
         </div>
 
         {/*for mobile view*/}
-        <div className=" lg:hidden absolute rotate-[12deg] md:rotate-[25deg] top-4 right-0 md:top-7 md:left-0 w-full px-5 -z-10 overflow-hidden">
+        <div className=" lg:hidden absolute rotate-[20deg] md:rotate-[25deg] top-14 left-0 md:top-7 md:left-0 w-full px-5 -z-10 overflow-hidden">
           <div className=" flex justify-between items-center ">
             <FiMail
               className=" rotate-[-50deg] text-gray-100 dark:text-slate-700		"
@@ -93,25 +96,25 @@ const Footer = () => {
               <p className=" text-white mb-3 text-md font-semibold">Company</p>
               <ul className=" text-slate-300">
                 <Link to={"/aboutus"}>
-                  <li className=" flex justify-start items-center mb-2 hover:text-slate-400">
+                  <li onClick={scrollYHandler} className=" flex justify-start items-center mb-2 hover:text-slate-400">
                     <IoIosArrowForward className="mr-3" />
                     About us
                   </li>
                 </Link>
                 <Link to={"/features"}>
-                  <li className=" flex justify-start items-center mb-2 hover:text-slate-400">
+                  <li onClick={scrollYHandler} className=" flex justify-start items-center mb-2 hover:text-slate-400">
                     <IoIosArrowForward className="mr-3" />
                     Services
                   </li>
                 </Link>
                 <Link to={"/pricing"}>
-                  <li className=" flex justify-start items-center mb-2 hover:text-slate-400">
+                  <li onClick={scrollYHandler} className=" flex justify-start items-center mb-2 hover:text-slate-400">
                     <IoIosArrowForward className="mr-3" />
                     Pricing{" "}
                   </li>
                 </Link>
                 <Link to={"/"}>
-                  <li className=" flex justify-start items-center mb-2 hover:text-slate-400">
+                  <li onClick={scrollYHandler} className=" flex justify-start items-center mb-2 hover:text-slate-400">
                     <IoIosArrowForward className="mr-3" />
                     Login
                   </li>
@@ -124,13 +127,13 @@ const Footer = () => {
               </p>
               <ul className=" text-gray-300">
                 <Link to={"/list-sidebar"}>
-                  <li className=" flex justify-start items-center mb-2 hover:text-slate-400">
+                  <li onClick={scrollYHandler} className=" flex justify-start items-center mb-2 hover:text-slate-400">
                     <IoIosArrowForward className="mr-3" />
                     Listing
                   </li>
                 </Link>
                 <Link to={"/contact"}>
-                  <li className=" flex justify-start items-center mb-2 hover:text-slate-400">
+                  <li onClick={scrollYHandler} className=" flex justify-start items-center mb-2 hover:text-slate-400">
                     <IoIosArrowForward className="mr-3" />
                     Contact
                   </li>
