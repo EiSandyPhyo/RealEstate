@@ -15,6 +15,8 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import './index.css'
 import Sell from './Pages/Sell';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
 const Buy = lazy(() => import('./Pages/Buy'));
 
 const App = () => {
@@ -64,7 +66,8 @@ const App = () => {
         <Route path="/pricing" element={<><Navbar/><Pricing /><Footer/></>} />
         <Route path="/features" element={<><Navbar/><Features /><Footer/></>} />
         <Route path="/faqs" element={<><Navbar/><Faqs /><Footer/></>} />
-        {/* <Route path="/about" element={<><Navbar/><About /><Footer/></>} /> */}
+        <Route path="/aboutus" element={<><Navbar/><About /><Footer/></>} />
+        <Route path="/contact" element={<><Navbar/><Contact /><Footer/></>} />
 
         <Route path={'/buy'} element={<><Navbar/><Buy properties={properties}/><Footer/></>}/>
         <Route path={'/sell'} element={<><Navbar/><Sell properties={properties}/><Footer/></>}/>

@@ -142,16 +142,20 @@ const Navbar = () => {
                   </ul>
                 </div>
               </li>
+              <Link to={"/aboutus"}>
               <li className=" w-fit h-[40px] flex justify-center items-center mx-3 cursor-pointer relative myliForDropDown">
                 <span className=" fs-[17px] font-medium text-black dark:text-white dark:hover:text-[#16a34a] hover:text-[#16a34a]">
                   About us
                 </span>
               </li>
+              </Link>
+              <Link to={"/contact"}>
               <li className=" w-[60px] h-[40px] flex justify-center items-center mx-3 cursor-pointer">
                 <span className=" fs-[17px] font-medium text-black dark:text-white dark:hover:text-[#16a34a] hover:text-[#16a34a]">
                   Contact
                 </span>
               </li>
+              </Link>
             </ul>
           </div>
           {/* Login Icon Section Start*/}
@@ -196,10 +200,12 @@ const Navbar = () => {
                       Buy
                     </li>
                   </Link>
+                  <Link to={'/sell'}>
                   <li className="fs-[17px] font-medium text-black hover:text-[#16a34a] mb-2 dark:text-white">
                     Sell
                   </li>
-                  <Link to={""}>
+                  </Link>
+                  <Link to={"/aboutus"}>
                     <li className="fs-[17px] font-medium text-black hover:text-[#16a34a] mb-2 dark:text-white">
                       About us
                     </li>
@@ -248,7 +254,7 @@ const Navbar = () => {
                       </Link>
                     </ul>
                   </div>
-                  <Link to={""}>
+                  <Link to={"/contact"}>
                     <li className="fs-[17px] font-medium text-black hover:text-[#16a34a] dark:text-white">
                       Contact
                     </li>

@@ -10,6 +10,8 @@ const Sell = () => {
   };
 
   const decimalValue = (value * 0.01).toFixed(2);
+  
+  window.scrollTo(0, 0);
 
   return (
     <section className=" pb-16 md:pb-24 dark:bg-slate-900">

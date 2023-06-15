@@ -192,7 +192,7 @@ const Home = ({properties}) => {
                   transparency and control into the hands of the consumers.
                   Hously is Real Estate Redefined.
                 </p>
-                <button className=" p-3 fs-[17px] leading-[24px] text-white bg-[#16a34a] hover:bg-[#138a3f] border-0 rounded-lg mb-3">
+                <button className="btn flex-center-center gap-2 px-7 py-2 mt-6">
                   Learn More
                 </button>
               </div>

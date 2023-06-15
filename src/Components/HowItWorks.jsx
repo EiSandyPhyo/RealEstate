@@ -18,7 +18,7 @@ const HowItWorks = () => {
         </p>
       </div>
       <div className="grid-layout-3 mt-8">
-        {workItems.map((item) => {
+        {workItems?.map((item) => {
           const IconComponent = item.icon;
           return (
             <div className="lg:px-8" key={item.id}>
