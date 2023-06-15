@@ -98,13 +98,13 @@ const Home = ({properties}) => {
                 <div className="w-[100%] lg:w-[100%] bg-white dark:bg-slate-900 h-fit rounded-b-xl rounded-tr-xl px-6 py-4">
                   <div className="flex border-2 border-slate-200  dark:border-slate-600 rounded-full w-full  h-[45px] justify-between items-center dark-bg-slate-900">
                     <BiSearchAlt
-                      className=" lg:w-[40px] lg:h-[40px] lg:ml-3 p-1 font-extrabold text-black dark:text-slate-600"
-                      size={"1rem"}
+                      className=" ms-2 lg:ml-3 p-1 font-extrabold text-black dark:text-slate-600"
+                      size={30}
                     />
                     <input
                       placeholder="City, Address, Zip:"
                       type="text"
-                      className=" px-3 py-2 dark:bg-slate-900 outline-none lg:mx-4 w-[60%]"
+                      className=" py-2 dark:bg-slate-900 outline-none w-[60%] xxs:ms-2"
                     />
                     <button className=" p-2 w-[90px] fs-[17px] leading-[24px] text-white bg-[#16a34a] hover:bg-[#138a3f] border rounded-full border-none cursor-pointer">
                       Find Out{" "}
@@ -192,9 +192,9 @@ const Home = ({properties}) => {
                   transparency and control into the hands of the consumers.
                   Hously is Real Estate Redefined.
                 </p>
-                <button className=" p-3 fs-[17px] leading-[24px] text-white bg-[#16a34a] hover:bg-[#138a3f] border-0 rounded-lg mb-3">
-                  Learn More
-                </button>
+                <button className="btn flex-center-center gap-2 px-7 py-2 mt-6">
+                Learn More
+              </button>
               </div>
             </div>
           </div>

@@ -6,7 +6,7 @@ import { BsChevronUp } from "react-icons/bs";
 import { BsFillSunFill } from "react-icons/bs";
 import { BsMoon } from "react-icons/bs";
 import { AiOutlineClose } from "react-icons/ai";
-import {BiUpArrowAlt} from "react-icons/bi"
+import { BiUpArrowAlt } from "react-icons/bi";
 
 import { Link, NavLink } from "react-router-dom";
 import Cookies from "js-cookie";
@@ -52,19 +52,17 @@ const Navbar = () => {
   };
 
   const changeDark = () => {
-    setTheme( "dark");
+    setTheme("dark");
     const Theme = JSON.parse(Cookies.get("theme"));
-    console.log('changedark',Theme);
+    console.log("changedark", Theme);
     changeAni();
-
   };
 
   const changeLight = () => {
-    setTheme("light" );
+    setTheme("light");
     const Theme = JSON.parse(Cookies.get("theme"));
-    console.log('changelight',Theme)
+    console.log("changelight", Theme);
     changeAni();
-
   };
 
   /*** 90Yoffset -> change bg color ***/
@@ -87,7 +85,9 @@ const Navbar = () => {
               : "container-fluid w-full myGlassBg dark:bg-[#0F262E] fixed top-0  h-[70px] z-50"
           }`}
         >
-          <div className={`container-2xl lg:mx-auto lg:px-48  py-4 flex justify-between items-center `}>
+          <div
+            className={`container-2xl lg:mx-auto lg:px-48  py-4 flex justify-between items-center `}
+          >
             <div className=" ml-4">
               <Link to={"/home"}>
                 <img
@@ -103,79 +103,83 @@ const Navbar = () => {
                 ></img>
               </Link>
             </div>
-              <ul className="hidden md:flex justify-end items-center mr-5 ">
-                <Link to={"/home"}>
-                  <li className=" w-[60px] h-[40px] flex justify-center items-center cursor-pointer">
-                    <span className=" fs-[17px] font-medium text-black hover:text-[#16a34a] dark:text-white dark:hover:text-[#16a34a] ">
-                      Home
-                    </span>
-                  </li>
-                </Link>
-                <Link to={"/buy"}>
-                  <li className=" w-[60px] h-[40px] flex justify-center items-center mx-3 cursor-pointer">
-                    <span className=" fs-[17px] font-medium dark:text-white dark:hover:text-[#16a34a]  hover:text-[#16a34a]">
-                      Buy
-                    </span>
-                  </li>
-                </Link>
-                <Link to={"/sell"}>
-                  <li className=" w-[60px] h-[40px] flex justify-center items-center mx-3 cursor-pointer">
-                    <span className=" fs-[17px] font-medium text-black  dark:text-white dark:hover:text-[#16a34a]  hover:text-[#16a34a]">
-                      Sell
-                    </span>
-                  </li>
-                </Link>
-                <li
-                  onClick={() => setShowDeskMenu(!showDeskMenu)}
-                  className=" w-fit h-[40px] flex justify-center items-center mx-3 cursor-pointer relative myliForDropDown"
-                >
-                  <span className=" fs-[17px] font-medium text-black dark:text-white dark:hover:text-[#16a34a] hover:text-[#16a34a]">
-                    Pages
+            <ul className="hidden md:flex justify-end items-center mr-5 ">
+              <Link to={"/home"}>
+                <li className=" w-[60px] h-[40px] flex justify-center items-center cursor-pointer">
+                  <span className=" fs-[17px] font-medium text-black hover:text-[#16a34a] dark:text-white dark:hover:text-[#16a34a] ">
+                    Home
                   </span>
-                  <BsChevronDown
-                    className=" ml-2 font-extrabold text-black dark:text-white  dark:hover:text-[#16a34a] hover:text-[#16a34a]"
-                    size={"0.8rem"}
-                  />
-                  <div
-                    className={` ${
-                      showDeskMenu ? "" : "hidden"
-                    }  bg-white w-[150px] absolute top-[38px] left-0 shadow-lg p-5 rounded-md dark:bg-[#0F172A] z-50`}
-                  >
-                    <ul>
-                      <Link to={"/list-sidebar"}>
-                        <li className="fs-[17px] font-medium text-black dark:text-white dark:hover:text-[#16a34a] hover:text-[#16a34a] mb-2">
-                          List Side bar
-                        </li>
-                      </Link>
-                      <Link to={"/features"}>
-                        <li className="fs-[17px] font-medium text-black dark:text-white dark:hover:text-[#16a34a] hover:text-[#16a34a] mb-2">
-                          Features
-                        </li>
-                      </Link>
-                      <Link to={"/pricing"}>
-                        <li className="fs-[17px] font-medium text-black dark:text-white dark:hover:text-[#16a34a] hover:text-[#16a34a] mb-2">
-                          Pricing
-                        </li>
-                      </Link>
-                      <Link to={"/faqs"}>
-                        <li className="fs-[17px] font-medium text-black dark:text-white dark:hover:text-[#16a34a] hover:text-[#16a34a]">
-                          FAQs
-                        </li>
-                      </Link>
-                    </ul>
-                  </div>
                 </li>
+              </Link>
+              <Link to={"/buy"}>
+                <li className=" w-[60px] h-[40px] flex justify-center items-center mx-3 cursor-pointer">
+                  <span className=" fs-[17px] font-medium dark:text-white dark:hover:text-[#16a34a]  hover:text-[#16a34a]">
+                    Buy
+                  </span>
+                </li>
+              </Link>
+              <Link to={"/sell"}>
+                <li className=" w-[60px] h-[40px] flex justify-center items-center mx-3 cursor-pointer">
+                  <span className=" fs-[17px] font-medium text-black  dark:text-white dark:hover:text-[#16a34a]  hover:text-[#16a34a]">
+                    Sell
+                  </span>
+                </li>
+              </Link>
+              <li
+                onClick={() => setShowDeskMenu(!showDeskMenu)}
+                className=" w-fit h-[40px] flex justify-center items-center mx-3 cursor-pointer relative myliForDropDown"
+              >
+                <span className=" fs-[17px] font-medium text-black dark:text-white dark:hover:text-[#16a34a] hover:text-[#16a34a]">
+                  Pages
+                </span>
+                <BsChevronDown
+                  className=" ml-2 font-extrabold text-black dark:text-white  dark:hover:text-[#16a34a] hover:text-[#16a34a]"
+                  size={"0.8rem"}
+                />
+                <div
+                  className={` ${
+                    showDeskMenu ? "" : "hidden"
+                  }  bg-white w-[150px] absolute top-[38px] left-0 shadow-lg p-5 rounded-md dark:bg-[#0F172A] z-50`}
+                >
+                  <ul>
+                    <Link to={"/list-sidebar"}>
+                      <li className="fs-[17px] font-medium text-black dark:text-white dark:hover:text-[#16a34a] hover:text-[#16a34a] mb-2">
+                        List Side bar
+                      </li>
+                    </Link>
+                    <Link to={"/features"}>
+                      <li className="fs-[17px] font-medium text-black dark:text-white dark:hover:text-[#16a34a] hover:text-[#16a34a] mb-2">
+                        Features
+                      </li>
+                    </Link>
+                    <Link to={"/pricing"}>
+                      <li className="fs-[17px] font-medium text-black dark:text-white dark:hover:text-[#16a34a] hover:text-[#16a34a] mb-2">
+                        Pricing
+                      </li>
+                    </Link>
+                    <Link to={"/faqs"}>
+                      <li className="fs-[17px] font-medium text-black dark:text-white dark:hover:text-[#16a34a] hover:text-[#16a34a]">
+                        FAQs
+                      </li>
+                    </Link>
+                  </ul>
+                </div>
+              </li>
+              <Link to={"/aboutus"}>
                 <li className=" w-fit h-[40px] flex justify-center items-center mx-3 cursor-pointer relative myliForDropDown">
                   <span className=" fs-[17px] font-medium text-black dark:text-white dark:hover:text-[#16a34a] hover:text-[#16a34a]">
                     About us
                   </span>
                 </li>
+              </Link>
+              <Link to={"/contact"}>
                 <li className=" w-[60px] h-[40px] flex justify-center items-center mx-3 cursor-pointer">
                   <span className=" fs-[17px] font-medium text-black dark:text-white dark:hover:text-[#16a34a] hover:text-[#16a34a]">
                     Contact
                   </span>
                 </li>
-              </ul>
+              </Link>
+            </ul>
             {/* Login Icon Section Start*/}
 
             <div className=" flex justify-end items-start">
@@ -218,10 +222,12 @@ const Navbar = () => {
                         Buy
                       </li>
                     </Link>
-                    <li className="fs-[17px] font-medium text-black hover:text-[#16a34a] mb-2 dark:text-white">
-                      Sell
-                    </li>
-                    <Link to={""}>
+                    <Link to={"/sell"}>
+                      <li className="fs-[17px] font-medium text-black hover:text-[#16a34a] mb-2 dark:text-white">
+                        Sell
+                      </li>
+                    </Link>
+                    <Link to={"/aboutus"}>
                       <li className="fs-[17px] font-medium text-black hover:text-[#16a34a] mb-2 dark:text-white">
                         About us
                       </li>
@@ -270,7 +276,7 @@ const Navbar = () => {
                         </Link>
                       </ul>
                     </div>
-                    <Link to={""}>
+                    <Link to={"/contact"}>
                       <li className="fs-[17px] font-medium text-black hover:text-[#16a34a] dark:text-white">
                         Contact
                       </li>
@@ -286,23 +292,26 @@ const Navbar = () => {
         {/* dark mode Section Start*/}
         <div className=" w-14 h-8 overflow-hidden fixed top-[40%] left-0 z-50  flex flex-col justify-center items-center bg-slate-900 dark:bg-white rounded-2xl rotate-90">
           <div className="w-14 h-7 flex justify-center items-center	relative">
-          <button
+            <button
               onClick={changeMood}
               className={` ${
                 showAni == true ? "myDarkBtnMoveUp" : "myDarkBtnMoveDown"
               } absolute top-0 left-0 w-7 h-7 rounded-full z-50 dark:bg-slate-900 bg-white `}
             ></button>
-            
-            <p onClick={changeDark} className="w-7 h-7 p-1 border-0 text-yellow-500 ">
+
+            <p
+              onClick={changeDark}
+              className="w-7 h-7 p-1 border-0 text-yellow-500 "
+            >
               <BsMoon size={"1.3rem"} />
             </p>
-            <p onClick={changeLight} className=" w-7 h-7 p-1 border-0 text-yellow-500">
+            <p
+              onClick={changeLight}
+              className=" w-7 h-7 p-1 border-0 text-yellow-500"
+            >
               <BsFillSunFill size={"1.3rem"} />
             </p>
-            
-            
-                      </div>
-
+          </div>
         </div>
         {/* dark mode Section End*/}
 

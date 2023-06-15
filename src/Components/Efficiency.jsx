@@ -23,7 +23,7 @@ const Efficiency = () => {
       <div className=" basis-7/12">
         <div className=" lg:w-[600px]">
 
-        <h1 className=" text-2xl md:text-3xl mb-3">
+        <h1 className=" text-2xl md:text-3xl mb-3 font-semibold">
           Efficiency. Transparency. <br />
           Control.
         </h1>
@@ -33,7 +33,7 @@ const Efficiency = () => {
           own. The platform drives efficiency, cost transparency and control
           into the hands of the consumers. Hously is Real Estate Redefined.
         </p>
-        <button className=" mb-3 p-2 fs-[17px] leading-[24px] text-white bg-[#16a34a] hover:bg-[#138a3f] border-0 rounded-lg">
+        <button className="btn flex-center-center gap-2 px-7 py-2 mt-6">
           Learn More
         </button>
         </div>
