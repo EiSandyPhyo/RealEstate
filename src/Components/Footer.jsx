@@ -19,9 +19,9 @@ import { BsPencil } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className=" container-fluid bg-slate-900 dark:bg-slate-800 relative">
+    <div className=" container-fluid bg-[#0F172A] dark:[#1E293B] relative">
       {/* Subscribe Section Start*/}
-      <div className="container-fluid w-[90%] lg:w-[55%]  absolute -top-20 left-[50%] translate-x-[-50%] mb-10 overflow-hidden bg-white dark:shadow-gray-700 drop-shadow-[0_30px_30px_rgba(0,0,0,0.25)] rounded-xl dark:bg-slate-900 ">
+      <div className="container-fluid w-[90%] lg:w-[55%] p-4 absolute -top-20 left-[50%] translate-x-[-50%] mb-10 overflow-hidden bg-white dark:drop-shadow-[0_10px_10px_rgba(2555,255,255,0.25)] drop-shadow-[0_30px_30px_rgba(0,0,0,0.25)] rounded-xl dark:bg-slate-900 ">
         <div className="container-2xl flex flex-col lg:flex-row gap-3 md:p-10 justify-between items-center relative  shadow-lg ">
           <div className="basis-1/2 z-20 ">
             <h1 className="text-black text-center lg:text-left text-2xl md:text-3xl font-semibold mb-3 dark:text-white">
@@ -74,7 +74,7 @@ const Footer = () => {
       {/* Subscribe Section End*/}
       {/* Footer Section Start*/}
       <div className=" container-2xl mx-auto px-44 relative">
-        <div className=" flex flex-col lg:flex-row justify-between pb-9 pt-52 px-3 mb-3 lg:px-2 ">
+        <div className=" flex flex-col lg:flex-row justify-between pb-3   pt-40 px-3 mb-3 lg:px-2 ">
           <div className=" basis-4/12 mb-5">
             <div className=" mb-4">
               <img
@@ -177,9 +177,9 @@ const Footer = () => {
 
         {/* Footer Section End*/}
       </div>
-      <div className="container-2xl">
+      <div className="container-fluid">
         <div className="border-t border-gray-800 dark:border-gray-700">
-          <div className=" flex flex-col lg:flex-row justify-between items-center py-5 gap-3 ">
+          <div className="container-2xl flex flex-col lg:flex-row justify-between items-center py-5 gap-3 ">
             <span className=" text-gray-300 flex justify-start items-start">
               <AiOutlineCopyright className=" lg:mr-2" />
               <span>2023 Hously. Design & Develop with</span>

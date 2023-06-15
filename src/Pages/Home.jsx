@@ -63,7 +63,7 @@ const Home = ({properties}) => {
               </div>
               
               <div className="px-2">
-                <div className="w-[100%] bg-white dark:bg-slate-900 dark:text-white text-black  rounded-t-xl px-6 py-4 h-fit flex justify-start items-center lg:w-fit">
+                <div className="w-[100%] bg-white dark:bg-slate-900 dark:text-white text-black  rounded-t-xl px-6 py-4 h-fit flex justify-center lg:justify-start items-center lg:w-fit">
                   <button
                     onClick={BuyHandler}
                     className={` w-[80px] h-[40px] fs-[17px] leading-[24px] rounded-lg ${

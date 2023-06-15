@@ -51,6 +51,22 @@ const Navbar = () => {
     changeAni();
   };
 
+  const changeDark = () => {
+    setTheme( "dark");
+    const Theme = JSON.parse(Cookies.get("theme"));
+    console.log('changedark',Theme);
+    changeAni();
+
+  };
+
+  const changeLight = () => {
+    setTheme("light" );
+    const Theme = JSON.parse(Cookies.get("theme"));
+    console.log('changelight',Theme)
+    changeAni();
+
+  };
+
   /*** 90Yoffset -> change bg color ***/
   const [color, setColor] = useState(false);
   const colorHandler = () => {
@@ -63,7 +79,7 @@ const Navbar = () => {
   window.addEventListener("scroll", colorHandler);
   return (
     <div>
-      <div className=" h-fit" id="mystart">
+      <div className="container-fluid h-fit" id="mystart">
         <div
           className={` ${
             color
@@ -268,7 +284,7 @@ const Navbar = () => {
         </div>
 
         {/* dark mode Section Start*/}
-        <div className=" w-14 h-8 overflow-hidden fixed top-[40%] left-1 z-50  flex flex-col justify-center items-center bg-slate-900 dark:bg-white rounded-2xl rotate-90">
+        <div className=" w-14 h-8 overflow-hidden fixed top-[40%] left-0 z-50  flex flex-col justify-center items-center bg-slate-900 dark:bg-white rounded-2xl rotate-90">
           <div className="w-14 h-7 flex justify-center items-center	relative">
           <button
               onClick={changeMood}
@@ -277,10 +293,10 @@ const Navbar = () => {
               } absolute top-0 left-0 w-7 h-7 rounded-full z-50 dark:bg-slate-900 bg-white `}
             ></button>
             
-            <p className="w-7 h-7 p-1 border-0 text-yellow-500 ">
+            <p onClick={changeDark} className="w-7 h-7 p-1 border-0 text-yellow-500 ">
               <BsMoon size={"1.3rem"} />
             </p>
-            <p className=" w-7 h-7 p-1 border-0 text-yellow-500">
+            <p onClick={changeLight} className=" w-7 h-7 p-1 border-0 text-yellow-500">
               <BsFillSunFill size={"1.3rem"} />
             </p>
             
