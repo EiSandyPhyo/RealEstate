@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-import { BsSearch } from "react-icons/bs";
+import { BiSearchAlt } from "react-icons/bi";
 import { BsPlayFill } from "react-icons/bs";
 import { BsTelephone } from "react-icons/bs";
 import { AiOutlineClose } from "react-icons/ai";
@@ -44,9 +44,9 @@ const Home = ({properties}) => {
       <div className=" container-fluid dark:bg-slate-900 ">
         {/* Hero Section Start*/}
         <div className=" container-fluid lg:h-screen pb-30  bg-[#E7F6ED]  dark:bg-[#13252F] ">
-          <div className=" container mx-auto flex flex-col lg:flex-row justify-center items-center h-fit mb-10 pt-32 lg:pt-10bg-[#E7F6ED] dark:bg-[#13252F] lg:px-28">
-            <div className=" basis-5/12 my-10 mx-2 lg:mx-12 ">
-              <div className="mx-2 ">
+          <div className=" container-2xl mx-auto flex flex-col lg:flex-row justify-between items-center h-fit md:h-screen mb-10 pt-32 lg:pt-10 bg-[#E7F6ED] dark:bg-[#13252F] ">
+            <div className=" basis-5/12 my-10 ">
+              <div className="px-2 ">
                 <h1 className=" text-4xl font-extrabold text-black dark:text-white leading-loose mb-6	text-center lg:text-left ">
                   Find Your
                   <span className=" text-[#16a34a]">
@@ -62,8 +62,8 @@ const Home = ({properties}) => {
                 </p>
               </div>
               
-              <div className="mx-2">
-                <div className="w-[100%] bg-white dark:bg-slate-900 dark:text-white text-black  rounded-t-xl px-6 py-4 h-fit flex justify-start items-center lg:w-fit">
+              <div className="px-2">
+                <div className="w-[100%] bg-white dark:bg-slate-900 dark:text-white text-black  rounded-t-xl px-6 py-4 h-fit flex justify-center lg:justify-start items-center lg:w-fit">
                   <button
                     onClick={BuyHandler}
                     className={` w-[80px] h-[40px] fs-[17px] leading-[24px] rounded-lg ${
@@ -97,16 +97,16 @@ const Home = ({properties}) => {
                 </div>
                 <div className="w-[100%] lg:w-[100%] bg-white dark:bg-slate-900 h-fit rounded-b-xl rounded-tr-xl px-6 py-4">
                   <div className="flex border-2 border-slate-200  dark:border-slate-600 rounded-full w-full  h-[45px] justify-between items-center dark-bg-slate-900">
-                    <BsSearch
-                      className=" lg:w-[40px] lg:h-[40px] lg:ml-3 p-1 font-extrabold text-black dark:text-white"
-                      size={"1.7rem"}
+                    <BiSearchAlt
+                      className=" lg:w-[40px] lg:h-[40px] lg:ml-3 p-1 font-extrabold text-black dark:text-slate-600"
+                      size={"1rem"}
                     />
                     <input
                       placeholder="City, Address, Zip:"
                       type="text"
                       className=" px-3 py-2 dark:bg-slate-900 outline-none lg:mx-4 w-[60%]"
                     />
-                    <button className=" p-2 w-[90px] fs-[17px] leading-[24px] text-white bg-[#16a34a] hover:bg-[#138a3f] border rounded-full cursor-pointer">
+                    <button className=" p-2 w-[90px] fs-[17px] leading-[24px] text-white bg-[#16a34a] hover:bg-[#138a3f] border rounded-full border-none cursor-pointer">
                       Find Out{" "}
                     </button>
                   </div>
@@ -114,12 +114,12 @@ const Home = ({properties}) => {
               </div>
                   
             </div>
-            <div className="  basis-5/12 my-10">
+            <div className="  basis-5/12 my-10 mx-2 lg:mx-3">
               <div className=" relative w-fit z-0">
                 <img
                   src="https://hously-react.vercel.app/static/media/1.bfd273967d5b93df7a02.jpg"
                   alt=""
-                  className=" border-[15px] rounded-t-full border-white dark:border-black lg:w-[500px] h-[600px] object-cover object-center "
+                  className=" border-[15px] rounded-t-full border-white dark:border-black lg:w-[500px]  h-[600px] object-cover object-center  " /* md:h-[600px] h-[440px] */
                 />
                 <div className=" absolute z-10 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex justify-center item-end w-[70px] h-[70px] border-none rounded-full changeLight bg-white dark:bg-black">
                   <button onClick={() => setShowHomeIframe(true)} className="">
@@ -161,8 +161,8 @@ const Home = ({properties}) => {
 
         {/* Efficiency Section Start*/}
         <div className="container-fluid h-fit">
-          <div className="container  mx-auto relative flex flex-col lg:flex-row justify-evenly items-center py-10 lg:my-20 dark:bg-slate-900  lg:px-52">
-            <div className=" basis-5/12 relative mb-5 mx-5 ">
+          <div className="container-2xl  mx-auto relative flex flex-col lg:flex-row justify-between items-center py-10 lg:my-20 dark:bg-slate-900  lg:px-62">
+            <div className=" basis-5/12 relative mb-5">
               <div className=" relative ">
                 <img
                   className=" rounded-xl w-full h-[400px] lg:h-[550px]"
@@ -179,8 +179,8 @@ const Home = ({properties}) => {
                 </div>
               </div>
             </div>
-            <div className=" basis-5/12 mb-5 w-[90%] my-10 lg:mx-5 ">
-              <div className=" lg:w-[600px]">
+            <div className=" basis-6/12 mb-5 my-10 px-4">
+              <div className="">
                 <h1 className=" text-2xl md:text-3xl mb-3 text-black dark:text-white font-medium">
                   Efficiency. Transparency. <br />
                   Control.

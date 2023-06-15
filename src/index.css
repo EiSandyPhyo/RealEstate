@@ -96,10 +96,10 @@ html{
 
 @keyframes myDarkBtnMoveUp {
   from {
-    transform: translateY(52px);
+    transform: translateX(20px);
   }
   to {
-    transform: translateY(2px);
+    transform: translateX(0px);
   }
 }
 .myDarkBtnMoveDown {
@@ -112,10 +112,10 @@ html{
 
 @keyframes myDarkBtnMoveDown {
   from {
-    transform: translateY(2px);
+    transform: translateX(0px);
   }
   to {
-    transform: translateY(52px);
+    transform: translateX(26px);
   }
 }
 
