@@ -92,7 +92,6 @@ const Contact = () => {
                   className=" w-32 h-32 text-[#f3faf6] mx-auto dark:text-slate-900 fill-[#f3faf6] dark:fill-[#0F1e2c]"
                 />
                 <div className="absolute center-h-v ">
-                  {/* <IconComponent className=" text-4xl text-green-600" /> */}
                   <Icon icon={item.icon} className=" text-4xl text-green-600" />
                 </div>
               </div>
