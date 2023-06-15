@@ -18,6 +18,7 @@ const Navbar = () => {
   const [showAni, setShowAni] = useState();
   const [showMenu, setShowMenu] = useState(false);
   const [closeMenu, setCloseMenu] = useState(false);
+  const [uparrow,setUparrow]=useState();
 
   const [theme, setTheme] = useState("light");
   const dispatch = useDispatch();
@@ -67,6 +68,8 @@ const Navbar = () => {
 
   };
 
+
+
   /*** 90Yoffset -> change bg color ***/
   const [color, setColor] = useState(false);
   const colorHandler = () => {
@@ -74,6 +77,11 @@ const Navbar = () => {
       setColor(true);
     } else {
       setColor(false);
+    }
+    if(window.scrollY>1020){
+      setUparrow(true);
+    }else{
+      setUparrow(false);
     }
   };
   window.addEventListener("scroll", colorHandler);
@@ -308,7 +316,7 @@ const Navbar = () => {
 
         {/* Up-arrow Section Start*/}
 
-        <div>
+        <div className={`${uparrow? "block": "hidden"}`}>
           <a href="#mystart" className="duration-[1500ms]	">
             <button className=" fixed right-3 bottom-[5%] w-10 h-10 p-2 fs-[17px] leading-[24px] border-0 text-white bg-[#16a34a] hover:bg-[#138a3f] rounded-full z-50">
               <BiUpArrowAlt size={"1.5rem"} />
