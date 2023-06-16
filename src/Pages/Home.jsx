@@ -99,7 +99,7 @@ const Home = ({properties}) => {
                 <div className="w-[100%] lg:w-[100%] bg-white dark:bg-slate-900 h-fit rounded-b-xl rounded-tr-xl px-6 py-4">
                   <div className="flex border-2 border-slate-200  dark:border-slate-600 rounded-full w-full  h-[45px] justify-between items-center dark-bg-slate-900">
                     <BiSearchAlt
-                      className=" ms-2 lg:ml-3 p-1 font-extrabold text-black dark:text-slate-600"
+                      className=" ms-2 lg:ml-3 p-1 font-extrabold text-slate-300 dark:text-slate-600"
                       size={30}
                     />
                     <input

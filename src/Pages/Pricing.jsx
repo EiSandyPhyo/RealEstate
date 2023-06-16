@@ -5,6 +5,10 @@ import { FaRocket } from "react-icons/fa";
 import PricingComponent from "../Components/PricingComponent";
 import { Link } from "react-router-dom";
 
+const scrollYHandler=()=>{
+  window.scroll(0,0);
+}
+
 const Pricing = () => {
   return (
     <div className=" mt-[70px] dark:bg-slate-900">
@@ -107,7 +111,7 @@ const Pricing = () => {
                   <i>
                     <BsTelephone className=" font-semibold align-middle mt-[2px] " />
                   </i>
-                  <Link to={"/contact"}>
+                  <Link to={"/contact"} onClick={scrollYHandler}>
                   <span className="font-semibold">Contact us</span>
                   </Link>
                 </span>

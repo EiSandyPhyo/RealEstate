@@ -46,6 +46,10 @@ const Faqs = () => {
       })
     );
   };
+
+  const scrollYHandler=()=>{
+    window.scroll(0,0);
+  }
     
   return (
     <div className=' dark:bg-slate-900 mt-[70px]'>
@@ -163,7 +167,7 @@ const Faqs = () => {
                   <i>
                     <BsTelephone className=" font-semibold align-middle mt-[2px] " />
                   </i>
-                  <Link to={"/contact"}>
+                  <Link to={"/contact"} onClick={scrollYHandler}>
                   <span className="font-semibold">Contact us</span>
                   </Link>
                 </span>

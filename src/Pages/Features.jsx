@@ -4,6 +4,9 @@ import FeatureGrids from "../Components/FeatureGrids";
 import FeatureSlider from "../Components/FeatureSlider";
 import { Link } from "react-router-dom";
 
+const scrollYHandler=()=>{
+  window.scroll(0,0);
+}
 
 const Features = () => {
   return (
@@ -52,7 +55,7 @@ const Features = () => {
                   <i>
                     <BsTelephone className=" font-semibold align-middle mt-[2px] " />
                   </i>
-                  <Link to={"/contact"}>
+                  <Link to={"/contact"} onClick={scrollYHandler}>
                   <span className="font-semibold">Contact us</span>
                   </Link>
                 </span>
