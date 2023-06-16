@@ -172,6 +172,12 @@ html{
 .paragraph-2{
     @apply xs:text-[16px] md:text-lg text-slate-400 px-1 sm:px-0
 }
+.paragraph-3{
+  @apply xs:text-[16px] md:text-lg
+}
+.paragraph-4{
+  @apply xs:text-[16px] md:text-lg max-w-xl text-center text-green-600 px-1 sm:px-0 font-medium
+}
 
   /* bg-color n bg-img */
   .hero-img {
@@ -196,12 +202,12 @@ html{
   }
 
 /* bg-color n bg-img */
-.hero-img{
+/* .hero-img{
     @apply bg-buy-img bg-no-repeat bg-center bg-cover w-full h-[378px] relative
 }
 .bg-dark-opacity{
     @apply absolute bg-[#161C2D] opacity-80 inset-0;
-}
+} */
 
   /* icon */
   .icon-color {
@@ -214,7 +220,7 @@ html{
   }
 
 /* btn */
-.btn{
+/* .btn{
     @apply bg-green-600 hover:bg-green-700 rounded-md text-white text-sm md:text-lg font-medium;
 }
 .btn-2{
@@ -226,7 +232,7 @@ html{
 }
 .active{
     @apply bg-green-600 rounded text-white
-}
+} */
 
 
 
@@ -256,16 +262,16 @@ html{
 
 
 /* icon */
-.icon-color{
+/* .icon-color{
     @apply text-green-500 text-2xl;
-}
+} */
 
 
 
 /* hover */
-.card-hover{
+/* .card-hover{
     @apply hover:shadow-xl duration-500 ease-in-out;
-}
+} */
 
 
 
@@ -275,6 +281,9 @@ html{
 }
 .form-box-2{
     @apply w-full py-2 px-3 text-sm md:text-lg border border-gray-200 bg-white rounded overflow-hidden;
+}
+.form-box-3{
+  @apply w-full py-2 px-3 text-sm md:text-lg mt-2
 }
 
 

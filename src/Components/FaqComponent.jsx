@@ -47,17 +47,17 @@ const FaqComponent = () => {
       {faqLists?.map((faqList) => {
         return (
           <div
-            className=" relative shadow rounded-md overflow-hidden mt-4 "
+            className=" relative shadow rounded-md overflow-hidden mt-4 dark:shadow-gray-700"
             key={faqList.id}
           >
             <h2 className="text-base font-medium">
               <button
                 type="button"
                 onClick={() => openAnswer(faqList.id)}
-                className=" flex justify-between items-center p-5 w-full font-medium text-left bg-gray-50 dark:bg-slate-900  dark:drop-shadow-[1px_1px_0_rgba(2555,255,255,0.2)]"
+                className=" flex justify-between items-center p-5 w-full font-medium text-left bg-gray-50 dark:bg-slate-800  dark:drop-shadow-[1px_1px_0_rgba(2555,255,255,0.2)]"
               >
                 <span
-                  className={` ${faqList.showAns ? "text-green-600" : "text-black"} dark:text-white` }
+                  className={` ${faqList.showAns ? "text-green-600 dark:text-green-600" : "text-black dark:text-white"}` }
                 >
                   {faqList.que}
                 </span>

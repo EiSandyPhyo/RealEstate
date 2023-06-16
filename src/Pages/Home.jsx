@@ -9,6 +9,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import FeatureSlider from "../Components/FeatureSlider";
 import HowItWorks from "../Components/HowItWorks";
 import FeatureProperties from "../Components/FeatureProperties";
+import GetInTouch from "../Components/GetInTouch";
 
 const Home = ({properties}) => {
   const [showBuyBtnColor, setShowBuyBtnColor] = useState(true);
@@ -44,8 +45,8 @@ const Home = ({properties}) => {
       <div className=" container-fluid dark:bg-slate-900 ">
         {/* Hero Section Start*/}
         <div className=" container-fluid lg:h-screen pb-30  bg-[#E7F6ED]  dark:bg-[#13252F] ">
-          <div className=" container-2xl mx-auto flex flex-col lg:flex-row justify-between items-center h-screen mb-10 pt-32 lg:pt-10 bg-[#E7F6ED] dark:bg-[#13252F] lg:px-40">
-            <div className=" basis-5/12 my-10 mx-2 lg:mx-12 ">
+          <div className=" container-2xl mx-auto flex flex-col lg:flex-row justify-between items-center h-fit md:h-screen mb-10 pt-32 lg:pt-10 bg-[#E7F6ED] dark:bg-[#13252F] ">
+            <div className=" basis-5/12 my-10 ">
               <div className="px-2 ">
                 <h1 className=" text-4xl font-extrabold text-black dark:text-white leading-loose mb-6	text-center lg:text-left ">
                   Find Your
@@ -98,13 +99,13 @@ const Home = ({properties}) => {
                 <div className="w-[100%] lg:w-[100%] bg-white dark:bg-slate-900 h-fit rounded-b-xl rounded-tr-xl px-6 py-4">
                   <div className="flex border-2 border-slate-200  dark:border-slate-600 rounded-full w-full  h-[45px] justify-between items-center dark-bg-slate-900">
                     <BiSearchAlt
-                      className=" lg:w-[40px] lg:h-[40px] lg:ml-3 p-1 font-extrabold text-black dark:text-slate-600"
-                      size={"1rem"}
+                      className=" ms-2 lg:ml-3 p-1 font-extrabold text-slate-300 dark:text-slate-600"
+                      size={30}
                     />
                     <input
                       placeholder="City, Address, Zip:"
                       type="text"
-                      className=" px-3 py-2 dark:bg-slate-900 outline-none lg:mx-4 w-[60%]"
+                      className=" py-2 dark:bg-slate-900 outline-none w-[60%] xxs:ms-2"
                     />
                     <button className=" p-2 w-[90px] fs-[17px] leading-[24px] text-white bg-[#16a34a] hover:bg-[#138a3f] border rounded-full border-none cursor-pointer">
                       Find Out{" "}
@@ -119,7 +120,7 @@ const Home = ({properties}) => {
                 <img
                   src="https://hously-react.vercel.app/static/media/1.bfd273967d5b93df7a02.jpg"
                   alt=""
-                  className=" border-[15px] rounded-t-full border-white dark:border-black lg:w-[500px] h-[600px] object-cover object-center "
+                  className=" border-[15px] rounded-t-full border-white dark:border-black lg:w-[500px]  h-[600px] object-cover object-center  " /* md:h-[600px] h-[440px] */
                 />
                 <div className=" absolute z-10 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex justify-center item-end w-[70px] h-[70px] border-none rounded-full changeLight bg-white dark:bg-black">
                   <button onClick={() => setShowHomeIframe(true)} className="">
@@ -192,9 +193,9 @@ const Home = ({properties}) => {
                   transparency and control into the hands of the consumers.
                   Hously is Real Estate Redefined.
                 </p>
-                <button className=" p-3 fs-[17px] leading-[24px] text-white bg-[#16a34a] hover:bg-[#138a3f] border-0 rounded-lg mb-3">
-                  Learn More
-                </button>
+                <button className="btn flex-center-center gap-2 px-7 py-2 mt-6">
+                Learn More
+              </button>
               </div>
             </div>
           </div>
@@ -253,29 +254,8 @@ const Home = ({properties}) => {
         {/* Our clients Section End*/}
 
         {/* Questions Section Start*/}
-        <div className="container pt-16 pb-32  mx-auto">
-          <div className="flex flex-col text-center">
-            <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-medium text-black dark:text-white">
-              Have Question ? Get in touch!
-            </h3>
-            <p className="text-slate-400 max-w-xl mx-auto">
-              A great plateform to buy, sell and rent your properties without
-              any agent or commisions.
-            </p>
-            <div className="mt-6 mx-auto">
-              <button
-                className="p-3 fs-[17px] leading-[24px] text-white bg-[#16a34a] hover:bg-[#138a3f] border-0 rounded-lg mb-3"
-                href="/contact"
-              >
-                <span className="flex gap-2">
-                  <i>
-                    <BsTelephone className=" font-semibold align-middle mt-1" />
-                  </i>
-                  <span className="font-semibold">Contact us</span>
-                </span>
-              </button>
-            </div>
-          </div>
+        <div className=" pb-16 md:pb-24">
+          <GetInTouch/>
         </div>
         {/* Questions Section End*/}
       </div>

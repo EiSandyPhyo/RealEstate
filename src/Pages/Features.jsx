@@ -2,7 +2,11 @@ import React from "react";
 import { BsTelephone } from "react-icons/bs";
 import FeatureGrids from "../Components/FeatureGrids";
 import FeatureSlider from "../Components/FeatureSlider";
+import { Link } from "react-router-dom";
 
+const scrollYHandler=()=>{
+  window.scroll(0,0);
+}
 
 const Features = () => {
   return (
@@ -35,7 +39,7 @@ const Features = () => {
         </div>
         <div className="container lg:mt-24 mt-16 mx-auto px-4">
           <div className="grid grid-cols-1 text-center">
-            <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-medium text-black dark:text-white">
+            <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-medium text-black ">
               Have Question ? Get in touch!
             </h3>
             <p className="text-slate-400 max-w-xl mx-auto">
@@ -51,7 +55,9 @@ const Features = () => {
                   <i>
                     <BsTelephone className=" font-semibold align-middle mt-[2px] " />
                   </i>
+                  <Link to={"/contact"} onClick={scrollYHandler}>
                   <span className="font-semibold">Contact us</span>
+                  </Link>
                 </span>
               </button>
             </div>

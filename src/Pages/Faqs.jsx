@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { BsTelephone } from "react-icons/bs";
 import FaqComponent from "../Components/FaqComponent";
+import { Link } from "react-router-dom";
 
 
 const Faqs = () => {
@@ -45,6 +46,10 @@ const Faqs = () => {
       })
     );
   };
+
+  const scrollYHandler=()=>{
+    window.scroll(0,0);
+  }
     
   return (
     <div className=' dark:bg-slate-900 mt-[70px]'>
@@ -59,13 +64,12 @@ const Faqs = () => {
         </div>
       </div>
       <div className="relative lg:py-24 pt-16 pb-32 lg:pb-44 dark:bg-slate-900 mt-10">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-2 lg:px-20">
           <div className="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
             <div className="lg:col-span-4 md:col-span-5">
               <div className="rounded-md shadow  p-6 sticky top-20  dark:text-white dark:shadow-gray-700">
                 <ul
                   className="list-unstyled sidebar-nav mb-0 py-0"
-                  
                 >
                   {links?.map((link)=>{
                     return(
@@ -147,7 +151,7 @@ const Faqs = () => {
         </div>
         <div className="container lg:mt-24 mt-16 mx-auto px-4">
           <div className="grid grid-cols-1 text-center">
-            <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-medium text-black dark:text-white">
+            <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-medium text-black ">
               Have Question ? Get in touch!
             </h3>
             <p className="text-slate-400 max-w-xl mx-auto">
@@ -163,7 +167,9 @@ const Faqs = () => {
                   <i>
                     <BsTelephone className=" font-semibold align-middle mt-[2px] " />
                   </i>
+                  <Link to={"/contact"} onClick={scrollYHandler}>
                   <span className="font-semibold">Contact us</span>
+                  </Link>
                 </span>
               </button>
             </div>

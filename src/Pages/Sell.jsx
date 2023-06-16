@@ -10,6 +10,8 @@ const Sell = () => {
   };
 
   const decimalValue = (value * 0.01).toFixed(2);
+  
+  // window.scrollTo(0, 0);
 
   return (
     <section className=" pb-16 md:pb-24 dark:bg-slate-900">
@@ -51,8 +53,8 @@ const Sell = () => {
             agent or commissions.
           </p>
         </div>
-        <div className="flex-center-center flex-col pb-8">
-          <div className="lg:w-3/5 md:w-4/5">
+        <div className="md:flex-center-center  pb-8">
+          <div className="lg:w-3/5 md:w-4/5 mx-auto">
             <div className="p-6 shadow dark:shadow-gray-700 rounded-md">
               <div className="flex-between-center font-2 dark:text-white">
                 <h2 className="">Min $ 10000</h2>
@@ -68,18 +70,18 @@ const Sell = () => {
                   className="w-full h-2 bg-gray-100 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"
                 />
               </div>
-              <div className="flex-between-center font dark:text-white">
-                <div className="flex flex-col">
-                  <h2 className="">Total Value ($)</h2>
-                  <div className=" ms-6 font-2">
-                    <span className="text-green-600">$</span>
-                    <p className="inline-block text-green-600">{value}</p>
+              <div className="md:flex justify-between items-center text-center mt-4 font dark:text-white">
+                <div className="flex flex-col ">
+                  <h2 className="font">Total Value ($)</h2>
+                  <div className=" md:ms-6 font-2">
+                    <span className="text-green-600">$ </span>
+                    <p className="inline-block text-green-600 ">{value}</p>
                   </div>
                 </div>
                 <div className="flex flex-col">
                   <h2 className="">Brokerage Fee ($)</h2>
-                  <div className=" ms-6 font-2">
-                    <span className="text-green-600">$</span>
+                  <div className=" md:ms-6 font-2">
+                    <span className="text-green-600">$ </span>
                     <p className="inline-block text-green-600">
                       {decimalValue}
                     </p>

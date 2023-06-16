@@ -85,6 +85,14 @@ const Navbar = () => {
     }
   };
   window.addEventListener("scroll", colorHandler);
+
+  const navActive = 'text-green-600 font-bold dark:text-green-600'
+  const navNormal = 'text-black font-medium dark:text-white'
+
+  const scrollYHandler=()=>{
+    window.scroll(0,0);
+  }
+
   return (
     <div>
       <div className="container-fluid h-fit" id="mystart">
@@ -112,27 +120,41 @@ const Navbar = () => {
               </Link>
             </div>
               <ul className="hidden md:flex justify-end items-center mr-5 ">
-                <Link to={"/home"}>
-                  <li className=" w-[60px] h-[40px] flex justify-center items-center cursor-pointer">
-                    <span className=" fs-[17px] font-medium text-black hover:text-[#16a34a] dark:text-white dark:hover:text-[#16a34a] ">
+                <NavLink to={"/home"} className={({ isActive })=> (isActive? navActive: navNormal)}>
+                  <li onClick={scrollYHandler} className=" w-[60px] h-[40px] flex justify-center items-center cursor-pointer">
+                    <span className="fs-[17px] hover:text-[#16a34a]   dark:hover:text-[#16a34a]">
                       Home
                     </span>
                   </li>
-                </Link>
-                <Link to={"/buy"}>
-                  <li className=" w-[60px] h-[40px] flex justify-center items-center mx-3 cursor-pointer">
-                    <span className=" fs-[17px] font-medium dark:text-white dark:hover:text-[#16a34a]  hover:text-[#16a34a]">
-                      Buy
+                </NavLink>
+                <NavLink to={"/buy"} className={({ isActive })=> (isActive? navActive: navNormal)}>
+                  <li onClick={scrollYHandler} className=" w-[60px] h-[40px] flex justify-center items-center cursor-pointer">
+                    <span className="fs-[17px] hover:text-[#16a34a] dark:hover:text-[#16a34a]">
+                    Buy
                     </span>
                   </li>
-                </Link>
-                <Link to={"/sell"}>
-                  <li className=" w-[60px] h-[40px] flex justify-center items-center mx-3 cursor-pointer">
+                </NavLink>
+                <NavLink to={"/sell"} className={({ isActive })=> (isActive? navActive: navNormal)}>
+                  <li onClick={scrollYHandler} className=" w-[60px] h-[40px] flex justify-center items-center cursor-pointer">
+                    <span className="fs-[17px] hover:text-[#16a34a] dark:hover:text-[#16a34a]">
+                    Sell
+                    </span>
+                  </li>
+                </NavLink>
+                {/* <Link to={"/buy"}>
+                  <li onClick={scrollYHandler} className=" w-[60px] h-[40px] flex justify-center items-center mx-3 cursor-pointer">
+                    <span className=" fs-[17px] font-medium dark:text-white dark:hover:text-[#16a34a]  hover:text-[#16a34a]">
+                    Buy
+                    </span>
+                  </li>
+                </Link> */}
+                {/* <Link to={"/sell"}>
+                  <li onClick={scrollYHandler} className=" w-[60px] h-[40px] flex justify-center items-center mx-3 cursor-pointer">
                     <span className=" fs-[17px] font-medium text-black  dark:text-white dark:hover:text-[#16a34a]  hover:text-[#16a34a]">
                       Sell
                     </span>
                   </li>
-                </Link>
+                </Link> */}
                 <li
                   onClick={() => setShowDeskMenu(!showDeskMenu)}
                   className=" w-fit h-[40px] flex justify-center items-center mx-3 cursor-pointer relative myliForDropDown"
@@ -150,39 +172,64 @@ const Navbar = () => {
                     }  bg-white w-[150px] absolute top-[38px] left-0 shadow-lg p-5 rounded-md dark:bg-[#0F172A] z-50`}
                   >
                     <ul>
-                      <Link to={"/list-sidebar"}>
-                        <li className="fs-[17px] font-medium text-black dark:text-white dark:hover:text-[#16a34a] hover:text-[#16a34a] mb-2">
+                      
+                      <NavLink to={"/list-sidebar"} className={({ isActive })=> (isActive? navActive: navNormal)}>
+                        <li onClick={scrollYHandler} className="fs-[17px]  dark:hover:text-[#16a34a] hover:text-[#16a34a] mb-2">
+                        List Side bar
+                        </li>
+                      </NavLink>
+                      <NavLink to={"/features"} className={({ isActive })=> (isActive? navActive: navNormal)}>
+                        <li onClick={scrollYHandler} className="fs-[17px]  dark:hover:text-[#16a34a] hover:text-[#16a34a] mb-2">
+                        Features
+                        </li>
+                      </NavLink>
+                      <NavLink to={"/pricing"} className={({ isActive })=> (isActive? navActive: navNormal)}>
+                        <li onClick={scrollYHandler} className="fs-[17px]  dark:hover:text-[#16a34a] hover:text-[#16a34a] mb-2">
+                        Pricing
+                        </li>
+                      </NavLink>
+                      <NavLink to={"/faqs"} className={({ isActive })=> (isActive? navActive: navNormal)}>
+                        <li onClick={scrollYHandler} className="fs-[17px] dark:hover:text-[#16a34a] hover:text-[#16a34a] mb-2">
+                        FAQs
+                        </li>
+                      </NavLink>
+                      {/* <Link to={"/list-sidebar"}>
+                        <li onClick={scrollYHandler} className="fs-[17px] font-medium text-black dark:text-white dark:hover:text-[#16a34a] hover:text-[#16a34a] mb-2">
                           List Side bar
                         </li>
-                      </Link>
-                      <Link to={"/features"}>
-                        <li className="fs-[17px] font-medium text-black dark:text-white dark:hover:text-[#16a34a] hover:text-[#16a34a] mb-2">
+                      </Link> */}
+                      {/* <Link to={"/features"}>
+                        <li onClick={scrollYHandler} className="fs-[17px] font-medium text-black dark:text-white dark:hover:text-[#16a34a] hover:text-[#16a34a] mb-2">
                           Features
                         </li>
-                      </Link>
-                      <Link to={"/pricing"}>
-                        <li className="fs-[17px] font-medium text-black dark:text-white dark:hover:text-[#16a34a] hover:text-[#16a34a] mb-2">
+                      </Link> */}
+                      {/* <Link to={"/pricing"}>
+                        <li onClick={scrollYHandler} className="fs-[17px] font-medium text-black dark:text-white dark:hover:text-[#16a34a] hover:text-[#16a34a] mb-2">
                           Pricing
                         </li>
-                      </Link>
-                      <Link to={"/faqs"}>
-                        <li className="fs-[17px] font-medium text-black dark:text-white dark:hover:text-[#16a34a] hover:text-[#16a34a]">
+                      </Link> */}
+                      {/* <Link to={"/faqs"}>
+                        <li onClick={scrollYHandler} className="fs-[17px] font-medium text-black dark:text-white dark:hover:text-[#16a34a] hover:text-[#16a34a]">
                           FAQs
                         </li>
-                      </Link>
+                      </Link> */}
                     </ul>
                   </div>
                 </li>
-                <li className=" w-fit h-[40px] flex justify-center items-center mx-3 cursor-pointer relative myliForDropDown">
-                  <span className=" fs-[17px] font-medium text-black dark:text-white dark:hover:text-[#16a34a] hover:text-[#16a34a]">
+                <NavLink to={"/aboutus"} className={({ isActive })=> (isActive? navActive: navNormal)}>
+                <li onClick={scrollYHandler} className=" w-fit h-[40px] flex justify-center items-center mx-3 cursor-pointer relative myliForDropDown">
+                  <span className=" fs-[17px] dark:hover:text-[#16a34a] hover:text-[#16a34a]">
                     About us
                   </span>
                 </li>
-                <li className=" w-[60px] h-[40px] flex justify-center items-center mx-3 cursor-pointer">
-                  <span className=" fs-[17px] font-medium text-black dark:text-white dark:hover:text-[#16a34a] hover:text-[#16a34a]">
+              </NavLink>
+              <NavLink to={"/contact"} className={({ isActive })=> (isActive? navActive: navNormal)}>
+                <li onClick={scrollYHandler} className=" w-[60px] h-[40px] flex justify-center items-center mx-3 cursor-pointer">
+                  <span className=" fs-[17px] dark:hover:text-[#16a34a] hover:text-[#16a34a]">
                     Contact
                   </span>
                 </li>
+              </NavLink>
               </ul>
             {/* Login Icon Section Start*/}
 
@@ -221,21 +268,28 @@ const Navbar = () => {
                   } bg-white absolute top-[68px] right-0 p-5  rounded-md w-[80%] shadow-xl dark:bg-[#0F172A] `}
                 >
                   <ul>
-                    <Link to={"/buy"}>
-                      <li className="fs-[17px] font-medium text-black hover:text-[#16a34a] mb-2 dark:text-white">
+                  <NavLink to={"/home"} className={({ isActive })=> (isActive? navActive: navNormal)}>
+                      <li onClick={scrollYHandler} className="fs-[17px] hover:text-[#16a34a] mb-2">
+                        Home
+                      </li>
+                    </NavLink>
+                    <NavLink to={"/buy"} className={({ isActive })=> (isActive? navActive: navNormal)}>
+                      <li onClick={scrollYHandler} className="fs-[17px] hover:text-[#16a34a] mb-2">
                         Buy
                       </li>
-                    </Link>
-                    <li className="fs-[17px] font-medium text-black hover:text-[#16a34a] mb-2 dark:text-white">
-                      Sell
-                    </li>
-                    <Link to={""}>
-                      <li className="fs-[17px] font-medium text-black hover:text-[#16a34a] mb-2 dark:text-white">
+                    </NavLink>
+                    <NavLink to={"/sell"} className={({ isActive })=> (isActive? navActive: navNormal)}>
+                      <li onClick={scrollYHandler} className="fs-[17px] hover:text-[#16a34a] mb-2">
+                        Sell
+                      </li>
+                    </NavLink>
+                    <NavLink to={"/aboutus"} className={({ isActive })=> (isActive? navActive: navNormal)}>
+                      <li onClick={scrollYHandler} className="fs-[17px] hover:text-[#16a34a] mb-2">
                         About us
                       </li>
-                    </Link>
+                    </NavLink>
                     <div className=" ">
-                      <li className="flex justify-between items-center fs-[17px] font-medium text-black hover:text-[#16a34a] mb-2 dark:text-white">
+                      <li className="flex justify-between items-center fs-[17px] font-medium hover:text-[#16a34a] mb-2 text-black dark:text-white">
                         Pages
                         {showMenu ? (
                           <BsChevronUp
@@ -256,33 +310,33 @@ const Navbar = () => {
                           showMenu ? "block" : "hidden"
                         } bg-white dark:bg-slate-900`}
                       >
-                        <Link to={"/list-sidebar"}>
-                          <li className="ml-5 fs-[17px] font-medium text-black hover:text-[#16a34a] mb-2 dark:text-white">
+                        <NavLink to={"/list-sidebar"} className={({ isActive })=> (isActive? navActive: navNormal)}>
+                          <li onClick={scrollYHandler} className="ml-5 fs-[17px] hover:text-[#16a34a] mb-2">
                             Listing
                           </li>
-                        </Link>
-                        <Link to={"/features"}>
-                          <li className=" ml-5 fs-[17px] font-medium text-black hover:text-[#16a34a] mb-2 dark:text-white">
+                        </NavLink>
+                        <NavLink to={"/features"} className={({ isActive })=> (isActive? navActive: navNormal)}>
+                          <li onClick={scrollYHandler} className=" ml-5 fs-[17px] hover:text-[#16a34a] mb-2">
                             Features
                           </li>
-                        </Link>
-                        <Link to={"/pricing"}>
-                          <li className=" ml-5 fs-[17px] font-medium text-black hover:text-[#16a34a] mb-2 dark:text-white">
+                        </NavLink>
+                        <NavLink to={"/pricing" } className={({ isActive })=> (isActive? navActive: navNormal)}>
+                          <li onClick={scrollYHandler} className=" ml-5 fs-[17px] hover:text-[#16a34a] mb-2">
                             Pricing
                           </li>
-                        </Link>
-                        <Link to={"/faqs"}>
-                          <li className=" ml-5 fs-[17px] font-medium text-black hover:text-[#16a34a] mb-2 dark:text-white">
+                        </NavLink>
+                        <NavLink to={"/faqs" } className={({ isActive })=> (isActive? navActive: navNormal)}>
+                          <li onClick={scrollYHandler} className=" ml-5 fs-[17px] hover:text-[#16a34a] mb-2">
                             FAQs
                           </li>
-                        </Link>
+                        </NavLink>
                       </ul>
                     </div>
-                    <Link to={""}>
-                      <li className="fs-[17px] font-medium text-black hover:text-[#16a34a] dark:text-white">
+                    <NavLink to={"/contact" } className={({ isActive })=> (isActive? navActive: navNormal)}>
+                      <li onClick={scrollYHandler} className="fs-[17px] hover:text-[#16a34a]">
                         Contact
                       </li>
-                    </Link>
+                    </NavLink>
                   </ul>
                 </div>
               </div>
