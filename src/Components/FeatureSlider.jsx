@@ -90,7 +90,7 @@ const FeatureSlider = () => {
               </ul>
               <div
                 style={{ backgroundImage: `url(${slides[currentIndex].img})` }}
-                className="  bg-center bg-cover duration-500 h-14 w-14 rounded-full shadow-md dark:shadow-gray-700 mx-auto"
+                className="  bg-center bg-cover duration-500 h-14 w-14 rounded-full shadow-md  mx-auto"
               ></div>
               <h6 className="mt-4 lg:mt-2 fw-semibold dark:text-white">
                 {slides[currentIndex].personName}
