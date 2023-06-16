@@ -2,6 +2,7 @@ import React from "react";
 import { BsTelephone } from "react-icons/bs";
 import FeatureGrids from "../Components/FeatureGrids";
 import FeatureSlider from "../Components/FeatureSlider";
+import { Link } from "react-router-dom";
 
 
 const Features = () => {
@@ -51,7 +52,9 @@ const Features = () => {
                   <i>
                     <BsTelephone className=" font-semibold align-middle mt-[2px] " />
                   </i>
+                  <Link to={"/contact"}>
                   <span className="font-semibold">Contact us</span>
+                  </Link>
                 </span>
               </button>
             </div>

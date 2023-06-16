@@ -3,6 +3,7 @@ import { BsTelephone, BsShield } from "react-icons/bs";
 import { CgTrees } from "react-icons/cg";
 import { FaRocket } from "react-icons/fa";
 import PricingComponent from "../Components/PricingComponent";
+import { Link } from "react-router-dom";
 
 const Pricing = () => {
   return (
@@ -18,7 +19,7 @@ const Pricing = () => {
         </div>
       </div>
       <div className="relative lg:py-24 pt-16 pb-32 lg:pb-44 dark:bg-slate-900">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 lg:px-24">
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-[30px] gap-y-[50px]">
             <div className="rounded-md shadow hover:shadow-xl  duration-500 ease-in-out  dark:bg-slate-900 dark:hover:shadow-xl dark:shadow-gray-700 dark:hover:shadow-gray-700">
               <div className="border-b dark:border-gray-800 p-6 text-center">
@@ -106,7 +107,9 @@ const Pricing = () => {
                   <i>
                     <BsTelephone className=" font-semibold align-middle mt-[2px] " />
                   </i>
+                  <Link to={"/contact"}>
                   <span className="font-semibold">Contact us</span>
+                  </Link>
                 </span>
               </button>
             </div>

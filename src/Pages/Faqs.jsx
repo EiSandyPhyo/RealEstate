@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { BsTelephone } from "react-icons/bs";
 import FaqComponent from "../Components/FaqComponent";
+import { Link } from "react-router-dom";
 
 
 const Faqs = () => {
@@ -59,13 +60,12 @@ const Faqs = () => {
         </div>
       </div>
       <div className="relative lg:py-24 pt-16 pb-32 lg:pb-44 dark:bg-slate-900 mt-10">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-2 lg:px-20">
           <div className="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
             <div className="lg:col-span-4 md:col-span-5">
               <div className="rounded-md shadow  p-6 sticky top-20  dark:text-white dark:shadow-gray-700">
                 <ul
                   className="list-unstyled sidebar-nav mb-0 py-0"
-                  
                 >
                   {links?.map((link)=>{
                     return(
@@ -79,41 +79,6 @@ const Faqs = () => {
                       </li>
                     )
                   })}
-                  {/* <li className="navbar-item p-0">
-                    <a
-                      href="#buying-questions"
-                      onClick={()=>setIsActive(true)}
-                      className={isActive? "text-base font-medium text-green-700 ":"text-base font-medium navbar-link"} 
-                    >
-                      Buying Questions
-                    </a>
-                  </li>
-                  <li className="navbar-item mt-3 p-0">
-                    <a
-                    href="#general-questions"
-                    onClick={()=>setIsActive(true)}
-                      className={isActive? "text-base font-medium text-green-700 ":"text-base font-medium navbar-link"}
-                    >
-                      General Questions
-                    </a>
-                  </li>
-                  <li className="navbar-item mt-3 p-0">
-                    <a
-                      href="#payment-questions"
-                      onClick={()=>setIsActive(true)}
-                      className={isActive? "text-base font-medium text-green-700 ":"text-base font-medium navbar-link"}
-                    >
-                      Payments Questions
-                    </a>
-                  </li>
-                  <li className="navbar-item mt-3 p-0">
-                    <a
-                     href="#support-questions"
-                     onClick={()=>setIsActive(true)}
-                     className={isActive? "text-base font-medium text-green-700 ":"text-base font-medium navbar-link"}                    >
-                      Support Questions
-                    </a>
-                  </li> */}
                 </ul>
               </div>
             </div>
@@ -163,7 +128,9 @@ const Faqs = () => {
                   <i>
                     <BsTelephone className=" font-semibold align-middle mt-[2px] " />
                   </i>
+                  <Link to={"/contact"}>
                   <span className="font-semibold">Contact us</span>
+                  </Link>
                 </span>
               </button>
             </div>
