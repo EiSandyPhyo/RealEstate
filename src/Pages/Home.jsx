@@ -9,6 +9,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import FeatureSlider from "../Components/FeatureSlider";
 import HowItWorks from "../Components/HowItWorks";
 import FeatureProperties from "../Components/FeatureProperties";
+import GetInTouch from "../Components/GetInTouch";
 
 const Home = ({properties}) => {
   const [showBuyBtnColor, setShowBuyBtnColor] = useState(true);
@@ -253,29 +254,8 @@ const Home = ({properties}) => {
         {/* Our clients Section End*/}
 
         {/* Questions Section Start*/}
-        <div className="container pt-16 pb-32  mx-auto">
-          <div className="flex flex-col text-center">
-            <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-medium text-black dark:text-white">
-              Have Question ? Get in touch!
-            </h3>
-            <p className="text-slate-400 max-w-xl mx-auto">
-              A great plateform to buy, sell and rent your properties without
-              any agent or commisions.
-            </p>
-            <div className="mt-6 mx-auto">
-              <button
-                className="p-3 fs-[17px] leading-[24px] text-white bg-[#16a34a] hover:bg-[#138a3f] border-0 rounded-lg mb-3"
-                href="/contact"
-              >
-                <span className="flex gap-2">
-                  <i>
-                    <BsTelephone className=" font-semibold align-middle mt-1" />
-                  </i>
-                  <span className="font-semibold">Contact us</span>
-                </span>
-              </button>
-            </div>
-          </div>
+        <div className=" pb-16 md:pb-24">
+          <GetInTouch/>
         </div>
         {/* Questions Section End*/}
       </div>

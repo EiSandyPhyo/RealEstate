@@ -10,8 +10,6 @@ const Buy = ({ properties }) => {
   const toggleHandler = (id) => {
     setToggle(id);
   };
-  
-  window.scrollTo(0, 0);
 
   return (
     <div>

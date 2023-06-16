@@ -8,7 +8,6 @@ const Contact = () => {
         { id: 2, name: "Email", icon: "uil:envelope", desc: "The phrasal sequence of the is now so that many campaign and benefit", info: "contact@example.com" },
         { id: 3, name: "Location", icon: "uil:map-marker", desc: "C/54 Northwest Freeway, Suite 558,Houston, USA 485", info: "View on Google map"},
       ]);
-      window.scrollTo(0, 0);
   return (
     <div>
       <div className="container-fluid mt-20">

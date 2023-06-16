@@ -1,5 +1,10 @@
 import React from "react";
 import { HiOutlinePhone } from "react-icons/hi";
+import { NavLink } from "react-router-dom";
+
+const scrollYHandler=()=>{
+  window.scroll(0,0);
+}
 
 const GetInTouch = () => {
   return (
@@ -10,10 +15,13 @@ const GetInTouch = () => {
           A great platform to buy, sell and rent your properties without any
           agent or commissions.
         </p>
-        <button className="btn flex-center-center gap-2 px-7 py-2 mt-6">
+        <NavLink to={'/contact'}>
+          <button onClick={scrollYHandler} className="btn flex-center-center gap-2 px-7 py-2 mt-6">
           <HiOutlinePhone className="xs:mb-[4px] md:mb-1 text-md sm:text-lg" />
           Contact us
         </button>
+        </NavLink>
+        
       </div>
     </div>
   );

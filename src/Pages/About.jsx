@@ -212,7 +212,7 @@ const About = () => {
                       <div
                         onClick={() => goToSlide(i)}
                         className={` transition-all w-1 h-1 bg-green-600 rounded-full cursor-pointer ${
-                          current === i ? "p-[5px]" : "bg-gray-600"
+                          current === i ? "p-[5px]" : " bg-opacity-50"
                         }
                                 `}
                         key={i}
