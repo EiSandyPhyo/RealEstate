@@ -159,7 +159,7 @@ const Footer = () => {
                 <Link to={"/faqs"}>
                   <li
                     onClick={scrollYHandler}
-                    className=" flex justify-start items-center mb-2 hover:text-[#16a34a]"
+                    className=" flex justify-start items-center mb-2 hover:text-slate-400"
                   >
                     <IoIosArrowForward className="mr-3" />
                     FAQs
@@ -185,7 +185,7 @@ const Footer = () => {
                 <Link to={"/features"}>
                   <li
                     onClick={scrollYHandler}
-                    className=" flex justify-start items-center mb-2 hover:text-[#16a34a]"
+                    className=" flex justify-start items-center mb-2 hover:text-slate-400"
                   >
                     <IoIosArrowForward className="mr-3" />
                     Features
