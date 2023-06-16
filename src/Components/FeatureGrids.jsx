@@ -11,7 +11,7 @@ const FeatureGrids = () => {
   return (
     <div className="container mx-auto px-4 lg:px-20  dark:bg-slate-900">
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-[30px] gap-y-[50px]">
-            <div className="group relative lg:px-10 transition-all duration-500 ease-in-out rounded-xl bg-white  overflow-hidden">
+            <div className="group relative lg:px-10 transition-all duration-500 ease-in-out rounded-xl bg-white  overflow-hidden dark:bg-slate-900">
               <div className="relative overflow-hidden text-transparent -m-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,7 @@ const FeatureGrids = () => {
                 </p>
               </div>
             </div>
-            <div className="group relative lg:px-10 transition-all duration-500 ease-in-out rounded-xl bg-white  overflow-hidden">
+            <div className="group relative lg:px-10 transition-all duration-500 ease-in-out rounded-xl bg-white  overflow-hidden dark:bg-slate-900">
               <div className="relative overflow-hidden text-transparent -m-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +81,7 @@ const FeatureGrids = () => {
                 </p>
               </div>
             </div>
-            <div className="group relative lg:px-10 transition-all duration-500 ease-in-out rounded-xl bg-white overflow-hidden">
+            <div className="group relative lg:px-10 transition-all duration-500 ease-in-out rounded-xl bg-white overflow-hidden dark:bg-slate-900">
               <div className="relative overflow-hidden text-transparent -m-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -116,7 +116,7 @@ const FeatureGrids = () => {
                 </p>
               </div>
             </div>
-            <div className="group relative lg:px-10 transition-all duration-500 ease-in-out rounded-xl bg-white overflow-hidden">
+            <div className="group relative lg:px-10 transition-all duration-500 ease-in-out rounded-xl bg-white overflow-hidden dark:bg-slate-900">
               <div className="relative overflow-hidden text-transparent -m-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -151,7 +151,7 @@ const FeatureGrids = () => {
                 </p>
               </div>
             </div>
-            <div className="group relative lg:px-10 transition-all duration-500 ease-in-out rounded-xl bg-white  overflow-hidden">
+            <div className="group relative lg:px-10 transition-all duration-500 ease-in-out rounded-xl bg-white  overflow-hidden dark:bg-slate-900">
               <div className="relative overflow-hidden text-transparent -m-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -186,7 +186,7 @@ const FeatureGrids = () => {
                 </p>
               </div>
             </div>
-            <div className="group relative lg:px-10 transition-all duration-500 ease-in-out rounded-xl bg-white  overflow-hidden">
+            <div className="group relative lg:px-10 transition-all duration-500 ease-in-out rounded-xl bg-white  overflow-hidden dark:bg-slate-900">
               <div className="relative overflow-hidden text-transparent -m-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
